@@ -16010,9 +16010,957 @@
      "recency": 1,
      "entailment": 0
     }
+   },
+   {
+    "id": "c2-e13",
+    "claimId": "c2",
+    "url": "https://www.clinicalaiweekly.com/compare/abridge-vs-dax-copilot",
+    "domain": "clinicalaiweekly.com",
+    "title": "Abridge vs Dragon Copilot (2026): pricing, HIPAA, psychiatry fit | ClinicalAIWeekly",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.1,
+    "tier": 4,
+    "tierReason": "Vendor comparison site; no customer counts",
+    "engines": [
+     "brave"
+    ],
+    "originId": "o-c2-12",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-14",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c2-e14",
+    "claimId": "c2",
+    "url": "https://www.healthcare-brew.com/stories/2026/03/12/microsoft-launches-ai-platform-copilot-health",
+    "domain": "healthcare-brew.com",
+    "title": "Microsoft launches AI platform, Copilot Health",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.02,
+    "tier": 2,
+    "tierReason": "Healthcare trade press; Copilot Health launch",
+    "engines": [
+     "linkup"
+    ],
+    "originId": "o-c2-13",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-03-12",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c2-e15",
+    "claimId": "c2",
+    "url": "https://healthtechmagazine.net/article/2026/04/health-systems-can-get-started-microsoft-dragon-copilot-today-improve-clinical-workflows",
+    "domain": "healthtechmagazine.net",
+    "title": "Health Systems Can Get Started With Microsoft Dragon Copilot Today to Improve Clinical Workflows | HealthTech Magazine",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.05,
+    "tier": 3,
+    "tierReason": "CDW HealthTech trade magazine; no counts",
+    "engines": [
+     "linkup"
+    ],
+    "originId": "o-c2-14",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-04-01",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c2-e16",
+    "claimId": "c2",
+    "url": "https://dev.to/shaam_ai/agentic-ai-in-health-care-compared-abridge-leads-5708",
+    "domain": "dev.to",
+    "title": "Agentic AI in Health Care Compared: Abridge Leads - DEV Community",
+    "quote": "**Abridge leads the field** on confirmed deployments, clinical-documentation depth, and revenue-cycle reach.",
+    "stance": "supports",
+    "entailment": 0.55,
+    "tier": 4,
+    "tierReason": "Dev.to repost of aitecharchive; unverified ranking",
+    "engines": [
+     "parallel"
+    ],
+    "originId": "o-c2-15",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-09",
+    "fetchedVia": "tavily",
+    "weight": 0.183,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.55
+    }
+   },
+   {
+    "id": "c2-e17",
+    "claimId": "c2",
+    "url": "https://www.microsoft.com/en/customers/story/27030-mercy-microsoft-dragon-copilot",
+    "domain": "microsoft.com",
+    "title": "Mercy nurses use Microsoft Dragon Copilot to help advance patient-centered care | Microsoft Customer Stories",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.03,
+    "tier": 4,
+    "tierReason": "Microsoft self-published customer story; no counts",
+    "engines": [
+     "parallel"
+    ],
+    "originId": "o-c2-16",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c5-e13",
+    "claimId": "c5",
+    "url": "https://www.beri.net/article/best-ambient-ai-scribes-health-systems-abridge-epic-ai-charting-dragon-copilot",
+    "domain": "beri.net",
+    "title": "Best Ambient AI Scribes Save 16 Minutes a Day, Not an Hour | THE D*AI*LY BRIEF",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.15,
+    "tier": 4,
+    "tierReason": "personal newsletter blog, no Abridge revenue",
+    "engines": [
+     "parallel",
+     "brave"
+    ],
+    "originId": "o-c5-13",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-09-25",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c5-e14",
+    "claimId": "c5",
+    "url": "https://www.ch-healthtech.com/insights/heidi-health-cuts-18-staff-abridge-confirms-layoffs-organizational-realignment",
+    "domain": "ch-healthtech.com",
+    "title": "Heidi and Abridge Layoffs: The AI Scribe Squeeze Begins",
+    "quote": "I expect native EHR tools to put sustained pressure on standalone scribe pricing.",
+    "stance": "supports",
+    "entailment": 0.6,
+    "tier": 3,
+    "tierReason": "credible analyst commentary on scribe market",
+    "engines": [
+     "parallel"
+    ],
+    "originId": "o-c5-14",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-11-10",
+    "fetchedVia": "tavily",
+    "weight": 0.371,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.6
+    }
+   },
+   {
+    "id": "c5-e15",
+    "claimId": "c5",
+    "url": "https://nirmitee.io/blog/epic-ai-scribe/",
+    "domain": "nirmitee.io",
+    "title": "Epic AI Scribe 2026: Chart with Art vs Abridge and Dragon",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.1,
+    "tier": 4,
+    "tierReason": "vendor blog, no pricing or revenue data",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c5-15",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-24",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c1-e13",
+    "claimId": "c1",
+    "url": "https://www.kaisoresearch.com/report-store/ai-clinical-documentation-market",
+    "domain": "kaisoresearch.com",
+    "title": "AI Clinical Documentation Market Size, Share, & Growth Report 2026–2035",
+    "quote": "Abridge has earned Best in KLAS for Ambient AI two consecutive years.",
+    "stance": "supports",
+    "entailment": 0.6,
+    "tier": 3,
+    "tierReason": "Paid market research report, analyst-style",
+    "engines": [
+     "perplexity"
+    ],
+    "originId": "o-c1-13",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-16",
+    "fetchedVia": "tavily",
+    "weight": 0.371,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.6
+    }
+   },
+   {
+    "id": "c1-e14",
+    "claimId": "c1",
+    "url": "https://dataintelo.com/report/ai-medical-scribe-software-market",
+    "domain": "dataintelo.com",
+    "title": "AI Medical Scribe Software Market Research Report 2034",
+    "quote": "Nuance Communications (Microsoft) led the competitive landscape with broad enterprise integration",
+    "stance": "contradicts",
+    "entailment": 0.05,
+    "tier": 4,
+    "tierReason": "Market report aggregator, undated day, SEO-style",
+    "engines": [
+     "perplexity"
+    ],
+    "originId": "o-c1-14",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.017,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.05
+    }
+   },
+   {
+    "id": "c1-e15",
+    "claimId": "c1",
+    "url": "https://growthmarketreports.com/report/ambient-clinical-intelligence-market",
+    "domain": "growthmarketreports.com",
+    "title": "Ambient Clinical Intelligence Market: Size, Share, Companies",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.1,
+    "tier": 4,
+    "tierReason": "Report seller aggregator; no vendor ranking",
+    "engines": [
+     "perplexity"
+    ],
+    "originId": "o-c1-15",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c1-e16",
+    "claimId": "c1",
+    "url": "https://alignify.co/blog/medical-scribe",
+    "domain": "alignify.co",
+    "title": "Best AI Medical Scribe Tools (2026): Abridge, Nuance DAX, Epic & More | Alignify",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.1,
+    "tier": 4,
+    "tierReason": "Vendor blog listing tools; no leadership claim",
+    "engines": [
+     "parallel"
+    ],
+    "originId": "o-c1-16",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-06-16",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c1-e17",
+    "claimId": "c1",
+    "url": "https://www.healthcare-brew.com/stories/abridge-nvidia-eli-lilly-ai-clinical-platform",
+    "domain": "healthcare-brew.com",
+    "title": "Abridge lays out road map for all-in-one clinical platform",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.1,
+    "tier": 3,
+    "tierReason": "Trade newsletter; discusses valuation, not leadership",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c1-17",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-06-25",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e13",
+    "claimId": "c3",
+    "url": "https://www.beckershospitalreview.com/healthcare-information-technology/digital-health/10-health-systems-top-1m-ai-documented-encounters-with-microsoft/",
+    "domain": "beckershospitalreview.com",
+    "title": "10 health systems top 1M AI-documented encounters with Microsoft",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.03,
+    "tier": 3,
+    "tierReason": "Trade health IT news; no share data",
+    "engines": [
+     "perplexity"
+    ],
+    "originId": "o-c3-13",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-28",
+    "fetchedVia": "exa",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e14",
+    "claimId": "c3",
+    "url": "https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/extend-clinical-workflows-with-dragon-copilot-ai-apps-and-agents-in-microsoft-ma/4548688",
+    "domain": "techcommunity.microsoft.com",
+    "title": "Extend clinical workflows with Dragon Copilot AI Apps and Agents in Microsoft Marketplace | Microsoft Community Hub",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.02,
+    "tier": 4,
+    "tierReason": "Microsoft's own product blog post",
+    "engines": [
+     "parallel"
+    ],
+    "originId": "o-c3-14",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-08-21",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e15",
+    "claimId": "c3",
+    "url": "https://www.healthcare-brew.com/stories/2026/02/18/microsoft-health-vps-ai-development-research",
+    "domain": "healthcare-brew.com",
+    "title": "Microsoft Health VPs talk AI development, research at NYC briefing",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.03,
+    "tier": 3,
+    "tierReason": "Trade healthcare news briefing coverage",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c3-15",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-02-18",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e16",
+    "claimId": "c3",
+    "url": "https://www.linkedin.com/posts/willfalk_microsoft-extends-ai-advancements-in-dragon-activity-7394860886424944640-Z6fA",
+    "domain": "linkedin.com",
+    "title": "Microsoft extends AI advancements in Dragon Copilot to nurses and partners to enhance patient care - Source | Will Falk",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.03,
+    "tier": 3,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "tavily"
+    ],
+    "originId": "o-c3-16",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tinyfish",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e17",
+    "claimId": "c3",
+    "url": "https://www.microsoft.com/en-us/health-solutions/clinical-workflow/dragon-copilot",
+    "domain": "microsoft.com",
+    "title": "Microsoft Dragon Copilot | Microsoft for Healthcare",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.01,
+    "tier": 4,
+    "tierReason": "Company product marketing page",
+    "engines": [
+     "tavily"
+    ],
+    "originId": "o-c3-17",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c4-e13",
+    "claimId": "c4",
+    "url": "https://6figr.com/company/abridge",
+    "domain": "6figr.com",
+    "title": "Abridge: Employees, Headcount Growth, Org Chart, Layoffs & H1B (2026) | 6figr",
+    "quote": "* **Jun 2025** · Series E · $300M · Andreessen Horowitz, Khosla Ventures",
+    "stance": "supports",
+    "entailment": 0.5,
+    "tier": 4,
+    "tierReason": "aggregator profile page; no valuation stated",
+    "engines": [
+     "linkup"
+    ],
+    "originId": "o-c4-13",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tinyfish",
+    "weight": 0.166,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.5
+    }
+   },
+   {
+    "id": "c4-e14",
+    "claimId": "c4",
+    "url": "https://www.modernhealthcare.com/health-tech/mh-abridge-layoffs-realignment-ai/",
+    "domain": "modernhealthcare.com",
+    "title": "Abridge layoffs affect staff amid company realignment - Modern Healthcare",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 3,
+    "tierReason": "trade press article on layoffs, no funding",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c4-14",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-11-06",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c4-e15",
+    "claimId": "c4",
+    "url": "https://www.bizjournals.com/pittsburgh/news/2026/11/09/abridge-cuts-undisclosed-amount-of-staff.html",
+    "domain": "bizjournals.com",
+    "title": "AI startup Abridge completes undisclosed number of layoffs - Pittsburgh Business Times",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.05,
+    "tier": 3,
+    "tierReason": "local business journal on layoffs, no valuation",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c4-15",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-11-09",
+    "fetchedVia": "exa",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c4-e16",
+    "claimId": "c4",
+    "url": "https://www.aol.com/articles/5-billion-ai-healthcare-company-190358000.html",
+    "domain": "aol.com",
+    "title": "$5+ billion AI healthcare company confirms layoffs - AOL",
+    "quote": "Led by Menlo Park based venture capital firm Andreessen Horowitz, it pulled in $300 million from investors at a $5.3 billion valuation.",
+    "stance": "supports",
+    "entailment": 0.9,
+    "tier": 3,
+    "tierReason": "local TV news syndicated via AOL repost",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c4-16",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-11-09",
+    "fetchedVia": "tavily",
+    "weight": 0.556,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.9
+    }
+   },
+   {
+    "id": "c4-e17",
+    "claimId": "c4",
+    "url": "https://finance.yahoo.com/healthcare/articles/5-billion-ai-healthcare-company-190358679.html",
+    "domain": "finance.yahoo.com",
+    "title": "$5+ billion AI healthcare company confirms layoffs",
+    "quote": "$5+ billion AI healthcare company confirms layoffs",
+    "stance": "supports",
+    "entailment": 0.55,
+    "tier": 4,
+    "tierReason": "Yahoo aggregator repost; body truncated, headline only",
+    "engines": [
+     "brave"
+    ],
+    "originId": "o-c4-17",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-11-09",
+    "fetchedVia": "tavily",
+    "weight": 0.183,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.55
+    }
    }
   ],
   "origins": [
+   {
+    "id": "o-c2-1",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e1",
+    "memberIds": [
+     "c2-e1"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-2",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e2",
+    "memberIds": [
+     "c2-e2"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-3",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e3",
+    "memberIds": [
+     "c2-e3"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-4",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e4",
+    "memberIds": [
+     "c2-e4"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-5",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e5",
+    "memberIds": [
+     "c2-e5"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-6",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e6",
+    "memberIds": [
+     "c2-e6"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-7",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e7",
+    "memberIds": [
+     "c2-e7",
+     "c2-e11"
+    ],
+    "similarity": 0.57
+   },
+   {
+    "id": "o-c2-8",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e8",
+    "memberIds": [
+     "c2-e8"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-9",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e9",
+    "memberIds": [
+     "c2-e9"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-10",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e10",
+    "memberIds": [
+     "c2-e10"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-11",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e12",
+    "memberIds": [
+     "c2-e12"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-12",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e13",
+    "memberIds": [
+     "c2-e13"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-13",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e14",
+    "memberIds": [
+     "c2-e14"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-14",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e15",
+    "memberIds": [
+     "c2-e15"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-15",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e16",
+    "memberIds": [
+     "c2-e16"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-16",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e17",
+    "memberIds": [
+     "c2-e17"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-1",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e1",
+    "memberIds": [
+     "c5-e1"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-2",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e2",
+    "memberIds": [
+     "c5-e2"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-3",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e3",
+    "memberIds": [
+     "c5-e3"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-4",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e4",
+    "memberIds": [
+     "c5-e4"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-5",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e5",
+    "memberIds": [
+     "c5-e5"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-6",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e6",
+    "memberIds": [
+     "c5-e6"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-7",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e7",
+    "memberIds": [
+     "c5-e7"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-8",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e8",
+    "memberIds": [
+     "c5-e8"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-9",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e9",
+    "memberIds": [
+     "c5-e9"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-10",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e10",
+    "memberIds": [
+     "c5-e10"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-11",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e11",
+    "memberIds": [
+     "c5-e11"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-12",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e12",
+    "memberIds": [
+     "c5-e12"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-13",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e13",
+    "memberIds": [
+     "c5-e13"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-14",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e14",
+    "memberIds": [
+     "c5-e14"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-15",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e15",
+    "memberIds": [
+     "c5-e15"
+    ],
+    "similarity": 0
+   },
    {
     "id": "o-c1-1",
     "claimId": "c1",
@@ -16122,110 +17070,47 @@
     "similarity": 0
    },
    {
-    "id": "o-c4-1",
-    "claimId": "c4",
-    "originEvidenceId": "c4-e1",
+    "id": "o-c1-13",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e13",
     "memberIds": [
-     "c4-e1"
+     "c1-e13"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c4-2",
-    "claimId": "c4",
-    "originEvidenceId": "c4-e2",
+    "id": "o-c1-14",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e14",
     "memberIds": [
-     "c4-e2"
+     "c1-e14"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c4-3",
-    "claimId": "c4",
-    "originEvidenceId": "c4-e3",
+    "id": "o-c1-15",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e15",
     "memberIds": [
-     "c4-e3"
+     "c1-e15"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c4-4",
-    "claimId": "c4",
-    "originEvidenceId": "c4-e4",
+    "id": "o-c1-16",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e16",
     "memberIds": [
-     "c4-e4"
+     "c1-e16"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c4-5",
-    "claimId": "c4",
-    "originEvidenceId": "c4-e5",
+    "id": "o-c1-17",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e17",
     "memberIds": [
-     "c4-e5"
-    ],
-    "similarity": 0
-   },
-   {
-    "id": "o-c4-6",
-    "claimId": "c4",
-    "originEvidenceId": "c4-e6",
-    "memberIds": [
-     "c4-e6"
-    ],
-    "similarity": 0
-   },
-   {
-    "id": "o-c4-7",
-    "claimId": "c4",
-    "originEvidenceId": "c4-e7",
-    "memberIds": [
-     "c4-e7"
-    ],
-    "similarity": 0
-   },
-   {
-    "id": "o-c4-8",
-    "claimId": "c4",
-    "originEvidenceId": "c4-e8",
-    "memberIds": [
-     "c4-e8"
-    ],
-    "similarity": 0
-   },
-   {
-    "id": "o-c4-9",
-    "claimId": "c4",
-    "originEvidenceId": "c4-e9",
-    "memberIds": [
-     "c4-e9"
-    ],
-    "similarity": 0
-   },
-   {
-    "id": "o-c4-10",
-    "claimId": "c4",
-    "originEvidenceId": "c4-e10",
-    "memberIds": [
-     "c4-e10"
-    ],
-    "similarity": 0
-   },
-   {
-    "id": "o-c4-11",
-    "claimId": "c4",
-    "originEvidenceId": "c4-e11",
-    "memberIds": [
-     "c4-e11"
-    ],
-    "similarity": 0
-   },
-   {
-    "id": "o-c4-12",
-    "claimId": "c4",
-    "originEvidenceId": "c4-e12",
-    "memberIds": [
-     "c4-e12"
+     "c1-e17"
     ],
     "similarity": 0
    },
@@ -16338,210 +17223,200 @@
     "similarity": 0
    },
    {
-    "id": "o-c2-1",
-    "claimId": "c2",
-    "originEvidenceId": "c2-e1",
+    "id": "o-c3-13",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e13",
     "memberIds": [
-     "c2-e1"
+     "c3-e13"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c2-2",
-    "claimId": "c2",
-    "originEvidenceId": "c2-e2",
+    "id": "o-c3-14",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e14",
     "memberIds": [
-     "c2-e2"
+     "c3-e14"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c2-3",
-    "claimId": "c2",
-    "originEvidenceId": "c2-e3",
+    "id": "o-c3-15",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e15",
     "memberIds": [
-     "c2-e3"
+     "c3-e15"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c2-4",
-    "claimId": "c2",
-    "originEvidenceId": "c2-e4",
+    "id": "o-c3-16",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e16",
     "memberIds": [
-     "c2-e4"
+     "c3-e16"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c2-5",
-    "claimId": "c2",
-    "originEvidenceId": "c2-e5",
+    "id": "o-c3-17",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e17",
     "memberIds": [
-     "c2-e5"
+     "c3-e17"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c2-6",
-    "claimId": "c2",
-    "originEvidenceId": "c2-e6",
+    "id": "o-c4-1",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e1",
     "memberIds": [
-     "c2-e6"
+     "c4-e1"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c2-7",
-    "claimId": "c2",
-    "originEvidenceId": "c2-e7",
+    "id": "o-c4-2",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e2",
     "memberIds": [
-     "c2-e7",
-     "c2-e11"
-    ],
-    "similarity": 0.57
-   },
-   {
-    "id": "o-c2-8",
-    "claimId": "c2",
-    "originEvidenceId": "c2-e8",
-    "memberIds": [
-     "c2-e8"
+     "c4-e2"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c2-9",
-    "claimId": "c2",
-    "originEvidenceId": "c2-e9",
+    "id": "o-c4-3",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e3",
     "memberIds": [
-     "c2-e9"
+     "c4-e3"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c2-10",
-    "claimId": "c2",
-    "originEvidenceId": "c2-e10",
+    "id": "o-c4-4",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e4",
     "memberIds": [
-     "c2-e10"
+     "c4-e4"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c2-11",
-    "claimId": "c2",
-    "originEvidenceId": "c2-e12",
+    "id": "o-c4-5",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e5",
     "memberIds": [
-     "c2-e12"
+     "c4-e5"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c5-1",
-    "claimId": "c5",
-    "originEvidenceId": "c5-e1",
+    "id": "o-c4-6",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e6",
     "memberIds": [
-     "c5-e1"
+     "c4-e6"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c5-2",
-    "claimId": "c5",
-    "originEvidenceId": "c5-e2",
+    "id": "o-c4-7",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e7",
     "memberIds": [
-     "c5-e2"
+     "c4-e7"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c5-3",
-    "claimId": "c5",
-    "originEvidenceId": "c5-e3",
+    "id": "o-c4-8",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e8",
     "memberIds": [
-     "c5-e3"
+     "c4-e8"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c5-4",
-    "claimId": "c5",
-    "originEvidenceId": "c5-e4",
+    "id": "o-c4-9",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e9",
     "memberIds": [
-     "c5-e4"
+     "c4-e9"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c5-5",
-    "claimId": "c5",
-    "originEvidenceId": "c5-e5",
+    "id": "o-c4-10",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e10",
     "memberIds": [
-     "c5-e5"
+     "c4-e10"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c5-6",
-    "claimId": "c5",
-    "originEvidenceId": "c5-e6",
+    "id": "o-c4-11",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e11",
     "memberIds": [
-     "c5-e6"
+     "c4-e11"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c5-7",
-    "claimId": "c5",
-    "originEvidenceId": "c5-e7",
+    "id": "o-c4-12",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e12",
     "memberIds": [
-     "c5-e7"
+     "c4-e12"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c5-8",
-    "claimId": "c5",
-    "originEvidenceId": "c5-e8",
+    "id": "o-c4-13",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e13",
     "memberIds": [
-     "c5-e8"
+     "c4-e13"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c5-9",
-    "claimId": "c5",
-    "originEvidenceId": "c5-e9",
+    "id": "o-c4-14",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e14",
     "memberIds": [
-     "c5-e9"
+     "c4-e14"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c5-10",
-    "claimId": "c5",
-    "originEvidenceId": "c5-e10",
+    "id": "o-c4-15",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e15",
     "memberIds": [
-     "c5-e10"
+     "c4-e15"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c5-11",
-    "claimId": "c5",
-    "originEvidenceId": "c5-e11",
+    "id": "o-c4-16",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e16",
     "memberIds": [
-     "c5-e11"
+     "c4-e16"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c5-12",
-    "claimId": "c5",
-    "originEvidenceId": "c5-e12",
+    "id": "o-c4-17",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e17",
     "memberIds": [
-     "c5-e12"
+     "c4-e17"
     ],
     "similarity": 0
    }
@@ -16549,12 +17424,12 @@
   "scores": {
    "c1": {
     "claimId": "c1",
-    "confidence": 63,
+    "confidence": 79,
     "label": "Contested",
-    "supportWeight": 1.05,
-    "contradictWeight": 0.67,
-    "articles": 5,
-    "independentOrigins": 5,
+    "supportWeight": 1.43,
+    "contradictWeight": 0.69,
+    "articles": 7,
+    "independentOrigins": 7,
     "engines": [
      "perplexity",
      "parallel",
@@ -16564,12 +17439,12 @@
    },
    "c2": {
     "claimId": "c2",
-    "confidence": 26,
+    "confidence": 34,
     "label": "Contested",
-    "supportWeight": 0.74,
+    "supportWeight": 0.93,
     "contradictWeight": 1.02,
-    "articles": 7,
-    "independentOrigins": 7,
+    "articles": 8,
+    "independentOrigins": 8,
     "engines": [
      "exa",
      "brave",
@@ -16597,10 +17472,10 @@
     "claimId": "c4",
     "confidence": 100,
     "label": "Verified",
-    "supportWeight": 5.3,
+    "supportWeight": 6.21,
     "contradictWeight": 0.23,
-    "articles": 10,
-    "independentOrigins": 10,
+    "articles": 13,
+    "independentOrigins": 13,
     "engines": [
      "exa",
      "brave",
@@ -16611,12 +17486,12 @@
    },
    "c5": {
     "claimId": "c5",
-    "confidence": 82,
+    "confidence": 91,
     "label": "Contested",
-    "supportWeight": 1.2,
+    "supportWeight": 1.57,
     "contradictWeight": 0.42,
-    "articles": 8,
-    "independentOrigins": 8,
+    "articles": 9,
+    "independentOrigins": 9,
     "engines": [
      "parallel",
      "brave",
@@ -16817,6 +17692,61 @@
     "ts": 1794695298066,
     "kind": "error",
     "text": "TRIPWIRE c5: 87 → 82 · beckershospitalreview.com (T3)"
+   },
+   {
+    "ts": 1794695460194,
+    "kind": "info",
+    "text": "Auto-check #2 (every 3 min)"
+   },
+   {
+    "ts": 1794695461038,
+    "kind": "search",
+    "text": "c3: monitor 3a9e506b (?) → 0 findings"
+   },
+   {
+    "ts": 1794695461107,
+    "kind": "search",
+    "text": "c5: monitor c80d033e (ready) → 0 findings"
+   },
+   {
+    "ts": 1794695461294,
+    "kind": "search",
+    "text": "c2: monitor 2664e8bb (ready) → 0 findings"
+   },
+   {
+    "ts": 1794695461305,
+    "kind": "search",
+    "text": "c4: monitor 74f176ba (ready) → 0 findings"
+   },
+   {
+    "ts": 1794695461553,
+    "kind": "search",
+    "text": "c1: monitor 8daace78 (ready) → 0 findings"
+   },
+   {
+    "ts": 1794695467440,
+    "kind": "score",
+    "text": "c2: 26 → 34 (Contested) · 5 new sources"
+   },
+   {
+    "ts": 1794695467633,
+    "kind": "score",
+    "text": "c5: 82 → 91 (Contested) · 3 new sources"
+   },
+   {
+    "ts": 1794695472359,
+    "kind": "score",
+    "text": "c1: 63 → 79 (Contested) · 5 new sources"
+   },
+   {
+    "ts": 1794695475869,
+    "kind": "score",
+    "text": "c3: 55 → 55 (Unverifiable) · 5 new sources"
+   },
+   {
+    "ts": 1794695483881,
+    "kind": "score",
+    "text": "c4: 100 → 100 (Verified) · 5 new sources"
    }
   ],
   "seeded": false,
@@ -16828,7 +17758,7 @@
     "cursor": 3058,
     "createdAt": 1794693305467,
     "agentStatus": "ready",
-    "lastCheckedAt": 1794695280957,
+    "lastCheckedAt": 1794695461553,
     "seen": 6
    },
    {
@@ -16838,7 +17768,7 @@
     "cursor": 3064,
     "createdAt": 1794693305706,
     "agentStatus": "ready",
-    "lastCheckedAt": 1794695281440,
+    "lastCheckedAt": 1794695461294,
     "seen": 2
    },
    {
@@ -16848,7 +17778,7 @@
     "cursor": 0,
     "createdAt": 1794693305918,
     "agentStatus": null,
-    "lastCheckedAt": 1794695281439,
+    "lastCheckedAt": 1794695461038,
     "seen": 0
    },
    {
@@ -16858,7 +17788,7 @@
     "cursor": 3092,
     "createdAt": 1794693305708,
     "agentStatus": "ready",
-    "lastCheckedAt": 1794695281207,
+    "lastCheckedAt": 1794695461305,
     "seen": 14
    },
    {
@@ -16868,7 +17798,7 @@
     "cursor": 3132,
     "createdAt": 1794693305695,
     "agentStatus": "ready",
-    "lastCheckedAt": 1794695280973,
+    "lastCheckedAt": 1794695461107,
     "seen": 19
    }
   ],
@@ -16902,6 +17832,12 @@
      "confidence": 63,
      "label": "Contested",
      "note": "check: 5 new, 0 relevant"
+    },
+    {
+     "ts": 1794695472359,
+     "confidence": 79,
+     "label": "Contested",
+     "note": "check: 5 new, 2 relevant"
     }
    ],
    "c2": [
@@ -16916,6 +17852,12 @@
      "confidence": 26,
      "label": "Contested",
      "note": "check: 5 new, 3 relevant"
+    },
+    {
+     "ts": 1794695467440,
+     "confidence": 34,
+     "label": "Contested",
+     "note": "check: 5 new, 1 relevant"
     }
    ],
    "c3": [
@@ -16927,6 +17869,12 @@
     },
     {
      "ts": 1794695290451,
+     "confidence": 55,
+     "label": "Unverifiable",
+     "note": "check: 5 new, 0 relevant"
+    },
+    {
+     "ts": 1794695475869,
      "confidence": 55,
      "label": "Unverifiable",
      "note": "check: 5 new, 0 relevant"
@@ -16944,6 +17892,12 @@
      "confidence": 100,
      "label": "Verified",
      "note": "check: 5 new, 5 relevant"
+    },
+    {
+     "ts": 1794695483881,
+     "confidence": 100,
+     "label": "Verified",
+     "note": "check: 5 new, 3 relevant"
     }
    ],
    "c5": [
@@ -16958,6 +17912,12 @@
      "confidence": 82,
      "label": "Contested",
      "note": "check: 5 new, 3 relevant"
+    },
+    {
+     "ts": 1794695467633,
+     "confidence": 91,
+     "label": "Contested",
+     "note": "check: 3 new, 1 relevant"
     }
    ]
   },
@@ -17106,9 +18066,9 @@
   ],
   "auto": {
    "everyMs": 180000,
-   "nextCheckAt": 1794695460047,
-   "lastViewedAt": 1794695297768,
-   "checks": 1
+   "nextCheckAt": 1794695640194,
+   "lastViewedAt": 1794695482923,
+   "checks": 2
   },
   "checking": false
  },
