@@ -5,10 +5,10 @@ import { Component, useEffect, useMemo, useState, type ReactNode } from "react";
 import type { ApiCall, CaseFile } from "@/lib/types";
 import { mockCase } from "@/components/mockCase";
 import { ClaimList, Cores2D, EvidenceDrawer, ProofPanel } from "@/components/panels";
-import MonitorsPanel from "@/components/MonitorsPanel";
+import { AlertFeed, TripwireBar } from "@/components/tripwire";
 import { ENGINES, ENGINE_COLOR, useReducedMotion } from "@/components/ui";
 
-const CoreRack = dynamic(() => import("@/components/CoreRack"), { ssr: false, loading: () => <div className="survey-label p-6">loading rack…</div> });
+const EvidenceTerrain = dynamic(() => import("@/components/EvidenceTerrain"), { ssr: false, loading: () => <div className="survey-label p-6">raising terrain…</div> });
 
 class GLBoundary extends Component<{ children: ReactNode; fallback: ReactNode }, { failed: boolean }> {
   state = { failed: false };
@@ -26,8 +26,9 @@ export default function CasePage() {
   const [selClaim, setSelClaim] = useState<string | null>(null);
   const [selEv, setSelEv] = useState<string | null>(null);
   const [flat, setFlat] = useState(false);
+  const [pollKey, setPollKey] = useState(0);
   const reduced = useReducedMotion();
-  const running = !c || c.status === "running";
+  const live = !c || c.status === "running" || !!c.checking;
 
   useEffect(() => {
     if (isMock) return;
@@ -40,13 +41,13 @@ export default function CasePage() {
         const d: CaseFile = await r.json();
         if (stop) return;
         setC(d); setErr(null);
-        if (d.status !== "running") return;
+        if (d.status !== "running" && !d.checking) return;
       } catch (e) { if (!stop) setErr((e as Error).message); }
       if (!stop) t = setTimeout(tick, 900);
     };
     tick();
     return () => { stop = true; clearTimeout(t); };
-  }, [id, isMock]);
+  }, [id, isMock, pollKey]);
 
   useEffect(() => {
     if (isMock) return;
@@ -60,10 +61,10 @@ export default function CasePage() {
       } catch (e) { if (!stop) setCallsErr((e as Error).message); }
     };
     load();
-    if (!running) return () => { stop = true; };
+    if (!live) return () => { stop = true; };
     const iv = setInterval(load, 1500);
     return () => { stop = true; clearInterval(iv); };
-  }, [id, isMock, running]);
+  }, [id, isMock, live]);
 
   const litEngines = useMemo(() => {
     const s = new Set<string>();
@@ -80,7 +81,7 @@ export default function CasePage() {
       <main className="min-h-screen grid place-items-center p-8">
         <div className="text-center">
           <div className="survey-label mb-2">CASE {id}</div>
-          <div className="text-3xl font-semibold">{err ? "Waiting for the drill rig…" : "Lowering the drill…"}</div>
+          <div className="text-3xl font-semibold">{err ? "Waiting for the survey…" : "Surveying the ground…"}</div>
           {err && <p className="mono text-[11px] text-muted mt-2">{err} — retrying every 0.9s</p>}
           <a href="/" className="survey-label hover:text-survey mt-6 inline-block">← back</a>
         </div>
@@ -88,21 +89,23 @@ export default function CasePage() {
     );
   }
 
-  const rackProps = { c, selectedClaim: selClaim, selectedEvidence: selEv, onSelectClaim: (x: string | null) => { setSelClaim(x); if (x === null) setSelEv(null); }, onSelectEvidence: setSelEv };
+  const viewProps = { c, selectedClaim: selClaim, selectedEvidence: selEv, onSelectClaim: (x: string | null) => { setSelClaim(x); if (x === null) setSelEv(null); }, onSelectEvidence: setSelEv };
+  const counts = { Verified: 0, Contested: 0, "Self-reported only": 0, Unverifiable: 0 } as Record<string, number>;
+  Object.values(c.scores).forEach((s) => { const k = s.label === "Contradicted" ? "Contested" : s.label; if (k in counts) counts[k]++; });
 
   return (
-    <main className="min-h-screen px-4 md:px-6 py-4 max-w-[1600px] mx-auto">
+    <main className="min-h-screen px-4 md:px-6 py-4 max-w-[1500px] mx-auto">
       <header className="border-b border-line pb-3 flex flex-wrap items-end gap-x-6 gap-y-2">
         <a href="/" className="text-lg font-bold tracking-tight hover:text-survey">TRIPWIRE</a>
         <div className="min-w-0">
-          <div className="survey-label">{c.input.kind === "url" ? "SITE" : "THESIS"} · {c.input.value.slice(0, 80)}</div>
+          <div className="survey-label truncate max-w-[60ch]">{c.input.kind === "url" ? "SITE" : "ASSUMPTIONS"} · {c.input.value.slice(0, 90)}</div>
           <h1 className="text-4xl font-bold tracking-tight leading-none">{c.company || "Untitled company"}</h1>
         </div>
         <div className="flex items-center gap-2 flex-wrap">
           {isMock && <span className="mono text-[11px] bg-oxide text-bone px-2 py-0.5 tracking-widest">MOCK DATA</span>}
           {c.seeded && <span className="mono text-[11px] border border-survey text-survey px-2 py-0.5 tracking-widest">SEEDED REPLAY</span>}
-          <span className="mono text-[11px] uppercase tracking-widest" style={{ color: c.status === "error" ? "#E4572E" : c.status === "running" ? "#5B9DFF" : "#3FB68B" }}>
-            {c.status === "running" ? "● " : ""}{c.status}
+          <span className="mono text-[11px] uppercase tracking-widest" style={{ color: c.status === "error" ? "#E4572E" : live ? "#5B9DFF" : "#3FB68B" }}>
+            {live ? "● " : ""}{c.checking ? "checking" : c.status}
           </span>
           <span className="mono text-[11px] text-muted">{c.stage}</span>
         </div>
@@ -116,56 +119,60 @@ export default function CasePage() {
         </div>
       </header>
 
-      {c.status === "error" && <div className="mt-3 border border-oxide text-oxide mono text-xs p-3">Drill failed: {c.error ?? "unknown error"}</div>}
+      {c.status === "error" && <div className="mt-3 border border-oxide text-oxide mono text-xs p-3">Check failed: {c.error ?? "unknown error"}</div>}
       {err && <div className="mt-3 mono text-[11px] text-muted">poll: {err}</div>}
 
-      <div className="grid lg:grid-cols-[3fr_2fr] gap-5 mt-4">
-        <section>
-          <div className="flex items-center justify-between mb-1">
-            <div className="survey-label">RACK · {c.claims.length} CORES · {c.origins.length} ORIGINS · {c.evidence.length} SAMPLES</div>
-            <button onClick={() => setFlat((f) => !f)} aria-pressed={flat} className="mono text-[10px] uppercase tracking-widest border border-line px-2 py-0.5 hover:border-survey">
-              {flat ? "3D" : "2D"}
-            </button>
-          </div>
-          <div className="relative border border-line" style={{ height: "62vh" }}>
-            {c.claims.length === 0 ? (
-              <div className="h-full grid place-items-center survey-label">{c.status === "running" ? "extracting claims…" : "no claims found"}</div>
-            ) : flat ? <Cores2D {...rackProps} /> : (
-              <GLBoundary fallback={<Cores2D {...rackProps} />}>
-                <CoreRack {...rackProps} reducedMotion={reduced} />
-              </GLBoundary>
-            )}
-            <div className="absolute left-0 right-0 bottom-0 bg-gradient-to-t from-basalt to-transparent px-3 pt-6 pb-2 pointer-events-none">
-              {c.log.slice(-8).map((l, i) => (
-                <div key={`${l.ts}-${i}`} className="mono text-[10.5px] truncate tick-in" style={{ color: l.kind === "error" ? "#E4572E" : i === Math.min(7, c.log.length - 1) ? "#E8E2D4" : "#8F897C" }}>
-                  <span className="text-muted">{new Date(l.ts).toLocaleTimeString()} {l.kind.padEnd(6)}</span> {l.text}
-                </div>
-              ))}
+      <div className="mt-3 flex flex-wrap items-center gap-2">
+        <span className="mono text-[11px] px-2 py-0.5" style={{ background: "#3FB68B22", color: "#3FB68B" }}>{counts.Verified} verified</span>
+        <span className="mono text-[11px] px-2 py-0.5" style={{ background: "#E4572E22", color: "#E4572E" }}>{counts.Contested} contested / contradicted</span>
+        <span className="mono text-[11px] px-2 py-0.5" style={{ background: "#F2A93B22", color: "#F2A93B" }}>{counts["Self-reported only"]} self-reported</span>
+        <span className="mono text-[11px] px-2 py-0.5 text-muted" style={{ background: "#5E6B7822" }}>{counts.Unverifiable} unverifiable</span>
+        <span className="survey-label ml-2">{c.evidence.length} sources → {c.origins.length || c.evidence.length} origins</span>
+        <div className="ml-auto">
+          {!isMock && <TripwireBar c={c} onChanged={(d) => { if (d) setC(d); setPollKey((k) => k + 1); }} />}
+        </div>
+      </div>
+
+      <section className="mt-3">
+        <div className="relative border border-line" style={{ height: "56vh", minHeight: 360 }}>
+          {c.claims.length === 0 ? (
+            <div className="h-full grid place-items-center survey-label">{c.status === "running" ? "extracting claims…" : "no claims found"}</div>
+          ) : flat ? <Cores2D {...viewProps} /> : (
+            <GLBoundary fallback={<Cores2D {...viewProps} />}>
+              <EvidenceTerrain {...viewProps} reducedMotion={reduced} />
+            </GLBoundary>
+          )}
+          <div className="absolute top-2 left-3 survey-label pointer-events-none leading-relaxed">
+            <div>
+              <span className="inline-block w-2 h-2 mr-1" style={{ background: "#3FB68B" }} />peak = supported
+              <span className="inline-block w-2 h-2 mx-1 ml-3" style={{ background: "#E4572E" }} />pit = contradicted
+              <span className="inline-block w-2 h-2 mx-1 ml-3" style={{ background: "#F2A93B" }} />amber = self-reported
             </div>
-            <div className="absolute top-2 left-3 survey-label pointer-events-none leading-relaxed">
-              <div><span className="inline-block w-2 h-2 bg-lime mr-1" />supports <span className="inline-block w-2 h-2 bg-oxide mx-1 ml-3" />contradicts <span className="inline-block w-2 h-2 bg-slate mx-1 ml-3" />irrelevant</div>
-              <div>ring = confidence · thin slivers = echo rewrites</div>
-            </div>
+            <div>flags = strongest sources · bigger flag = more credible tier · blue dot = found by Telem Monitor</div>
           </div>
-          {selEvidence && <div className="mt-4"><EvidenceDrawer e={selEvidence} c={c} onClose={() => setSelEv(null)} /></div>}
+          <button onClick={() => setFlat((f) => !f)} aria-pressed={flat}
+            className="absolute top-2 right-2 mono text-[10px] uppercase tracking-widest border border-line bg-basalt/80 px-2 py-0.5 hover:border-survey">
+            {flat ? "3D" : "2D"}
+          </button>
+          <div className="absolute left-0 right-0 bottom-0 bg-gradient-to-t from-basalt to-transparent px-3 pt-6 pb-2 pointer-events-none">
+            {c.log.slice(-5).map((l, i, arr) => (
+              <div key={`${l.ts}-${i}`} className="mono text-[10.5px] truncate tick-in" style={{ color: l.kind === "error" ? "#E4572E" : i === arr.length - 1 ? "#E8E2D4" : "#8F897C" }}>
+                <span className="text-muted">{new Date(l.ts).toLocaleTimeString()}</span> {l.text}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="grid lg:grid-cols-[3fr_2fr] gap-6 mt-5">
+        <section className="min-w-0">
+          <h2 className="text-xl font-semibold tracking-tight mb-2">Claims</h2>
+          <ClaimList {...viewProps} />
         </section>
 
         <section className="space-y-5 min-w-0">
-          <div>
-            <h2 className="text-xl font-semibold tracking-tight mb-2">Claims</h2>
-            <ClaimList {...rackProps} />
-          </div>
-          {c.linkedin && (
-            <div className="border border-line p-3">
-              <div className="survey-label mb-1">LINKEDIN VIA TELEM FETCH · {c.linkedin.provider.toUpperCase()}</div>
-              {c.linkedin.ok ? (
-                <>
-                  <a href={c.linkedin.url} target="_blank" rel="noreferrer" className="font-semibold hover:text-survey">{c.linkedin.title}</a>
-                  <p className="mono text-[11px] text-muted mt-1 whitespace-pre-line">{c.linkedin.excerpt}</p>
-                </>
-              ) : <p className="mono text-[11px] text-oxide">fetch failed: {c.linkedin.error ?? "unknown error"} ({c.linkedin.url})</p>}
-            </div>
-          )}
+          {selEvidence && <EvidenceDrawer e={selEvidence} c={c} onClose={() => setSelEv(null)} />}
+          <AlertFeed c={c} onSelect={(cid) => setSelClaim(cid)} />
           {c.questions.length > 0 && (
             <div>
               <h2 className="text-xl font-semibold tracking-tight mb-2">Ask the founder</h2>
@@ -174,12 +181,22 @@ export default function CasePage() {
               </ol>
             </div>
           )}
+          {c.linkedin && (
+            <div className="border border-line p-3">
+              <div className="survey-label mb-1">LINKEDIN VIA TELEM FETCH · {c.linkedin.provider.toUpperCase()}</div>
+              {c.linkedin.ok ? (
+                <>
+                  <a href={c.linkedin.url} target="_blank" rel="noreferrer" className="font-semibold hover:text-survey">{c.linkedin.title}</a>
+                  <p className="mono text-[11px] text-muted mt-1 whitespace-pre-line line-clamp-6">{c.linkedin.excerpt}</p>
+                </>
+              ) : <p className="mono text-[11px] text-oxide">fetch failed: {c.linkedin.error ?? "unknown error"} ({c.linkedin.url})</p>}
+            </div>
+          )}
         </section>
       </div>
 
-      <div className="mt-8 space-y-8">
+      <div className="mt-8">
         {isMock ? <p className="survey-label">Live calls hidden — mock data has no API calls.</p> : <ProofPanel calls={calls} err={callsErr} />}
-        <MonitorsPanel />
       </div>
     </main>
   );

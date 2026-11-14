@@ -28,7 +28,7 @@ Read this first. It is the full context of the build session so another agent ca
 
 It merges two ideas from brainstorming:
 - **Idea 2 — Diligence Room (BUILT):** company URL → site mapped and read → LinkedIn record → 5 falsifiable claims → evidence for and against each → credibility scoring → founder questions.
-- **Idea 1 — Tripwire (HALF BUILT):** user types investment assumptions (built) → assumptions are watched by Telem Monitors and an alert fires when credible new evidence breaks one (**NOT built** — see section 7).
+- **Idea 1 — Tripwire (BUILT):** user types investment assumptions → "Arm tripwires" creates one Telem Monitor per claim → "Check now" judges new findings, rescores, and raises alerts (see section 7).
 
 "Belief" was dropped as a word; use **claim** or **assumption**. The product is **not** limited to one industry (dental was only an example early on).
 
@@ -121,10 +121,10 @@ components/MonitorsPanel.tsx, components/ui.tsx (colors, chips, hooks), componen
 | Home page simplification + sample assumptions + new palette | PASS |
 | Mock data | only `/case/mock`, labelled MOCK DATA |
 
-## 7. What is NOT done (prioritised)
+## 7. Status of the planned work
 
-1. **[NEXT — UI] Replace the 3D with the Evidence Terrain** (section 8). The user rejected stacked cores, orbit, weighing room and the variations; they chose **Evidence Terrain**.
-2. **[DEMO CRITICAL] Watch-and-alert loop (idea 1):**
+1. **DONE — Evidence Terrain** replaced the stacked cores on the case page (`components/EvidenceTerrain.tsx`). CoreRack.tsx is kept only for the 2D fallback helper.
+2. **DONE — Watch-and-alert loop (idea 1)** — `lib/watch.ts`, `app/api/case/[id]/watch`, `app/api/case/[id]/check`, `components/tripwire.tsx` (TripwireBar, AlertFeed, Sparkline). Monitor change records carry `after.url`; those URLs plus a fresh Telem attack re-search are fetched, judged, collapsed and scored. Alerts fire on a ≥15 point drop, a switch to Contested/Contradicted, or a new T1–T3 contradiction with entailment ≥ 0.6. Original design notes kept below:
    - "Watch this case" button on the case page → `POST /api/monitors` once per claim, query built from `claim.disproof`, stored on the case (`case.watch: {claimId, monitorId}[]`; add to `lib/types.ts`).
    - "Check now" per case → for each claim monitor, read `/agent/changes` + `/poll`; take new URLs not already in `case.evidence`; Telem fetch them; Haiku judge against the claim; append evidence; re-run echo collapse + score; push `case.history[claimId].push({ts, confidence})`.
    - If confidence drops ≥ 20 points or label becomes Contested → add an alert `{ts, claimId, from, to, sourceUrl, tier}` to `case.alerts`; show an alert feed and make the claim's terrain peak sink / pit glow.
@@ -132,9 +132,9 @@ components/MonitorsPanel.tsx, components/ui.tsx (colors, chips, hooks), componen
 4. No webhooks (no public URL); the changes feed is used instead. ngrok exists at `C:\Users\Ash\opt\ngrok-v3-stable-windows-amd64\ngrok.exe` if needed.
 5. Competitor discovery is only an occasional claim; no dedicated competitor graph.
 6. Echo collapse is text-overlap only.
-7. Not committed to a remote yet (see section 10).
+7. Pushed to https://github.com/wh0th3h3llam1/pullsignal (branch master).
 
-## 8. NEXT UI: Evidence Terrain (chosen)
+## 8. Evidence Terrain (BUILT — design notes)
 
 Replace `components/CoreRack.tsx` usage on the case page with a new `components/EvidenceTerrain.tsx` (React Three Fiber, `dynamic(..., {ssr:false})`). Keep the 2D fallback toggle and reduced-motion support. Keep layout simple: terrain on top (≈ 55vh), claim rows below or to the right — the user found the old board fragmented.
 
@@ -156,8 +156,7 @@ Hook → home → click a sample (or a judge's company) → engines light up →
 
 ## 10. Git
 - Local repo on branch `master`. `.env*` is git-ignored. `data/cases.json` (cached real runs, replayed as SEEDED REPLAY) is committed so the demo has history.
-- No GitHub CLI on this machine and no remote yet. To publish: create an empty **private** repo, then
-  `git remote add origin <url>` and `git push -u origin master`.
+- Remote: https://github.com/wh0th3h3llam1/pullsignal (branch `master`). No GitHub CLI on this machine; plain `git push` works via the credential manager.
 
 ## 11. User preferences (from the session)
 - Hackathon strategist mode; skip basics; decide fast.

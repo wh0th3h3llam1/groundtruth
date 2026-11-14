@@ -6,7 +6,7 @@ export type ClaimType =
 
 export type Tier = 1 | 2 | 3 | 4 | 5; // 1 = primary (SEC, gov, courts), 5 = unknown / content farm
 export type Stance = "supports" | "contradicts" | "irrelevant";
-export type ClaimLabel = "Verified" | "Contested" | "Self-reported only" | "Unverifiable" | "Pending";
+export type ClaimLabel = "Verified" | "Contested" | "Contradicted" | "Self-reported only" | "Unverifiable" | "Pending";
 
 export interface Claim {
   id: string;                 // "c1", "c2"...
@@ -73,6 +73,30 @@ export interface LinkedInRecord {
 
 export interface LogLine { ts: number; kind: "info" | "search" | "fetch" | "llm" | "score" | "error"; text: string }
 
+export interface WatchEntry {
+  claimId: string;
+  monitorId: string;
+  query: string;
+  cursor: number;             // last agent-change seq handled
+  createdAt: number;
+  agentStatus: string | null;
+  lastCheckedAt: number | null;
+  seen: number;               // monitor URLs seen so far
+}
+
+export interface AlertItem {
+  id: string;
+  ts: number;
+  claimId: string;
+  kind: "drop" | "contested" | "new-contradiction";
+  from: number; to: number;
+  fromLabel: ClaimLabel; toLabel: ClaimLabel;
+  url: string; domain: string; tier: Tier; quote: string;
+  source: "monitor" | "recheck";
+}
+
+export interface HistoryPoint { ts: number; confidence: number; label: ClaimLabel; note: string }
+
 export interface CaseFile {
   id: string;
   input: { kind: "url" | "thesis"; value: string };
@@ -91,6 +115,11 @@ export interface CaseFile {
   log: LogLine[];
   seeded: boolean;            // true when replayed from data/cases.json cache (UI must label "SEEDED REPLAY")
   error?: string;
+  // ---- Tripwire watch loop (optional so older cached cases still load) ----
+  checking?: boolean;         // a watch check is running; UI keeps polling
+  watch?: WatchEntry[];
+  alerts?: AlertItem[];
+  history?: Record<string, HistoryPoint[]>;
 }
 
 export type Service =
@@ -135,3 +164,5 @@ export interface MonitorView {
 // GET  /api/monitors       -> MonitorView[]
 // POST /api/monitors       body {query, label}  -> MonitorView
 // POST /api/monitors/:id/check -> MonitorView   (reads agent changes + poll now)
+// POST /api/case/:id/watch  -> CaseFile   (creates one Telem monitor per claim from its disproof condition)
+// POST /api/case/:id/check  -> {ok:true}  (async: reads monitor changes + attack re-search, judges new sources, rescores, raises alerts; poll /api/case/:id while case.checking)

@@ -7,6 +7,10 @@ import { PRESS_WIRES, ROUTES, domainOf, echoCollapse, normUrl, scoreClaim, seede
 
 const PER_CLAIM_DOCS = 7;
 
+// Full page text per evidence id (server memory only) so echo collapse can be re-run when new evidence arrives.
+const g = globalThis as unknown as { __twText?: Map<string, string> };
+const textCache: Map<string, string> = (g.__twText ??= new Map());
+
 export function startCase(input: { kind: "url" | "thesis"; value: string }) {
   let value = input.value.trim();
   if (input.kind === "url" && !/^https?:\/\//i.test(value)) value = "https://" + value;
@@ -14,6 +18,7 @@ export function startCase(input: { kind: "url" | "thesis"; value: string }) {
     id: uid("case_"), input: { kind: input.kind, value }, company: input.kind === "url" ? domainOf(value) : "Investment thesis",
     companyDomain: input.kind === "url" ? domainOf(value) : null, createdAt: Date.now(), status: "running", stage: "Starting",
     claims: [], evidence: [], origins: [], scores: {}, questions: [], linkedin: null, routingBaseline: null, log: [], seeded: false,
+    watch: [], alerts: [], history: {},
   };
   putCase(c);
   run(c.id).catch((e) => {
@@ -37,11 +42,10 @@ async function run(id: string) {
       telemFetchPages([c.input.value], { caseId: c.id, label: "homepage" }),
     ]);
     const wanted = /(about|customer|pricing|company|team|security|careers|press|news)/i;
-    const extra = mapped.filter((u) => wanted.test(new URL(u, c.input.value).pathname)).slice(0, 3);
+    const extra = mapped.filter((u) => { try { return wanted.test(new URL(u, c.input.value).pathname); } catch { return false; } }).slice(0, 3);
     const more = extra.length ? await telemFetchPages(extra, { caseId: c.id, label: "site pages" }) : [];
     sitePages = [...home, ...more].filter((p) => p.ok);
     log(c, "fetch", `Read ${sitePages.length} site pages`);
-    // LinkedIn via Telem fetch (Bright Data) — runs in background
     linkedin(c, sitePages).catch(() => {});
   }
 
@@ -56,7 +60,6 @@ async function run(id: string) {
   for (const cl of c.claims) c.scores[cl.id] = { claimId: cl.id, confidence: 0, label: "Pending", supportWeight: 0, contradictWeight: 0, articles: 0, independentOrigins: 0, engines: [] };
   log(c, "llm", `${c.claims.length} claims extracted for ${c.company}`);
 
-  // Telem auto-routing baseline on claim 1 (compare with our per-claim-type routing)
   if (c.claims[0]) {
     telemSearch(c.claims[0].queries.support, { autoRouting: true, numResults: 3, caseId: c.id, label: "baseline C1" }).then((r) => {
       const engines = r.engines.map((e) => e.name);
@@ -74,6 +77,11 @@ async function run(id: string) {
     c.questions = q.questions || [];
   } catch (e) { log(c, "error", "questions failed: " + String(e)); }
 
+  c.history = {};
+  for (const cl of c.claims) {
+    const s = c.scores[cl.id];
+    c.history[cl.id] = [{ ts: Date.now(), confidence: s.confidence, label: s.label, note: "initial check" }];
+  }
   c.status = "done";
   c.stage = "Complete";
   log(c, "info", "Case complete");
@@ -95,6 +103,60 @@ async function linkedin(c: CaseFile, pages: FetchedPage[]) {
   log(c, "fetch", `LinkedIn ${c.linkedin.ok ? "read via " + c.linkedin.provider : "failed"}`);
 }
 
+export interface Candidate { url: string; title: string; summary: string; engines: Set<string>; rank: number; published: string | null }
+
+/** Fetch full text for candidates, judge them against the claim, and return new Evidence (not yet added to the case). */
+export async function buildEvidence(c: CaseFile, cl: Claim, cands: Candidate[], label: string): Promise<Evidence[]> {
+  if (!cands.length) return [];
+  const pages = await telemFetchPages(cands.map((t) => t.url), { caseId: c.id, label });
+  const byUrl = new Map(pages.map((p) => [normUrl(p.url), p]));
+  const docs = cands.map((t, i) => {
+    const p = byUrl.get(normUrl(t.url));
+    const ok = p?.ok && p.content.length > 200;
+    return { i, url: t.url, title: p?.title || t.title, text: ok ? p!.content : t.summary, via: ok ? p!.provider : "snippet", agg: t };
+  });
+
+  let judged: Awaited<ReturnType<typeof judgeEvidence>>["results"] = [];
+  try { judged = (await judgeEvidence(cl.text, docs, c.id)).results || []; }
+  catch (e) { log(c, "error", `${cl.id} judge failed: ${String(e)}`); }
+
+  const company = (c.companyDomain || "").split(".")[0];
+  const existing = c.evidence.filter((e) => e.claimId === cl.id).length;
+  return docs.map((d, k) => {
+    const j = judged.find((x) => x.i === d.i);
+    const domain = domainOf(d.url);
+    const tier = seededTier(domain) ?? ((j?.tier as Evidence["tier"]) || 5);
+    const self = (!!c.companyDomain && (domain === c.companyDomain || domain.endsWith("." + c.companyDomain) || (company.length > 3 && domain.split(".")[0] === company)))
+      || PRESS_WIRES.some((w) => domain.endsWith(w));
+    const ev: Evidence = {
+      id: `${cl.id}-e${existing + k + 1}`, claimId: cl.id, url: d.url, domain, title: d.title, quote: j?.quote || "",
+      stance: j?.stance || "irrelevant", entailment: j?.entailment ?? 0,
+      tier: (self && tier < 4 && domain !== "sec.gov" ? Math.max(tier, 3) : tier) as Evidence["tier"],
+      tierReason: seededTier(domain) ? "seeded domain list" : j?.tier_reason || "unclassified",
+      engines: [...d.agg.engines], originId: `solo-${cl.id}-${existing + k}`, isOrigin: true, selfInterest: self,
+      publishedAt: j?.published || d.agg.published, fetchedVia: d.via, weight: 0,
+      factors: { tier: 0, independence: 1, crossEngine: 1, selfInterest: 1, recency: 1, entailment: 0 },
+    };
+    textCache.set(ev.id, d.text.slice(0, 8000));
+    weighEvidence(ev, 1);
+    return ev;
+  });
+}
+
+/** Re-run echo collapse + weights + score over ALL evidence of a claim. */
+export function recollapse(c: CaseFile, cl: Claim) {
+  const evs = c.evidence.filter((e) => e.claimId === cl.id);
+  const docs = evs.map((ev) => ({ ev, text: textCache.get(ev.id) || ev.quote || ev.title }));
+  const clusters = echoCollapse(cl.id, docs);
+  for (const e of evs) {
+    const cluster = clusters.find((k) => k.id === e.originId)!;
+    weighEvidence(e, cluster.memberIds.length);
+  }
+  c.origins = [...c.origins.filter((o) => o.claimId !== cl.id), ...clusters];
+  c.scores[cl.id] = scoreClaim(cl.id, evs, clusters);
+  return c.scores[cl.id];
+}
+
 async function drill(c: CaseFile, cl: Claim) {
   log(c, "search", `${cl.id} [${cl.type}] → ${cl.engines.join(", ")}`);
   const [sup, att, news] = await Promise.all([
@@ -103,10 +165,9 @@ async function drill(c: CaseFile, cl: Claim) {
     tavilyNews(cl.queries.attack, c.id),
   ]);
 
-  type Agg = { url: string; title: string; summary: string; engines: Set<string>; rank: number; published: string | null };
-  const agg = new Map<string, Agg>();
+  const agg = new Map<string, Candidate>();
   const add = (url: string, title: string, summary: string, engine: string, rank: number, published: string | null = null) => {
-    if (!url || /\.(pdf)$/i.test(url) && false) return;
+    if (!url) return;
     const k = normUrl(url);
     const a = agg.get(k) || { url, title, summary, engines: new Set<string>(), rank, published };
     a.engines.add(engine); a.rank = Math.min(a.rank, rank);
@@ -121,49 +182,11 @@ async function drill(c: CaseFile, cl: Claim) {
   log(c, "search", `${cl.id}: ${agg.size} unique URLs from ${new Set([...sup.engines, ...att.engines].map((e) => e.name)).size} engines → reading top ${top.length}`);
   if (!top.length) { c.scores[cl.id] = scoreClaim(cl.id, [], []); return; }
 
-  const pages = await telemFetchPages(top.map((t) => t.url), { caseId: c.id, label: `${cl.id} evidence` });
-  const byUrl = new Map(pages.map((p) => [normUrl(p.url), p]));
-  const docs = top.map((t, i) => {
-    const p = byUrl.get(normUrl(t.url));
-    const ok = p?.ok && p.content.length > 200;
-    return { i, url: t.url, title: p?.title || t.title, text: ok ? p!.content : t.summary, via: ok ? p!.provider : "snippet", agg: t };
-  });
-
-  let judged: Awaited<ReturnType<typeof judgeEvidence>>["results"] = [];
-  try { judged = (await judgeEvidence(cl.text, docs, c.id)).results || []; }
-  catch (e) { log(c, "error", `${cl.id} judge failed: ${String(e)}`); }
-
-  const company = (c.companyDomain || "").split(".")[0];
-  const evs: { ev: Evidence; text: string }[] = docs.map((d) => {
-    const j = judged.find((x) => x.i === d.i);
-    const domain = domainOf(d.url);
-    const tier = seededTier(domain) ?? ((j?.tier as Evidence["tier"]) || 5);
-    const self = (!!c.companyDomain && (domain === c.companyDomain || domain.endsWith("." + c.companyDomain) || (company.length > 3 && domain.split(".")[0] === company)))
-      || PRESS_WIRES.some((w) => domain.endsWith(w));
-    const ev: Evidence = {
-      id: `${cl.id}-e${d.i + 1}`, claimId: cl.id, url: d.url, domain, title: d.title, quote: j?.quote || "",
-      stance: j?.stance || "irrelevant", entailment: j?.entailment ?? 0, tier: (self && tier < 4 && domain !== "sec.gov" ? Math.max(tier, 3) : tier) as Evidence["tier"],
-      tierReason: seededTier(domain) ? "seeded domain list" : j?.tier_reason || "unclassified",
-      engines: [...d.agg.engines], originId: `solo-${cl.id}-${d.i}`, isOrigin: true, selfInterest: self,
-      publishedAt: j?.published || d.agg.published, fetchedVia: d.via, weight: 0,
-      factors: { tier: 0, independence: 1, crossEngine: 1, selfInterest: 1, recency: 1, entailment: 0 },
-    };
-    return { ev, text: d.text };
-  });
-
-  // Stream pre-collapse evidence so the UI can show layers dropping in, then collapse.
-  for (const e of evs) weighEvidence(e.ev, 1);
-  c.evidence.push(...evs.map((e) => e.ev));
-  c.scores[cl.id] = scoreClaim(cl.id, evs.map((e) => e.ev), []);
+  const evs = await buildEvidence(c, cl, top, `${cl.id} evidence`);
+  // Stream pre-collapse evidence so the UI shows it arriving, then collapse.
+  c.evidence.push(...evs);
+  c.scores[cl.id] = scoreClaim(cl.id, evs, []);
   await new Promise((r) => setTimeout(r, 700));
-
-  const clusters = echoCollapse(cl.id, evs);
-  for (const e of evs) {
-    const cluster = clusters.find((k) => k.id === e.ev.originId)!;
-    weighEvidence(e.ev, cluster.memberIds.length);
-  }
-  c.origins.push(...clusters);
-  c.scores[cl.id] = scoreClaim(cl.id, evs.map((e) => e.ev), clusters);
-  const s = c.scores[cl.id];
+  const s = recollapse(c, cl);
   log(c, "score", `${cl.id} ${s.label} ${s.confidence}/100 · ${s.articles} articles → ${s.independentOrigins} origins`);
 }

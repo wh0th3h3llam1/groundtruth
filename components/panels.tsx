@@ -2,6 +2,7 @@
 import type { ApiCall, CaseFile, Evidence } from "@/lib/types";
 import { orderedLayers } from "./CoreRack";
 import { STANCE_COLOR, TIER_H, StanceTag, TierBadge, LabelChip } from "./ui";
+import { Sparkline } from "./tripwire";
 
 /* 2D fallback: same cores as stacked bars */
 export function Cores2D({ c, selectedClaim, selectedEvidence, onSelectClaim, onSelectEvidence }: {
@@ -91,12 +92,15 @@ export function ClaimList({ c, selectedClaim, onSelectClaim, onSelectEvidence, s
               className="w-full text-left p-3 grid grid-cols-[3.5rem_1fr] gap-3 hover:bg-panel transition-colors">
               <div>
                 <div className="survey-label">C{i + 1}</div>
-                <div className="text-3xl font-semibold leading-none tabular-nums" style={{ color: s?.label === "Contested" ? "#E4572E" : "#E8E2D4" }}>{s && s.label !== "Pending" ? Math.round(s.confidence) : "—"}</div>
+                <div className="text-3xl font-semibold leading-none tabular-nums" style={{ color: s?.label === "Contested" || s?.label === "Contradicted" ? "#E4572E" : "#E8E2D4" }}>{s && s.label !== "Pending" ? Math.round(s.confidence) : "—"}</div>
               </div>
               <div className="min-w-0">
                 <div className="flex gap-2 items-center mb-1"><LabelChip label={s?.label ?? "Pending"} /><span className="survey-label">{cl.type}</span></div>
                 <div className="leading-snug">{cl.text}</div>
-                <div className="survey-label mt-1">{s?.articles ?? ev.length} articles → {s?.independentOrigins ?? "?"} origins · {s?.engines.length ?? 0} engines</div>
+                <div className="flex items-center gap-3 mt-1">
+                  <div className="survey-label">{s?.articles ?? ev.length} articles → {s?.independentOrigins ?? "?"} origins · {s?.engines.length ?? 0} engines</div>
+                  {c.history?.[cl.id] && <span className="ml-auto"><Sparkline points={c.history[cl.id]} /></span>}
+                </div>
               </div>
             </button>
             {open && (

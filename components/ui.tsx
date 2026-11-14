@@ -12,6 +12,7 @@ export function labelStyle(l: ClaimLabel): { bg: string; fg: string; border: str
   switch (l) {
     case "Verified": return { bg: "#3FB68B", fg: "#0E0E0C", border: "#3FB68B" };
     case "Contested": return { bg: "transparent", fg: "#E4572E", border: "#E4572E" };
+    case "Contradicted": return { bg: "#E4572E", fg: "#0E0E0C", border: "#E4572E" };
     case "Self-reported only": return { bg: "transparent", fg: "#F2A93B", border: "#F2A93B" };
     case "Unverifiable": return { bg: "transparent", fg: "#8F897C", border: "#5E6B78" };
     default: return { bg: "transparent", fg: "#8F897C", border: "#2A2925" };

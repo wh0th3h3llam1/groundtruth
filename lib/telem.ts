@@ -112,25 +112,25 @@ export async function monitorGet(id: string) {
   const r = await telemFetch(`/v1/monitors/${id}`);
   return r.ok ? r.json : null;
 }
-export async function monitorCreate(query: string, label: string) {
+export async function monitorCreate(query: string, label: string, caseId: string | null = null) {
   const t0 = Date.now();
   const r = await telemFetch("/v1/monitors", {
     method: "POST",
     body: JSON.stringify({ query, options: { frequency: "1h" }, ttl: "3d", metadata: { app: "tripwire", label } }),
   });
-  recordCall({ caseId: null, service: "telem.monitors", status: r.ok ? "ok" : "error", ms: Date.now() - t0, httpStatus: r.status, summary: `create monitor: ${label}`, detail: r.ok ? r.json?.id : r.text.slice(0, 200) });
+  recordCall({ caseId, service: "telem.monitors", status: r.ok ? "ok" : "error", ms: Date.now() - t0, httpStatus: r.status, summary: `create monitor: ${label}`, detail: r.ok ? r.json?.id : r.text.slice(0, 200) });
   return r.ok ? r.json : null;
 }
-export async function monitorChanges(id: string) {
+export async function monitorChanges(id: string, caseId: string | null = null, cursor?: number) {
   const t0 = Date.now();
-  const r = await telemFetch(`/v1/monitors/${id}/agent/changes?limit=100`);
-  recordCall({ caseId: null, service: "telem.monitors", status: r.ok ? "ok" : "error", ms: Date.now() - t0, httpStatus: r.status, summary: `agent changes ${id.slice(0, 8)}: ${r.json?.changes?.length ?? 0} changes`, detail: r.ok ? undefined : r.text.slice(0, 200) });
+  const r = await telemFetch(`/v1/monitors/${id}/agent/changes?limit=200${cursor ? `&cursor=${cursor}` : ""}`);
+  recordCall({ caseId, service: "telem.monitors", status: r.ok ? "ok" : "error", ms: Date.now() - t0, httpStatus: r.status, summary: `agent changes ${id.slice(0, 8)}: ${r.json?.changes?.length ?? 0} changes`, detail: r.ok ? undefined : r.text.slice(0, 200) });
   return r.ok ? r.json : { changes: [], error: r.text.slice(0, 200) };
 }
-export async function monitorPoll(id: string) {
+export async function monitorPoll(id: string, caseId: string | null = null) {
   const t0 = Date.now();
   const r = await telemFetch(`/v1/monitors/${id}/poll`, { method: "POST", body: "{}" });
   const n = (r.json?.preprocessor_runs || []).reduce((a: number, x: any) => a + (x.output_payload?.results?.length || 0), 0);
-  recordCall({ caseId: null, service: "telem.monitors", status: r.ok ? "ok" : "error", ms: Date.now() - t0, httpStatus: r.status, summary: `poll ${id.slice(0, 8)}: ${n} new results`, detail: r.ok ? JSON.stringify(r.json?.warnings || r.json?.client_advisory || "").slice(0, 200) : r.text.slice(0, 200) });
+  recordCall({ caseId, service: "telem.monitors", status: r.ok ? "ok" : "error", ms: Date.now() - t0, httpStatus: r.status, summary: `poll ${id.slice(0, 8)}: ${n} new results`, detail: r.ok ? JSON.stringify(r.json?.warnings || r.json?.client_advisory || "").slice(0, 200) : r.text.slice(0, 200) });
   return r;
 }

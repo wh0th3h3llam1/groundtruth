@@ -116,7 +116,9 @@ export function scoreClaim(claimId: string, evs: Evidence[], origins: OriginClus
   const confidence = rel.length ? Math.round(100 / (1 + Math.exp(-2.2 * net))) : 0;
   let label: ClaimScore["label"];
   if (!rel.length) label = "Unverifiable";
-  else if (contradictWeight >= 0.15 && supportWeight >= 0.15) label = "Contested";
+  // contested only when contradiction is a meaningful share of the support (not one weak dissent among many)
+  else if (contradictWeight >= 0.2 && contradictWeight >= 0.25 * supportWeight) label = "Contested";
+  else if (contradictWeight > supportWeight && supportWeight < 0.25) label = "Contradicted";
   else if (contradictWeight > supportWeight) label = "Contested";
   else if (!indepSupport.length && sup.some((e) => e.selfInterest)) label = "Self-reported only";
   else if (indepSupport.length && confidence >= 60) label = "Verified";

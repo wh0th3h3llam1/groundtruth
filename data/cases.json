@@ -542,10 +542,10 @@
     "selfInterest": false,
     "publishedAt": null,
     "fetchedVia": "snippet",
-    "weight": 0.015,
+    "weight": 0.007,
     "factors": {
      "tier": 0.35,
-     "independence": 0.15,
+     "independence": 0.08,
      "crossEngine": 0.95,
      "selfInterest": 1,
      "recency": 1,
@@ -745,14 +745,14 @@
      "perplexity"
     ],
     "originId": "o-c4-7",
-    "isOrigin": true,
+    "isOrigin": false,
     "selfInterest": false,
     "publishedAt": null,
     "fetchedVia": "snippet",
-    "weight": 0.04,
+    "weight": 0.006,
     "factors": {
      "tier": 0.12,
-     "independence": 1,
+     "independence": 0.15,
      "crossEngine": 0.95,
      "selfInterest": 1,
      "recency": 1,
@@ -1182,9 +1182,1743 @@
      "recency": 1,
      "entailment": 0.1
     }
+   },
+   {
+    "id": "c5-e8",
+    "claimId": "c5",
+    "url": "https://www.usedby.ai/compare/brex-vs-ramp",
+    "domain": "usedby.ai",
+    "title": "Brex vs Ramp: who uses which (Nov 2026) | UsedBy.ai",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.05,
+    "tier": 4,
+    "tierReason": "aggregator listing comparison page",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c5-8",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-11-14",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c5-e9",
+    "claimId": "c5",
+    "url": "https://www.usedby.ai/tools/ramp",
+    "domain": "usedby.ai",
+    "title": "Ramp customers: 68 companies (Nov 2026) | UsedBy.ai",
+    "quote": "On usedby, **68 companies use Ramp**, including [Eventbrite](/companies/eventbrite), [Notion](/companies/notion), and [Perplexity](/companies/perplexity).",
+    "stance": "supports",
+    "entailment": 0.5,
+    "tier": 4,
+    "tierReason": "aggregator listing Ramp customers, partial match",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c5-9",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.166,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.5
+    }
+   },
+   {
+    "id": "c5-e10",
+    "claimId": "c5",
+    "url": "https://composio.dev/blog/composio-may-2026-security-incident",
+    "domain": "composio.dev",
+    "title": "Composio May 2026 security incident update | Composio",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.02,
+    "tier": 4,
+    "tierReason": "company's own site, unrelated security notice",
+    "engines": [
+     "brave"
+    ],
+    "originId": "o-c5-10",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c5-e11",
+    "claimId": "c5",
+    "url": "https://eightx.co/blog/compare/reviews/brex-for-ecommerce-review",
+    "domain": "eightx.co",
+    "title": "Brex for Ecommerce: A CFO's Honest Review (2026) | Eightx",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.05,
+    "tier": 3,
+    "tierReason": "niche finance blog review, no customer list",
+    "engines": [
+     "brave"
+    ],
+    "originId": "o-c5-11",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c5-e12",
+    "claimId": "c5",
+    "url": "https://www.houseblend.io/articles/airbase-ramp-brex-netsuite-integration",
+    "domain": "houseblend.io",
+    "title": "Airbase vs Ramp vs Brex: NetSuite Integration Compared | Houseblend",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.03,
+    "tier": 4,
+    "tierReason": "content-marketing article, no customer claims",
+    "engines": [
+     "linkup"
+    ],
+    "originId": "o-c5-12",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-06-08",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c1-e8",
+    "claimId": "c1",
+    "url": "https://multiples.vc/private-comps/ramp",
+    "domain": "multiples.vc",
+    "title": "Ramp Revenue, Valuation, Funding & Investors | Multiples",
+    "quote": "in October 2026 it raised $1.85 billion in a round led by Dragoneer Investment Group at a $60 billion valuation.",
+    "stance": "supports",
+    "entailment": 0.6,
+    "tier": 3,
+    "tierReason": "valuation data aggregator, dated October not November",
+    "engines": [
+     "linkup"
+    ],
+    "originId": "o-c1-8",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.371,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.6
+    }
+   },
+   {
+    "id": "c1-e9",
+    "claimId": "c1",
+    "url": "https://thedealtape.com/ramp-1-85b-funding-60b-valuation",
+    "domain": "thedealtape.com",
+    "title": "Ramp $1.85B Round at $60B Valuation: Confirmed vs Reported",
+    "quote": "a Form D filed 16 October 2026 shows $1.585B sold, not $1.85B.",
+    "stance": "contradicts",
+    "entailment": 0.2,
+    "tier": 3,
+    "tierReason": "niche analyst outlet disputing the raise amount",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c1-9",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-26",
+    "fetchedVia": "tavily",
+    "weight": 0.124,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.2
+    }
+   },
+   {
+    "id": "c1-e10",
+    "claimId": "c1",
+    "url": "https://growthnavigatefunding.net/ramp-valuation/",
+    "domain": "growthnavigatefunding.net",
+    "title": "Ramp Valuation 2026: $60B Round and Full History",
+    "quote": "announced a $1.85 billion primary round led by Dragoneer Investment Group on October 15, 2026.",
+    "stance": "supports",
+    "entailment": 0.55,
+    "tier": 4,
+    "tierReason": "content site; announcement dated October, not November",
+    "engines": [
+     "brave"
+    ],
+    "originId": "o-c1-2",
+    "isOrigin": false,
+    "selfInterest": false,
+    "publishedAt": "2026-11-11",
+    "fetchedVia": "tavily",
+    "weight": 0.027,
+    "factors": {
+     "tier": 0.35,
+     "independence": 0.15,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.55
+    }
+   },
+   {
+    "id": "c1-e11",
+    "claimId": "c1",
+    "url": "https://finance.yahoo.com/technology/articles/ramp-reported-60b-round-shows-112220686.html",
+    "domain": "finance.yahoo.com",
+    "title": "Ramp’s Reported $60B Round Shows Corporate Spend Software Turning Into an Agent Platform",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.05,
+    "tier": 2,
+    "tierReason": "Yahoo Finance page, body lacks round figures",
+    "engines": [
+     "brave"
+    ],
+    "originId": "o-c1-10",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c1-e12",
+    "claimId": "c1",
+    "url": "https://fourweekmba.com/ai-ramp-raises-about-1-85b-at-a-roughly-60b-valuation/",
+    "domain": "fourweekmba.com",
+    "title": "Ramp Raises About $1.85B at a Roughly $60B Valuation - FourWeekMBA",
+    "quote": "Ramp has raised about $1.85 billion at a roughly $60 billion valuation, Bloomberg reported on 9 October 2026, citing people familiar with the matter.",
+    "stance": "supports",
+    "entailment": 0.75,
+    "tier": 3,
+    "tierReason": "trade blog relaying Bloomberg report, unconfirmed",
+    "engines": [
+     "perplexity"
+    ],
+    "originId": "o-c1-11",
+    "isOrigin": false,
+    "selfInterest": false,
+    "publishedAt": "2026-10-10",
+    "fetchedVia": "tavily",
+    "weight": 0.069,
+    "factors": {
+     "tier": 0.65,
+     "independence": 0.15,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.75
+    }
+   },
+   {
+    "id": "c4-e8",
+    "claimId": "c4",
+    "url": "https://www.bankingnewsai.com/fintech/brex/competitors",
+    "domain": "bankingnewsai.com",
+    "title": "Brex Competitors and Alternatives: 7 Rivals by Business (2026) | BankingNewsAI",
+    "quote": "Ramp is the rival named most often next to Brex in these sources: on October 15, 2026 it said more than 85,000 companies use it to manage over $275 billion in annualized purchase volume, at a $60 billion valuation.",
+    "stance": "supports",
+    "entailment": 0.6,
+    "tier": 4,
+    "tierReason": "aggregator citing filings; not primary",
+    "engines": [
+     "perplexity"
+    ],
+    "originId": "o-c4-8",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-11-08",
+    "fetchedVia": "tavily",
+    "weight": 0.2,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.6
+    }
+   },
+   {
+    "id": "c4-e9",
+    "claimId": "c4",
+    "url": "https://www.bankingnewsai.com/fintech/ramp/competitors.md",
+    "domain": "bankingnewsai.com",
+    "title": "Ramp: Competitors and alternatives",
+    "quote": "In expense management, Navan's 10-K for the year ended January 31, 2026 names Brex and Ramp alongside Expensify, Oracle and SAP",
+    "stance": "supports",
+    "entailment": 0.5,
+    "tier": 4,
+    "tierReason": "aggregator; scale figures show BILL larger",
+    "engines": [
+     "perplexity"
+    ],
+    "originId": "o-c4-7",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-11-11",
+    "fetchedVia": "tavily",
+    "weight": 0.166,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.5
+    }
+   },
+   {
+    "id": "c4-e10",
+    "claimId": "c4",
+    "url": "https://theteardown.co/ramp",
+    "domain": "theteardown.co",
+    "title": "The Teardown — company case studies",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 4,
+    "tierReason": "company case-study index; no Ramp competition",
+    "engines": [
+     "perplexity"
+    ],
+    "originId": "o-c4-9",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c4-e11",
+    "claimId": "c4",
+    "url": "https://ramp.com/versus/brex",
+    "domain": "ramp.com",
+    "title": "Ramp vs Brex | Choose Ramp as a Brex Alternative",
+    "quote": "5,500+ teams chose Ramp over Brex.",
+    "stance": "supports",
+    "entailment": 0.45,
+    "tier": 4,
+    "tierReason": "vendor marketing about its own product",
+    "engines": [
+     "parallel"
+    ],
+    "originId": "o-c4-10",
+    "isOrigin": true,
+    "selfInterest": true,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.06,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 0.4,
+     "recency": 1,
+     "entailment": 0.45
+    }
+   },
+   {
+    "id": "c4-e12",
+    "claimId": "c4",
+    "url": "https://www.indinero.com/blog/ramp-vs-brex-vs-bill-comparison",
+    "domain": "indinero.com",
+    "title": "Ramp vs Brex vs Bill: 2026 SaaS Comparison | Indinero",
+    "quote": "Ramp vs Brex vs Bill is a category question before it's a feature question.",
+    "stance": "supports",
+    "entailment": 0.45,
+    "tier": 4,
+    "tierReason": "accounting firm blog; self-interested marketing",
+    "engines": [
+     "parallel"
+    ],
+    "originId": "o-c4-11",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-08-20",
+    "fetchedVia": "tavily",
+    "weight": 0.15,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.45
+    }
+   },
+   {
+    "id": "c3-e8",
+    "claimId": "c3",
+    "url": "https://glonce.com/ramp-ai-index-us-corporate-ai-spending-hits/",
+    "domain": "glonce.com",
+    "title": "Ramp AI Index: US corporate AI spending hits a high in October, up only 1.65% | Glonce",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.02,
+    "tier": 4,
+    "tierReason": "Aggregator repost of AI spending index",
+    "engines": [
+     "perplexity"
+    ],
+    "originId": "o-c3-7",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-11-12",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e9",
+    "claimId": "c3",
+    "url": "https://ramp.com/data/ai-jobs-impact/paper",
+    "domain": "ramp.com",
+    "title": "ramp-revelio-ai-jobs-impact-2026.pdf",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.03,
+    "tier": 3,
+    "tierReason": "Ramp and Revelio working paper, primary source",
+    "engines": [
+     "perplexity"
+    ],
+    "originId": "o-c3-8",
+    "isOrigin": true,
+    "selfInterest": true,
+    "publishedAt": "2026-06-30",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 0.4,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e10",
+    "claimId": "c3",
+    "url": "https://next.ramp.com/data/how-ramp-data-works",
+    "domain": "next.ramp.com",
+    "title": "How Ramp data works: an explainer",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.02,
+    "tier": 4,
+    "tierReason": "Company explainer marketing its own data",
+    "engines": [
+     "parallel"
+    ],
+    "originId": "o-c3-4",
+    "isOrigin": false,
+    "selfInterest": true,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 0.08,
+     "crossEngine": 0.95,
+     "selfInterest": 0.4,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e11",
+    "claimId": "c3",
+    "url": "https://fourweekmba.com/ai-ramp-frontier-model-share-router-effect-2026",
+    "domain": "fourweekmba.com",
+    "title": "Ramp Spend Data and the Router Effect: What the Frontier Share Shift Does and Does Not Show - FourWeekMBA",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.02,
+    "tier": 4,
+    "tierReason": "Personal blog relaying podcast claims",
+    "engines": [
+     "parallel"
+    ],
+    "originId": "o-c3-9",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-09-26",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e12",
+    "claimId": "c3",
+    "url": "https://foundranews.com/stories/ramp-reports-a-2-billion-annualized-run-rate-not-two-billion-dollars-earned-in-a-year",
+    "domain": "foundranews.com",
+    "title": "Ramp reports a $2 billion annualized run rate, not two billion dollars earned in a year | Foundra",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.02,
+    "tier": 3,
+    "tierReason": "Niche fintech news analysis, single source",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c3-10",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-15",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c2-e8",
+    "claimId": "c2",
+    "url": "https://sacra.com/c/ramp/",
+    "domain": "sacra.com",
+    "title": "Ramp revenue, valuation & funding | Sacra",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.2,
+    "tier": 3,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c2-8",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-06-01",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c2-e9",
+    "claimId": "c2",
+    "url": "https://pedrumshokouhi.com/investing/private/ramp",
+    "domain": "pedrumshokouhi.com",
+    "title": "Ramp: private company, the moat and the last valuation · Pedrum Shokouhi",
+    "quote": "CustomersMore than 85,000 businesses (70,000 in June 2026)",
+    "stance": "supports",
+    "entailment": 0.9,
+    "tier": 4,
+    "tierReason": "Personal blog citing company figures",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c2-9",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-01",
+    "fetchedVia": "tavily",
+    "weight": 0.299,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.9
+    }
+   },
+   {
+    "id": "c2-e10",
+    "claimId": "c2",
+    "url": "https://www.tipranks.com/stocks/ramp/kpis/direct-subscription-customers",
+    "domain": "tipranks.com",
+    "title": "LiveRamp Holdings (RAMP) Direct Subscription Customers - Historical Chart & Data - TipRanks.com",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 5,
+    "tierReason": "Stock data page for unrelated LiveRamp",
+    "engines": [
+     "brave"
+    ],
+    "originId": "o-c2-10",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "parallel",
+    "weight": 0,
+    "factors": {
+     "tier": 0.12,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c2-e11",
+    "claimId": "c2",
+    "url": "https://www.mostlymetrics.com/p/why-customer-count-can-be-a-misleading-metric",
+    "domain": "mostlymetrics.com",
+    "title": "Why Customer Count Is a Misleading SaaS Metric",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 3,
+    "tierReason": "Generic newsletter on customer count metrics",
+    "engines": [
+     "brave"
+    ],
+    "originId": "o-c2-11",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-04-05",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c2-e12",
+    "claimId": "c2",
+    "url": "https://answers.org/ramp/how-many-customers-does-ramp-currently-serve",
+    "domain": "answers.org",
+    "title": "How many customers does Ramp currently serve?",
+    "quote": "As of 2024, Ramp serves over 45,000 active customers and has more than 1 million users utilizing its platform.",
+    "stance": "contradicts",
+    "entailment": 0.1,
+    "tier": 5,
+    "tierReason": "SEO answer site, outdated 2024 figure",
+    "engines": [
+     "linkup"
+    ],
+    "originId": "o-c2-12",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2025-09-21",
+    "fetchedVia": "tavily",
+    "weight": 0.009,
+    "factors": {
+     "tier": 0.12,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0.1
+    }
+   },
+   {
+    "id": "c1-e13",
+    "claimId": "c1",
+    "url": "https://kraneshares.com/weekly-private-markets-wrap-ramps-1-85-billion-round-sets-a-60-billion-benchmark-for-fintech",
+    "domain": "kraneshares.com",
+    "title": "Weekly Private Markets Wrap: Ramp’s $1.85 Billion Round Sets A $60 Billion Benchmark For Fintech - KraneShares",
+    "quote": "Financial operations platform Ramp raised $1.85 billion at a $60 billion valuation, 36% above its June financing valuation.",
+    "stance": "supports",
+    "entailment": 0.9,
+    "tier": 4,
+    "tierReason": "Investment firm newsletter, self-promotional marketing context",
+    "engines": [
+     "telem-monitor",
+     "perplexity"
+    ],
+    "originId": "o-c1-12",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.347,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.9
+    }
+   },
+   {
+    "id": "c1-e14",
+    "claimId": "c1",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-09/ramp-hits-60-billion-valuation-in-1-85-billion-funding-round",
+    "domain": "bloomberg.com",
+    "title": "Ramp Hits $60 Billion Valuation in $1.85 Billion Funding Round - Bloomberg",
+    "quote": "Fintech startup Ramp has reached a roughly $60 billion valuation with its latest fundraising effort, according to people familiar with the matter.",
+    "stance": "supports",
+    "entailment": 0.7,
+    "tier": 2,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c1-11",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-09",
+    "fetchedVia": "tavily",
+    "weight": 0.565,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.7
+    }
+   },
+   {
+    "id": "c1-e15",
+    "claimId": "c1",
+    "url": "https://www.sec.gov/Archives/edgar/data/1803782/000180378226000003/0001803782-26-000003-index.htm",
+    "domain": "sec.gov",
+    "title": "EDGAR Filing Documents for 0001803782-26-000003",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.1,
+    "tier": 1,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c1-13",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-16",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 1,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c1-e16",
+    "claimId": "c1",
+    "url": "https://www.bisnow.com/news/new-york/deal-sheet/fintech-firm-ramp-inks-another-mega-expansion-in-flatiron-district-the-n-y-deal-sheet",
+    "domain": "bisnow.com",
+    "title": "$60B Fintech Ramp Inks Huge Expansion In Flatiron: The N.Y. Deal Sheet",
+    "quote": "The company is weeks removed from [raising more than $1.8B at a $60B valuation](https://www.reuters.com/technology/fintech-firm-ramp-raises-185-billion-60-billion-valuation-2026-10-15/)",
+    "stance": "supports",
+    "entailment": 0.8,
+    "tier": 3,
+    "tierReason": "Niche commercial real estate trade publication",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c1-14",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-27",
+    "fetchedVia": "tavily",
+    "weight": 0.494,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.8
+    }
+   },
+   {
+    "id": "c1-e17",
+    "claimId": "c1",
+    "url": "https://app.dealroom.co/news/note/ramp-buys-treasury-platform-vesto-after-1-85b-raise",
+    "domain": "app.dealroom.co",
+    "title": "Ramp buys treasury platform Vesto after $1.85B raise | Dealroom.co",
+    "quote": "It also follows a week after the fintech raised $1.85 billion at a $60 billion valuation.",
+    "stance": "supports",
+    "entailment": 0.8,
+    "tier": 3,
+    "tierReason": "Niche fintech data platform news item",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c1-15",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "exa",
+    "weight": 0.494,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.8
+    }
+   },
+   {
+    "id": "c4-e13",
+    "claimId": "c4",
+    "url": "https://upround.xyz/p/brex-mercury-ramp-one-customer-base-three-endings-ea9e",
+    "domain": "upround.xyz",
+    "title": "Brex, Mercury, Ramp: One Customer Base, Three Endings",
+    "quote": "Brex handed its two closest competitors momentum for free.",
+    "stance": "supports",
+    "entailment": 0.5,
+    "tier": 4,
+    "tierReason": "personal newsletter blog, not primary",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c4-12",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-07-23",
+    "fetchedVia": "tavily",
+    "weight": 0.166,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.5
+    }
+   },
+   {
+    "id": "c4-e14",
+    "claimId": "c4",
+    "url": "https://100xfounder.com/us-fintech-infrastructure-ramp-brex-2/",
+    "domain": "100xfounder.com",
+    "title": "Ramp and Brex in 2026: a $44B round, a bank buyout and the CFO stack",
+    "quote": "Ramp raised $750 million at a $44 billion valuation in June and says it has passed $1 billion in annualized revenue, while its long-time rival Brex was bought by Capital One for $5.15 billion",
+    "stance": "supports",
+    "entailment": 0.5,
+    "tier": 4,
+    "tierReason": "fintech blog, not established press",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c4-13",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-21",
+    "fetchedVia": "tavily",
+    "weight": 0.166,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.5
+    }
+   },
+   {
+    "id": "c4-e15",
+    "claimId": "c4",
+    "url": "https://sacra.com/research/ramp-passes-brex",
+    "domain": "sacra.com",
+    "title": "Ramp passes Brex | Sacra",
+    "quote": "Sacra estimates that Ramp has overtaken Brex in total payments volume (TPV), hitting $30B annualized at the end of 2023",
+    "stance": "supports",
+    "entailment": 0.8,
+    "tier": 3,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "tavily"
+    ],
+    "originId": "o-c4-14",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.494,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.8
+    }
+   },
+   {
+    "id": "c4-e16",
+    "claimId": "c4",
+    "url": "https://clyr.io/ramp-vs-brex",
+    "domain": "clyr.io",
+    "title": "Ramp vs Brex: The Actual Difference (and a Third Option)",
+    "quote": "Ramp and Brex run the same model: each issues you a charge card and ties its software to spending on that card.",
+    "stance": "supports",
+    "entailment": 0.5,
+    "tier": 4,
+    "tierReason": "competitor vendor marketing about itself",
+    "engines": [
+     "tavily"
+    ],
+    "originId": "o-c4-15",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.166,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.5
+    }
+   },
+   {
+    "id": "c4-e17",
+    "claimId": "c4",
+    "url": "https://www.corpay.com/resources/blog/ramp-alternatives-competitors",
+    "domain": "corpay.com",
+    "title": "8 Best Ramp Alternatives and Competitors for Corporate Cards (2026) | Corpay",
+    "quote": "The credible Ramp alternatives in 2026 are Brex, Bill.com, Expensify, SAP Concur, Airbase, Navan, American Express, and Corpay.",
+    "stance": "supports",
+    "entailment": 0.7,
+    "tier": 4,
+    "tierReason": "vendor marketing blog, competitor to Ramp",
+    "engines": [
+     "tavily"
+    ],
+    "originId": "o-c4-16",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-09-02",
+    "fetchedVia": "tavily",
+    "weight": 0.233,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.7
+    }
+   },
+   {
+    "id": "c2-e13",
+    "claimId": "c2",
+    "url": "https://ramp.com/vendors/ramp",
+    "domain": "ramp.com",
+    "title": "Ramp Review: A Data-Backed Look",
+    "quote": "Ramp's 85,000+ customers range from small family businesses and early-stage startups to multinational enterprises like Shopify and CBRE.",
+    "stance": "supports",
+    "entailment": 0.9,
+    "tier": 4,
+    "tierReason": "vendor review page, Ramp-sourced figures",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c2-13",
+    "isOrigin": true,
+    "selfInterest": true,
+    "publishedAt": "2026-11-03",
+    "fetchedVia": "tavily",
+    "weight": 0.12,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 0.4,
+     "recency": 1,
+     "entailment": 0.9
+    }
+   },
+   {
+    "id": "c2-e14",
+    "claimId": "c2",
+    "url": "https://ramp.com/",
+    "domain": "ramp.com",
+    "title": "Spend Management, Corporate Cards & Accounts Payable Solutions | Ramp",
+    "quote": "Join 85,000 of the world’s most ambitious companies growing 3.2x faster than the average American business.",
+    "stance": "supports",
+    "entailment": 0.92,
+    "tier": 4,
+    "tierReason": "company homepage marketing about itself",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c2-14",
+    "isOrigin": true,
+    "selfInterest": true,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.122,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 0.4,
+     "recency": 1,
+     "entailment": 0.92
+    }
+   },
+   {
+    "id": "c2-e15",
+    "claimId": "c2",
+    "url": "https://finovate.com/ramp-launches-ramp-treasury-to-make-use-of-idle-cash",
+    "domain": "finovate.com",
+    "title": "Ramp Launches Ramp Treasury to Make Use of Idle Cash - Finovate",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.1,
+    "tier": 3,
+    "tierReason": "trade fintech blog citing dated 30,000 figure",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c2-15",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2025-01-22",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.6,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c2-e16",
+    "claimId": "c2",
+    "url": "https://stripe.com/customers/ramp",
+    "domain": "stripe.com",
+    "title": "Behind the scenes: How Ramp Built a Global Corporate Card Program | Stripe",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.1,
+    "tier": 4,
+    "tierReason": "partner marketing case study, card-specific count",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c2-16",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c2-e17",
+    "claimId": "c2",
+    "url": "https://support.ramp.com/hc/en-us/articles/4417685250195-Ramp-overview",
+    "domain": "support.ramp.com",
+    "title": "Ramp Help Center",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.15,
+    "tier": 4,
+    "tierReason": "company help center, lower-bound figure only",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c2-17",
+    "isOrigin": true,
+    "selfInterest": true,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 0.4,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c5-e13",
+    "claimId": "c5",
+    "url": "https://x.com/NotionHQ/status/1384989820620001286",
+    "domain": "x.com",
+    "title": "@alexsongis Hi Head of Finance @tryramp. Sorry we don't use Ramp at Notion. This is someone else…",
+    "quote": "Hi Head of Finance @tryramp. Sorry we don't use Ramp at Notion.",
+    "stance": "contradicts",
+    "entailment": 0.05,
+    "tier": 4,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c5-13",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2021-04-21",
+    "fetchedVia": "fetchlayer_x",
+    "weight": 0.01,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.6,
+     "entailment": 0.05
+    }
+   },
+   {
+    "id": "c5-e14",
+    "claimId": "c5",
+    "url": "https://minisite.frontal.so/ramp/ramp-competitors.html",
+    "domain": "minisite.frontal.so",
+    "title": "Ramp · Competitor & Ad Research · Frontal",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 4,
+    "tierReason": "competitor ad research, not customer evidence",
+    "engines": [
+     "linkup"
+    ],
+    "originId": "o-c5-14",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c5-e15",
+    "claimId": "c5",
+    "url": "https://www.getproven.com/ramp",
+    "domain": "getproven.com",
+    "title": "Ramp startup deal: Save up to $351,000 | GetProven",
+    "quote": "Clients Ramp names on its own website. Proven has not verified these.",
+    "stance": "supports",
+    "entailment": 0.3,
+    "tier": 4,
+    "tierReason": "aggregator listing Ramp's self-named clients",
+    "engines": [
+     "linkup"
+    ],
+    "originId": "o-c5-15",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-11-08",
+    "fetchedVia": "tavily",
+    "weight": 0.1,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.3
+    }
+   },
+   {
+    "id": "c5-e16",
+    "claimId": "c5",
+    "url": "https://tryproofie.com/blog/perplexity-shopping-for-merchants",
+    "domain": "tryproofie.com",
+    "title": "Perplexity shopping: what merchants control | Proofie",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 4,
+    "tierReason": "Perplexity shopping guide, no Ramp mention",
+    "engines": [
+     "parallel"
+    ],
+    "originId": "o-c5-16",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-11-07",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c5-e17",
+    "claimId": "c5",
+    "url": "https://www.notion.com/customers/ramp",
+    "domain": "notion.com",
+    "title": "Ramp runs on Notion: How they built an AI operating system for work",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 4,
+    "tierReason": "vendor marketing; Ramp uses Notion, not reverse",
+    "engines": [
+     "parallel"
+    ],
+    "originId": "o-c5-17",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e13",
+    "claimId": "c3",
+    "url": "https://www.sofarbot.com/news/i-XICVrUhGyU",
+    "domain": "sofarbot.com",
+    "title": "Ramp: U.S. AI spending growth slows in October",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 5,
+    "tierReason": "content-farm aggregator repost, no claim",
+    "engines": [
+     "telem-monitor",
+     "parallel"
+    ],
+    "originId": "o-c3-11",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.12,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e14",
+    "claimId": "c3",
+    "url": "https://www.youreverydayai.com/ep-777-no-anthropic-isnt-leading-in-enterprise-ai-adoption-separating-ai-facts-from-fiction-and-how-companies-should-choose-providers/",
+    "domain": "youreverydayai.com",
+    "title": "Ep 777: No, Anthropic isn’t leading In Enterprise AI Adoption. Separating AI Facts from Fiction and how Companies Should Choose Providers",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 3,
+    "tierReason": "podcast episode page, no revenue figure",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c3-12",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-05-14",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e15",
+    "claimId": "c3",
+    "url": "https://fortune.com/2026/08/27/chinese-open-source-ai-is-starting-to-win-over-u-s-businesses",
+    "domain": "fortune.com",
+    "title": "Chinese open-source AI is starting to win over U.S. businesses | Fortune",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 2,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c3-13",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-08-27",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e16",
+    "claimId": "c3",
+    "url": "https://www.linkedin.com/posts/ian-macomber_government-surveys-say-9-of-us-businesses-activity-7390034452355129344-NGdP",
+    "domain": "linkedin.com",
+    "title": "Government surveys say 9% of US businesses use AI: Ramp data says it's closer to 44%. | Ian Macomber",
+    "quote": "We observe that Ramp customers with high AI intensity grow revenue ~4x faster.",
+    "stance": "contradicts",
+    "entailment": 0.2,
+    "tier": 3,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c3-14",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tinyfish",
+    "weight": 0.124,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.2
+    }
+   },
+   {
+    "id": "c3-e17",
+    "claimId": "c3",
+    "url": "https://econlab.substack.com/p/ai-business-adoption-re-accelerates",
+    "domain": "econlab.substack.com",
+    "title": "AI business adoption re-accelerates, led by Anthropic",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 4,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c3-15",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2025-11-19",
+    "fetchedVia": "apify_substack",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0
+    }
    }
   ],
   "origins": [
+   {
+    "id": "o-c1-1",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e1",
+    "memberIds": [
+     "c1-e1"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-2",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e2",
+    "memberIds": [
+     "c1-e2",
+     "c1-e10"
+    ],
+    "similarity": 0.38
+   },
+   {
+    "id": "o-c1-3",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e3",
+    "memberIds": [
+     "c1-e3"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-4",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e4",
+    "memberIds": [
+     "c1-e4"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-5",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e5",
+    "memberIds": [
+     "c1-e5"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-6",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e6",
+    "memberIds": [
+     "c1-e6"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-7",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e7",
+    "memberIds": [
+     "c1-e7"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-8",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e8",
+    "memberIds": [
+     "c1-e8"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-9",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e9",
+    "memberIds": [
+     "c1-e9"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-10",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e11",
+    "memberIds": [
+     "c1-e11"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-11",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e14",
+    "memberIds": [
+     "c1-e14",
+     "c1-e12"
+    ],
+    "similarity": 0.52
+   },
+   {
+    "id": "o-c1-12",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e13",
+    "memberIds": [
+     "c1-e13"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-13",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e15",
+    "memberIds": [
+     "c1-e15"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-14",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e16",
+    "memberIds": [
+     "c1-e16"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-15",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e17",
+    "memberIds": [
+     "c1-e17"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-1",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e1",
+    "memberIds": [
+     "c4-e1"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-2",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e2",
+    "memberIds": [
+     "c4-e2"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-3",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e3",
+    "memberIds": [
+     "c4-e3"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-4",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e4",
+    "memberIds": [
+     "c4-e4"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-5",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e5",
+    "memberIds": [
+     "c4-e5"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-6",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e6",
+    "memberIds": [
+     "c4-e6"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-7",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e9",
+    "memberIds": [
+     "c4-e9",
+     "c4-e7"
+    ],
+    "similarity": 0.76
+   },
+   {
+    "id": "o-c4-8",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e8",
+    "memberIds": [
+     "c4-e8"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-9",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e10",
+    "memberIds": [
+     "c4-e10"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-10",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e11",
+    "memberIds": [
+     "c4-e11"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-11",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e12",
+    "memberIds": [
+     "c4-e12"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-12",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e13",
+    "memberIds": [
+     "c4-e13"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-13",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e14",
+    "memberIds": [
+     "c4-e14"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-14",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e15",
+    "memberIds": [
+     "c4-e15"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-15",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e16",
+    "memberIds": [
+     "c4-e16"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-16",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e17",
+    "memberIds": [
+     "c4-e17"
+    ],
+    "similarity": 0
+   },
    {
     "id": "o-c2-1",
     "claimId": "c2",
@@ -1249,120 +2983,92 @@
     "similarity": 0
    },
    {
-    "id": "o-c3-1",
-    "claimId": "c3",
-    "originEvidenceId": "c3-e1",
+    "id": "o-c2-8",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e8",
     "memberIds": [
-     "c3-e1"
+     "c2-e8"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c3-2",
-    "claimId": "c3",
-    "originEvidenceId": "c3-e2",
+    "id": "o-c2-9",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e9",
     "memberIds": [
-     "c3-e2"
+     "c2-e9"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c3-3",
-    "claimId": "c3",
-    "originEvidenceId": "c3-e3",
+    "id": "o-c2-10",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e10",
     "memberIds": [
-     "c3-e3"
+     "c2-e10"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c3-4",
-    "claimId": "c3",
-    "originEvidenceId": "c3-e4",
+    "id": "o-c2-11",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e11",
     "memberIds": [
-     "c3-e4",
-     "c3-e7"
-    ],
-    "similarity": 1
-   },
-   {
-    "id": "o-c3-5",
-    "claimId": "c3",
-    "originEvidenceId": "c3-e5",
-    "memberIds": [
-     "c3-e5"
+     "c2-e11"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c3-6",
-    "claimId": "c3",
-    "originEvidenceId": "c3-e6",
+    "id": "o-c2-12",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e12",
     "memberIds": [
-     "c3-e6"
+     "c2-e12"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c4-1",
-    "claimId": "c4",
-    "originEvidenceId": "c4-e1",
+    "id": "o-c2-13",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e13",
     "memberIds": [
-     "c4-e1"
+     "c2-e13"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c4-2",
-    "claimId": "c4",
-    "originEvidenceId": "c4-e2",
+    "id": "o-c2-14",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e14",
     "memberIds": [
-     "c4-e2"
+     "c2-e14"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c4-3",
-    "claimId": "c4",
-    "originEvidenceId": "c4-e3",
+    "id": "o-c2-15",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e15",
     "memberIds": [
-     "c4-e3"
+     "c2-e15"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c4-4",
-    "claimId": "c4",
-    "originEvidenceId": "c4-e4",
+    "id": "o-c2-16",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e16",
     "memberIds": [
-     "c4-e4"
+     "c2-e16"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c4-5",
-    "claimId": "c4",
-    "originEvidenceId": "c4-e5",
+    "id": "o-c2-17",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e17",
     "memberIds": [
-     "c4-e5"
-    ],
-    "similarity": 0
-   },
-   {
-    "id": "o-c4-6",
-    "claimId": "c4",
-    "originEvidenceId": "c4-e6",
-    "memberIds": [
-     "c4-e6"
-    ],
-    "similarity": 0
-   },
-   {
-    "id": "o-c4-7",
-    "claimId": "c4",
-    "originEvidenceId": "c4-e7",
-    "memberIds": [
-     "c4-e7"
+     "c2-e17"
     ],
     "similarity": 0
    },
@@ -1430,65 +3136,229 @@
     "similarity": 0
    },
    {
-    "id": "o-c1-1",
-    "claimId": "c1",
-    "originEvidenceId": "c1-e1",
+    "id": "o-c5-8",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e8",
     "memberIds": [
-     "c1-e1"
+     "c5-e8"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c1-2",
-    "claimId": "c1",
-    "originEvidenceId": "c1-e2",
+    "id": "o-c5-9",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e9",
     "memberIds": [
-     "c1-e2"
+     "c5-e9"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c1-3",
-    "claimId": "c1",
-    "originEvidenceId": "c1-e3",
+    "id": "o-c5-10",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e10",
     "memberIds": [
-     "c1-e3"
+     "c5-e10"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c1-4",
-    "claimId": "c1",
-    "originEvidenceId": "c1-e4",
+    "id": "o-c5-11",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e11",
     "memberIds": [
-     "c1-e4"
+     "c5-e11"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c1-5",
-    "claimId": "c1",
-    "originEvidenceId": "c1-e5",
+    "id": "o-c5-12",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e12",
     "memberIds": [
-     "c1-e5"
+     "c5-e12"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c1-6",
-    "claimId": "c1",
-    "originEvidenceId": "c1-e6",
+    "id": "o-c5-13",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e13",
     "memberIds": [
-     "c1-e6"
+     "c5-e13"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c1-7",
-    "claimId": "c1",
-    "originEvidenceId": "c1-e7",
+    "id": "o-c5-14",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e14",
     "memberIds": [
-     "c1-e7"
+     "c5-e14"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-15",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e15",
+    "memberIds": [
+     "c5-e15"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-16",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e16",
+    "memberIds": [
+     "c5-e16"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-17",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e17",
+    "memberIds": [
+     "c5-e17"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-1",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e1",
+    "memberIds": [
+     "c3-e1"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-2",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e2",
+    "memberIds": [
+     "c3-e2"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-3",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e3",
+    "memberIds": [
+     "c3-e3"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-4",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e4",
+    "memberIds": [
+     "c3-e4",
+     "c3-e7",
+     "c3-e10"
+    ],
+    "similarity": 0.38
+   },
+   {
+    "id": "o-c3-5",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e5",
+    "memberIds": [
+     "c3-e5"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-6",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e6",
+    "memberIds": [
+     "c3-e6"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-7",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e8",
+    "memberIds": [
+     "c3-e8"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-8",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e9",
+    "memberIds": [
+     "c3-e9"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-9",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e11",
+    "memberIds": [
+     "c3-e11"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-10",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e12",
+    "memberIds": [
+     "c3-e12"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-11",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e13",
+    "memberIds": [
+     "c3-e13"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-12",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e14",
+    "memberIds": [
+     "c3-e14"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-13",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e15",
+    "memberIds": [
+     "c3-e15"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-14",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e16",
+    "memberIds": [
+     "c3-e16"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-15",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e17",
+    "memberIds": [
+     "c3-e17"
     ],
     "similarity": 0
    }
@@ -1496,76 +3366,84 @@
   "scores": {
    "c1": {
     "claimId": "c1",
-    "confidence": 56,
-    "label": "Unverifiable",
-    "supportWeight": 0.41,
-    "contradictWeight": 0.25,
-    "articles": 6,
-    "independentOrigins": 6,
+    "confidence": 99,
+    "label": "Contested",
+    "supportWeight": 2.77,
+    "contradictWeight": 0.37,
+    "articles": 14,
+    "independentOrigins": 12,
     "engines": [
      "exa",
      "perplexity",
      "tavily",
      "brave",
-     "linkup"
+     "linkup",
+     "telem-monitor"
     ]
    },
    "c2": {
     "claimId": "c2",
-    "confidence": 97,
+    "confidence": 99,
     "label": "Verified",
-    "supportWeight": 1.63,
-    "contradictWeight": 0,
-    "articles": 5,
-    "independentOrigins": 5,
+    "supportWeight": 2.17,
+    "contradictWeight": 0.01,
+    "articles": 9,
+    "independentOrigins": 9,
     "engines": [
      "exa",
      "parallel",
      "brave",
      "linkup",
-     "tavily"
+     "tavily",
+     "telem-monitor"
     ]
    },
    "c3": {
     "claimId": "c3",
-    "confidence": 82,
+    "confidence": 76,
     "label": "Self-reported only",
     "supportWeight": 0.68,
-    "contradictWeight": 0,
-    "articles": 5,
-    "independentOrigins": 4,
+    "contradictWeight": 0.12,
+    "articles": 6,
+    "independentOrigins": 5,
     "engines": [
      "perplexity",
      "parallel",
      "exa",
-     "tavily"
+     "tavily",
+     "telem-monitor"
     ]
    },
    "c4": {
     "claimId": "c4",
-    "confidence": 97,
+    "confidence": 100,
     "label": "Verified",
-    "supportWeight": 1.66,
-    "contradictWeight": 0.04,
-    "articles": 6,
-    "independentOrigins": 6,
+    "supportWeight": 3.46,
+    "contradictWeight": 0.01,
+    "articles": 15,
+    "independentOrigins": 14,
     "engines": [
      "parallel",
      "exa",
      "tavily",
      "tavily-news",
-     "perplexity"
+     "perplexity",
+     "telem-monitor"
     ]
    },
    "c5": {
     "claimId": "c5",
-    "confidence": 0,
+    "confidence": 64,
     "label": "Unverifiable",
-    "supportWeight": 0,
-    "contradictWeight": 0,
-    "articles": 0,
-    "independentOrigins": 0,
-    "engines": []
+    "supportWeight": 0.27,
+    "contradictWeight": 0.01,
+    "articles": 3,
+    "independentOrigins": 3,
+    "engines": [
+     "exa",
+     "telem-monitor",
+     "linkup"
+    ]
    }
   },
   "questions": [
@@ -1699,9 +3577,281 @@
     "ts": 1794686804477,
     "kind": "info",
     "text": "Case complete"
+   },
+   {
+    "ts": 1794692909421,
+    "kind": "info",
+    "text": "c3: tripwire armed (monitor f8fe84e0)"
+   },
+   {
+    "ts": 1794692909465,
+    "kind": "info",
+    "text": "c5: tripwire armed (monitor d8fe9b48)"
+   },
+   {
+    "ts": 1794692909502,
+    "kind": "info",
+    "text": "c2: tripwire armed (monitor 4adc82ee)"
+   },
+   {
+    "ts": 1794692909779,
+    "kind": "info",
+    "text": "c4: tripwire armed (monitor c7ed4f7d)"
+   },
+   {
+    "ts": 1794692909988,
+    "kind": "info",
+    "text": "c1: tripwire armed (monitor 26de8507)"
+   },
+   {
+    "ts": 1794692911965,
+    "kind": "search",
+    "text": "c1: monitor 26de8507 (compiling) → 0 findings"
+   },
+   {
+    "ts": 1794692912171,
+    "kind": "search",
+    "text": "c2: monitor 4adc82ee (compiling) → 0 findings"
+   },
+   {
+    "ts": 1794692912370,
+    "kind": "search",
+    "text": "c5: monitor d8fe9b48 (compiling) → 0 findings"
+   },
+   {
+    "ts": 1794692912695,
+    "kind": "search",
+    "text": "c3: monitor f8fe84e0 (compiling) → 0 findings"
+   },
+   {
+    "ts": 1794692912696,
+    "kind": "search",
+    "text": "c4: monitor c7ed4f7d (compiling) → 0 findings"
+   },
+   {
+    "ts": 1794692921988,
+    "kind": "score",
+    "text": "c5: 0 → 59 (Unverifiable) · 5 new sources"
+   },
+   {
+    "ts": 1794692922069,
+    "kind": "score",
+    "text": "c1: 56 → 86 (Contested) · 5 new sources"
+   },
+   {
+    "ts": 1794692922069,
+    "kind": "error",
+    "text": "TRIPWIRE c1: 56 → 86 · thedealtape.com (T3)"
+   },
+   {
+    "ts": 1794692925569,
+    "kind": "score",
+    "text": "c4: 97 → 99 (Verified) · 5 new sources"
+   },
+   {
+    "ts": 1794692925618,
+    "kind": "score",
+    "text": "c3: 82 → 82 (Self-reported only) · 5 new sources"
+   },
+   {
+    "ts": 1794692926592,
+    "kind": "score",
+    "text": "c2: 97 → 99 (Verified) · 5 new sources"
+   },
+   {
+    "ts": 1794693095841,
+    "kind": "search",
+    "text": "c4: monitor c7ed4f7d (ready) → 1 findings"
+   },
+   {
+    "ts": 1794693096156,
+    "kind": "search",
+    "text": "c5: monitor d8fe9b48 (ready) → 1 findings"
+   },
+   {
+    "ts": 1794693096420,
+    "kind": "search",
+    "text": "c1: monitor 26de8507 (ready) → 16 findings"
+   },
+   {
+    "ts": 1794693096519,
+    "kind": "search",
+    "text": "c2: monitor 4adc82ee (ready) → 7 findings"
+   },
+   {
+    "ts": 1794693096695,
+    "kind": "search",
+    "text": "c3: monitor f8fe84e0 (ready) → 19 findings"
+   },
+   {
+    "ts": 1794693106896,
+    "kind": "score",
+    "text": "c1: 86 → 99 (Contested) · 5 new sources"
+   },
+   {
+    "ts": 1794693107682,
+    "kind": "score",
+    "text": "c4: 99 → 100 (Verified) · 5 new sources"
+   },
+   {
+    "ts": 1794693110630,
+    "kind": "score",
+    "text": "c2: 99 → 99 (Verified) · 5 new sources"
+   },
+   {
+    "ts": 1794693110786,
+    "kind": "score",
+    "text": "c5: 59 → 64 (Unverifiable) · 5 new sources"
+   },
+   {
+    "ts": 1794693112407,
+    "kind": "score",
+    "text": "c3: 82 → 76 (Self-reported only) · 5 new sources"
    }
   ],
-  "seeded": false
+  "seeded": false,
+  "watch": [
+   {
+    "claimId": "c1",
+    "monitorId": "26de8507-f01f-4a8a-a50c-bfcb6d140c90",
+    "query": "Ramp: No credible press coverage or SEC/Form D filing confirms a $1.85B raise, or the reported round size or valuation differs materially (e.g., a lower valuation, or a figure that includes secondary or debt).",
+    "cursor": 2941,
+    "createdAt": 1794692909988,
+    "agentStatus": "ready",
+    "lastCheckedAt": 1794693096419,
+    "seen": 16
+   },
+   {
+    "claimId": "c2",
+    "monitorId": "4adc82ee-abb3-4e5f-829a-f8ff6ead6bfa",
+    "query": "Ramp: Ramp's own earlier or later statements, press reports or S-1-style disclosures give a materially lower customer count, or the number counts non-paying or inactive accounts.",
+    "cursor": 2909,
+    "createdAt": 1794692909502,
+    "agentStatus": "ready",
+    "lastCheckedAt": 1794693096519,
+    "seen": 7
+   },
+   {
+    "claimId": "c3",
+    "monitorId": "f8fe84e0-1f72-4855-a997-4b18806d84a6",
+    "query": "Ramp: The report's methodology shows selection bias or a flawed comparison (e.g., it compares venture-backed startups against all US businesses), or independent analysis contradicts the figure.",
+    "cursor": 2979,
+    "createdAt": 1794692909421,
+    "agentStatus": "ready",
+    "lastCheckedAt": 1794693096695,
+    "seen": 19
+   },
+   {
+    "claimId": "c4",
+    "monitorId": "c7ed4f7d-c87f-45ac-bcae-626d0f8c4d9a",
+    "query": "Ramp: Third-party data (payment volume, revenue, valuation) shows Brex, Bill or others have materially greater or comparable scale, or Ramp's market share is smaller than implied. Also evidence that Brex or Mercury grew faster.",
+    "cursor": 2874,
+    "createdAt": 1794692909779,
+    "agentStatus": "ready",
+    "lastCheckedAt": 1794693095841,
+    "seen": 1
+   },
+   {
+    "claimId": "c5",
+    "monitorId": "d8fe9b48-a551-4634-924e-41a1760efd49",
+    "query": "Ramp: Customers publicly deny using Ramp, the case studies are removed or don't support the claims, or the logos are for partial or discontinued relationships.",
+    "cursor": 2881,
+    "createdAt": 1794692909465,
+    "agentStatus": "ready",
+    "lastCheckedAt": 1794693096156,
+    "seen": 1
+   }
+  ],
+  "alerts": [
+   {
+    "id": "al_gndpgj8",
+    "ts": 1794692922069,
+    "claimId": "c1",
+    "kind": "contested",
+    "from": 56,
+    "to": 86,
+    "fromLabel": "Unverifiable",
+    "toLabel": "Contested",
+    "url": "https://thedealtape.com/ramp-1-85b-funding-60b-valuation",
+    "domain": "thedealtape.com",
+    "tier": 3,
+    "quote": "a Form D filed 16 October 2026 shows $1.585B sold, not $1.85B.",
+    "source": "recheck"
+   }
+  ],
+  "history": {
+   "c5": [
+    {
+     "ts": 1794692921988,
+     "confidence": 59,
+     "label": "Unverifiable",
+     "note": "check: 5 new, 1 relevant"
+    },
+    {
+     "ts": 1794693110786,
+     "confidence": 64,
+     "label": "Unverifiable",
+     "note": "check: 5 new, 2 relevant"
+    }
+   ],
+   "c1": [
+    {
+     "ts": 1794692922069,
+     "confidence": 86,
+     "label": "Contested",
+     "note": "check: 5 new, 4 relevant"
+    },
+    {
+     "ts": 1794693106896,
+     "confidence": 99,
+     "label": "Contested",
+     "note": "check: 5 new, 4 relevant"
+    }
+   ],
+   "c4": [
+    {
+     "ts": 1794692925569,
+     "confidence": 99,
+     "label": "Verified",
+     "note": "check: 5 new, 4 relevant"
+    },
+    {
+     "ts": 1794693107682,
+     "confidence": 100,
+     "label": "Verified",
+     "note": "check: 5 new, 5 relevant"
+    }
+   ],
+   "c3": [
+    {
+     "ts": 1794692925618,
+     "confidence": 82,
+     "label": "Self-reported only",
+     "note": "check: 5 new, 0 relevant"
+    },
+    {
+     "ts": 1794693112407,
+     "confidence": 76,
+     "label": "Self-reported only",
+     "note": "check: 5 new, 1 relevant"
+    }
+   ],
+   "c2": [
+    {
+     "ts": 1794692926592,
+     "confidence": 99,
+     "label": "Verified",
+     "note": "check: 5 new, 2 relevant"
+    },
+    {
+     "ts": 1794693110630,
+     "confidence": 99,
+     "label": "Verified",
+     "note": "check: 5 new, 2 relevant"
+    }
+   ]
+  },
+  "checking": false
  },
  {
   "id": "case_wi97z6d",
@@ -10109,5 +12259,3475 @@
    }
   ],
   "seeded": false
+ },
+ {
+  "id": "case_to446vd",
+  "input": {
+   "kind": "thesis",
+   "value": "Ramp has overtaken Brex as the leading US corporate card for startups.\nRamp is profitable.\nAmex has not launched a competing spend-management product."
+  },
+  "company": "Ramp (corporate card / spend management) vs. Brex and American Express",
+  "companyDomain": null,
+  "createdAt": 1794693147227,
+  "status": "done",
+  "stage": "Complete",
+  "claims": [
+   {
+    "id": "c1",
+    "text": "Ramp has overtaken Brex as the leading US corporate card and spend-management platform for startups, measured by customer count, card spend volume, or revenue.",
+    "type": "market",
+    "disproof": "Credible third-party or company-disclosed data (e.g., Brex or Capital One filings, Ramp disclosures, Ramp/Brex customer counts, card volume, or revenue) showing Brex still ahead with startups on volume or customers. Also evidence that the startup segment is led by a different provider such as Mercury or Amex.",
+    "entities": [
+     "Ramp",
+     "Brex",
+     "Mercury",
+     "Capital One"
+    ],
+    "weight": 0.9,
+    "queries": {
+     "support": "Ramp surpasses Brex market share corporate card startups annualized revenue card volume customers",
+     "attack": "Brex vs Ramp market share startups customers spend volume Brex still leads Mercury Amex comparison"
+    },
+    "engines": [
+     "perplexity",
+     "parallel",
+     "exa",
+     "tavily"
+    ]
+   },
+   {
+    "id": "c2",
+    "text": "Ramp is profitable, on a GAAP net income, operating income, or free cash flow basis, as of 2026.",
+    "type": "funding",
+    "disproof": "Reports, executive statements, or investor documents stating Ramp is unprofitable or burning cash, or showing only an adjusted metric (such as contribution margin) that is misrepresented as overall profitability.",
+    "entities": [
+     "Ramp",
+     "Eric Glyman",
+     "Karim Atiyeh"
+    ],
+    "weight": 0.9,
+    "queries": {
+     "support": "Ramp fintech profitable free cash flow positive net income 2026 Eric Glyman",
+     "attack": "Ramp fintech not profitable net loss burn rate 2025 2026 revenue losses"
+    },
+    "engines": [
+     "linkup",
+     "exa",
+     "brave",
+     "perplexity",
+     "tavily"
+    ]
+   },
+   {
+    "id": "c3",
+    "text": "American Express has not launched a product that competes directly with Ramp in spend management (expense management, bill pay, and corporate card controls).",
+    "type": "product",
+    "disproof": "Amex press releases or product pages showing a launched spend-management offering, such as expense management tools, Amex Business Blueprint, Center, Nipendo-based payables, or Amex integrations with Emburse, Expensify, or Coupa, marketed as a spend-management or AP solution.",
+    "entities": [
+     "American Express",
+     "Ramp",
+     "Nipendo",
+     "Center",
+     "Emburse"
+    ],
+    "weight": 0.85,
+    "queries": {
+     "support": "American Express spend management product launch small business expense management platform",
+     "attack": "American Express launches expense management bill pay spend management platform compete with Ramp Brex"
+    },
+    "engines": [
+     "exa",
+     "parallel",
+     "brave",
+     "tavily"
+    ]
+   },
+   {
+    "id": "c4",
+    "text": "Ramp's most recent funding round valued the company at roughly $32 billion or more, and its annualized revenue exceeds $1 billion.",
+    "type": "funding",
+    "disproof": "Funding announcements, press coverage, or filings showing a lower valuation or revenue than claimed, or a subsequent down round, secondary sale at a lower price, or revenue restatement.",
+    "entities": [
+     "Ramp",
+     "Founders Fund",
+     "Thrive Capital",
+     "Lightspeed",
+     "General Catalyst"
+    ],
+    "weight": 0.7,
+    "queries": {
+     "support": "Ramp raises valuation $32 billion annualized revenue $1 billion funding round",
+     "attack": "Ramp valuation down round secondary discount revenue overstated annualized revenue dispute"
+    },
+    "engines": [
+     "linkup",
+     "exa",
+     "brave",
+     "perplexity",
+     "tavily"
+    ]
+   },
+   {
+    "id": "c5",
+    "text": "Brex remains an independent competitor and has not been acquired or materially absorbed by a larger bank or card issuer.",
+    "type": "market",
+    "disproof": "Announcements or SEC/press reports of an acquisition of Brex (e.g., by Capital One), which would change the competitive dynamics. Also evidence of Brex layoffs, strategy shifts, or customer migration tied to such a deal.",
+    "entities": [
+     "Brex",
+     "Capital One",
+     "Pedro Franceschi",
+     "Henrique Dubugras"
+    ],
+    "weight": 0.6,
+    "queries": {
+     "support": "Brex acquisition announcement Capital One deal terms closing",
+     "attack": "Brex acquired Capital One $5.15 billion Brex customers migrate layoffs"
+    },
+    "engines": [
+     "perplexity",
+     "parallel",
+     "exa",
+     "tavily"
+    ]
+   }
+  ],
+  "evidence": [
+   {
+    "id": "c2-e1",
+    "claimId": "c2",
+    "url": "https://quantlogix.ai/quantlogix-ipo-brief-ramp-2026-07-06",
+    "domain": "quantlogix.ai",
+    "title": "Ramp IPO 2026 — $44B Series F, Revenue Doubling to $1B, the AI-Agent Finance Stack",
+    "quote": "Free-cash-flow positive since Nov 2025 · underlying profitability +153% YoY",
+    "stance": "supports",
+    "entailment": 0.8,
+    "tier": 4,
+    "tierReason": "self-published research brief, not primary source",
+    "engines": [
+     "linkup",
+     "brave"
+    ],
+    "originId": "o-c2-1",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-07-06",
+    "fetchedVia": "tavily",
+    "weight": 0.308,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.8
+    }
+   },
+   {
+    "id": "c2-e2",
+    "claimId": "c2",
+    "url": "https://quantlogix.ai/briefing/quantlogix-ipo-brief-ramp-2026-07-06",
+    "domain": "quantlogix.ai",
+    "title": "Ramp IPO 2026 — $44B Series F, Revenue Doubling to $1B, the AI-Agent Finance Stack | QuantLogix",
+    "quote": "Free-cash-flow positive since Nov 2025 · underlying profitability +153% YoY",
+    "stance": "supports",
+    "entailment": 0.8,
+    "tier": 4,
+    "tierReason": "duplicate self-published research brief",
+    "engines": [
+     "linkup",
+     "brave"
+    ],
+    "originId": "o-c2-1",
+    "isOrigin": false,
+    "selfInterest": false,
+    "publishedAt": "2026-07-06",
+    "fetchedVia": "tavily",
+    "weight": 0.046,
+    "factors": {
+     "tier": 0.35,
+     "independence": 0.15,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.8
+    }
+   },
+   {
+    "id": "c2-e3",
+    "claimId": "c2",
+    "url": "https://aifundingtracker.com/ramp-valuation",
+    "domain": "aifundingtracker.com",
+    "title": "Ramp Valuation 2026: $60B After $1.85B Round - AI Funding Tracker",
+    "quote": "At the time of the announcement, Ramp reported more than $2 billion in annualized revenue and positive cash flow.",
+    "stance": "supports",
+    "entailment": 0.7,
+    "tier": 5,
+    "tierReason": "SEO-style funding tracker, secondhand claims",
+    "engines": [
+     "tavily",
+     "tavily-news"
+    ],
+    "originId": "o-c2-2",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-15",
+    "fetchedVia": "tavily",
+    "weight": 0.092,
+    "factors": {
+     "tier": 0.12,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.7
+    }
+   },
+   {
+    "id": "c2-e4",
+    "claimId": "c2",
+    "url": "https://techcrunch.com/2025/03/03/ramp-has-more-than-doubled-its-annualized-revenue-to-700-million/",
+    "domain": "techcrunch.com",
+    "title": "Ramp, a 6-year-old fintech startup, has more than doubled its annualized revenue to $700M | TechCrunch",
+    "quote": "The company, however, is not yet profitable by choice because it is reinvesting its money.",
+    "stance": "contradicts",
+    "entailment": 0.75,
+    "tier": 2,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "exa",
+     "perplexity"
+    ],
+    "originId": "o-c2-3",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2025-03-03",
+    "fetchedVia": "tavily",
+    "weight": 0.421,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 0.6,
+     "entailment": 0.75
+    }
+   },
+   {
+    "id": "c2-e5",
+    "claimId": "c2",
+    "url": "https://www.sec.gov/Archives/edgar/data/733269/000073326926000025/ramp-20260331.htm",
+    "domain": "sec.gov",
+    "title": "ramp-20260331",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 1,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "exa",
+     "perplexity"
+    ],
+    "originId": "o-c2-4",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 1,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c2-e6",
+    "claimId": "c2",
+    "url": "https://www.cnbc.com/2026/06/04/ramp-valuation-funding-ai-spend.html",
+    "domain": "cnbc.com",
+    "title": "Ramp hits $44 billion valuation as companies look to rein in AI spend",
+    "quote": "The New York-based company crossed $1 billion in annualized revenue, with positive free cash flow, according to CEO Eric Glyman.",
+    "stance": "supports",
+    "entailment": 0.85,
+    "tier": 2,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "exa",
+     "brave"
+    ],
+    "originId": "o-c2-5",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-06-04",
+    "fetchedVia": "tavily",
+    "weight": 0.795,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.85
+    }
+   },
+   {
+    "id": "c2-e7",
+    "claimId": "c2",
+    "url": "https://tavily.com/knowledge/company/gkU2TP1jvE63",
+    "domain": "tavily.com",
+    "title": "Ramp",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 4,
+    "tierReason": "knowledge aggregator profile, no profitability data",
+    "engines": [
+     "tavily",
+     "tavily-news"
+    ],
+    "originId": "o-c2-6",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e1",
+    "claimId": "c3",
+    "url": "https://www.wsj.com/tech/amex-adds-ai-expense-tracking-to-corporate-card-to-counter-fintech-rivals-1cf54487",
+    "domain": "wsj.com",
+    "title": "American Express Rolls Out AI Expense Management to Counter Fintech Rivals - WSJ",
+    "quote": "American Express is rolling out an expense-management platform with AI features alongside its new corporate card, as the company’s corporate business faces mounting competition from fintechs.",
+    "stance": "contradicts",
+    "entailment": 0.9,
+    "tier": 2,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "exa",
+     "tavily-news"
+    ],
+    "originId": "o-c3-1",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-09-30",
+    "fetchedVia": "tavily",
+    "weight": 0.842,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.9
+    }
+   },
+   {
+    "id": "c3-e2",
+    "claimId": "c3",
+    "url": "https://www.businesstravelexecutive.com/news/amex-announces-most-significant-business-product-expansion-in-its-history/",
+    "domain": "businesstravelexecutive.com",
+    "title": "Amex Announces ‘Most Significant Business Product Expansion’ in Its History - Business Travel Executive",
+    "quote": "A new platform combines card and expense management in one place so businesses can simplify operations and automate time-consuming processes.",
+    "stance": "contradicts",
+    "entailment": 0.85,
+    "tier": 3,
+    "tierReason": "Trade travel publication reporting announcement",
+    "engines": [
+     "exa",
+     "tavily"
+    ],
+    "originId": "o-c3-2",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.608,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.85
+    }
+   },
+   {
+    "id": "c3-e3",
+    "claimId": "c3",
+    "url": "https://www.americanexpress.com/en-us/newsroom/articles/amex-for-business/american-express-delivers-the-next-generation-of-amex-corporate-.html",
+    "domain": "americanexpress.com",
+    "title": "American Express Delivers the Next Generation of Amex Corporate™",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 4,
+    "tierReason": "Company newsroom page, navigation only",
+    "engines": [
+     "parallel",
+     "brave"
+    ],
+    "originId": "o-c3-3",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e4",
+    "claimId": "c3",
+    "url": "https://www.businesstravelnews.com/Payment-Expense/Amex-Debuts-Expense-Mgmt-Capabilities-with-New-Card-Offering",
+    "domain": "businesstravelnews.com",
+    "title": "Amex Debuts Expense Mgmt Capabilities with New Card Offering",
+    "quote": "Amex Debuts Expense Mgmt Capabilities with New Card Offering",
+    "stance": "contradicts",
+    "entailment": 0.7,
+    "tier": 3,
+    "tierReason": "Trade press headline; body is navigation only",
+    "engines": [
+     "parallel",
+     "tavily"
+    ],
+    "originId": "o-c3-4",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.501,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.7
+    }
+   },
+   {
+    "id": "c3-e5",
+    "claimId": "c3",
+    "url": "https://www.americanexpress.com/en-us/newsroom/articles/amex-for-business/american-express-launches-new-graphite-business-cash-unlimited-c.html",
+    "domain": "americanexpress.com",
+    "title": "American Express Launches New Graphite™ Business Cash Unlimited Card, Kicking Off the Most Significant Year for Commercial Product Expansion in Company History",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 4,
+    "tierReason": "Company newsroom page about a different card",
+    "engines": [
+     "parallel",
+     "brave"
+    ],
+    "originId": "o-c3-3",
+    "isOrigin": false,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 0.15,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e6",
+    "claimId": "c3",
+    "url": "https://www.businesstravelnews.com/Payment-Expense/Amex-Plans-Octet-of-Commercial-Offerings-Including-Expense-Platform",
+    "domain": "businesstravelnews.com",
+    "title": "Amex Plans Octet of Commercial Offerings Including Expense Platform",
+    "quote": "Amex Plans Octet of Commercial Offerings Including Expense Platform",
+    "stance": "supports",
+    "entailment": 0.3,
+    "tier": 3,
+    "tierReason": "Trade press headline describing future plans only",
+    "engines": [
+     "brave",
+     "exa"
+    ],
+    "originId": "o-c3-4",
+    "isOrigin": false,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.032,
+    "factors": {
+     "tier": 0.65,
+     "independence": 0.15,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.3
+    }
+   },
+   {
+    "id": "c3-e7",
+    "claimId": "c3",
+    "url": "https://thepaypers.com/payments/news/american-express-launches-corporate-cashback-card-with-expense-tools",
+    "domain": "thepaypers.com",
+    "title": "Amex launches corporate cashback card with AI | The Paypers",
+    "quote": "American Express has launched a corporate cashback card integrated with an AI-enabled expense management platform for middle-market firms.",
+    "stance": "contradicts",
+    "entailment": 0.95,
+    "tier": 3,
+    "tierReason": "Niche payments trade publication report",
+    "engines": [
+     "brave",
+     "tavily-news"
+    ],
+    "originId": "o-c3-5",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-01",
+    "fetchedVia": "tavily",
+    "weight": 0.679,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.95
+    }
+   },
+   {
+    "id": "c1-e1",
+    "claimId": "c1",
+    "url": "https://sacra.com/research/ramp-passes-brex/",
+    "domain": "sacra.com",
+    "title": "Ramp passes Brex | Sacra",
+    "quote": "Sacra estimates that Ramp has overtaken Brex in total payments volume (TPV)",
+    "stance": "supports",
+    "entailment": 0.8,
+    "tier": 3,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "perplexity",
+     "parallel",
+     "exa",
+     "tavily"
+    ],
+    "originId": "o-c1-1",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.728,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.4,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.8
+    }
+   },
+   {
+    "id": "c1-e2",
+    "claimId": "c1",
+    "url": "https://valueaddvc.com/blog/ramp-vs-brex-in-2026-which-corporate-card-wins-for-your-startup",
+    "domain": "valueaddvc.com",
+    "title": "Ramp vs Brex in 2026: Which Corporate Card Wins for Your Startup",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.15,
+    "tier": 4,
+    "tierReason": "Personal blog with affiliate-style comparison",
+    "engines": [
+     "perplexity",
+     "tavily"
+    ],
+    "originId": "o-c1-2",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-08-24",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c1-e3",
+    "claimId": "c1",
+    "url": "https://pilot.com/insights/what-1700-businesses-reveal-about-the-best-cards-for-2025",
+    "domain": "pilot.com",
+    "title": "The tech startup credit card shakeup: What 1,700+ businesses reveal about the best cards for 2025",
+    "quote": "Brex: 54.5% market share (757 companies)",
+    "stance": "contradicts",
+    "entailment": 0.85,
+    "tier": 3,
+    "tierReason": "Vendor analysis of 1,700 companies",
+    "engines": [
+     "perplexity",
+     "exa"
+    ],
+    "originId": "o-c1-3",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2025-05-01",
+    "fetchedVia": "tavily",
+    "weight": 0.365,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 0.6,
+     "entailment": 0.85
+    }
+   },
+   {
+    "id": "c1-e4",
+    "claimId": "c1",
+    "url": "https://corpdigest.com/compare/brex-vs-ramp",
+    "domain": "corpdigest.com",
+    "title": "Brex vs Ramp: Enterprise Global Spend Platform vs Automated Expense & Savings Titan",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.1,
+    "tier": 4,
+    "tierReason": "Comparison site with no usage metrics",
+    "engines": [
+     "perplexity"
+    ],
+    "originId": "o-c1-4",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c1-e5",
+    "claimId": "c1",
+    "url": "https://citewake.com/editions/2/corporate-cards/questions/h05",
+    "domain": "citewake.com",
+    "title": "Which corporate cards are most widely… (Edition 2) · Citewake",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.1,
+    "tier": 4,
+    "tierReason": "AI recommendation aggregator, not a usage measure",
+    "engines": [
+     "perplexity"
+    ],
+    "originId": "o-c1-5",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-29",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c1-e6",
+    "claimId": "c1",
+    "url": "http://salespeak.ai/buyer-eval/brex-vs-ramp-vs-mercury",
+    "domain": "salespeak.ai",
+    "title": "Brex vs Ramp vs Mercury (2026): What the Evidence Shows | Buyer Eval",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.1,
+    "tier": 4,
+    "tierReason": "Vendor buyer-evaluation content, no market ranking",
+    "engines": [
+     "parallel"
+    ],
+    "originId": "o-c1-6",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-09-28",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c1-e7",
+    "claimId": "c1",
+    "url": "https://johngalt-finance.com/brex-vs-mercury-vs-ramp-business-banking-2026",
+    "domain": "johngalt-finance.com",
+    "title": "Brex vs Mercury vs Ramp 2026: Business Banking | JGF",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.1,
+    "tier": 4,
+    "tierReason": "Finance blog comparing products, no leadership claim",
+    "engines": [
+     "tavily"
+    ],
+    "originId": "o-c1-7",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-15",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c5-e1",
+    "claimId": "c5",
+    "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-acquire-brex",
+    "domain": "investor.capitalone.com",
+    "title": "Capital One to Acquire Brex | Capital One Financial Corp.",
+    "quote": "today announced that it has entered into a definitive agreement to acquire Brex, in a combination of stock and cash transaction valued at $5.15 billion.",
+    "stance": "contradicts",
+    "entailment": 0.9,
+    "tier": 1,
+    "tierReason": "Acquirer's own press release",
+    "engines": [
+     "parallel",
+     "exa",
+     "tavily"
+    ],
+    "originId": "o-c5-1",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-01-22",
+    "fetchedVia": "tavily",
+    "weight": 0.9,
+    "factors": {
+     "tier": 1,
+     "independence": 1,
+     "crossEngine": 1.25,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0.9
+    }
+   },
+   {
+    "id": "c5-e2",
+    "claimId": "c5",
+    "url": "https://www.fintechfutures.com/m-a/capital-one-to-acquire-brex-in-landmark-5-15bn-deal",
+    "domain": "fintechfutures.com",
+    "title": "Capital One to acquire Brex in landmark $5.15bn deal",
+    "quote": "US financial services heavyweight Capital One has reached a definitive agreement to acquire expense management platform Brex for $5.15 billion.",
+    "stance": "contradicts",
+    "entailment": 0.85,
+    "tier": 3,
+    "tierReason": "Fintech trade press reporting",
+    "engines": [
+     "perplexity",
+     "exa",
+     "tavily"
+    ],
+    "originId": "o-c5-2",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-01-23",
+    "fetchedVia": "tavily",
+    "weight": 0.553,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.25,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0.85
+    }
+   },
+   {
+    "id": "c5-e3",
+    "claimId": "c5",
+    "url": "https://www.rho.co/blog/brex-capitalone-acquisition",
+    "domain": "rho.co",
+    "title": "You’re a Founder on Brex. Now What?",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.05,
+    "tier": 4,
+    "tierReason": "Competitor marketing blog, excerpt lacks deal",
+    "engines": [
+     "perplexity",
+     "exa"
+    ],
+    "originId": "o-c5-3",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c5-e4",
+    "claimId": "c5",
+    "url": "https://www.airwallex.com/en-us/blog/capital-one-acquired-brex",
+    "domain": "airwallex.com",
+    "title": "Capital One Acquired Brex: Strategic Analysis of the $5.15B Deal — Airwallex US",
+    "quote": "Earlier this year, the financial industry was surprised to learn of Capital One's planned acquisition of Brex for $5.15 billion.",
+    "stance": "contradicts",
+    "entailment": 0.85,
+    "tier": 4,
+    "tierReason": "Competitor company marketing blog",
+    "engines": [
+     "perplexity",
+     "exa"
+    ],
+    "originId": "o-c5-4",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-03-11",
+    "fetchedVia": "tavily",
+    "weight": 0.262,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0.85
+    }
+   },
+   {
+    "id": "c5-e5",
+    "claimId": "c5",
+    "url": "https://www.sec.gov/Archives/edgar/data/927628/000119312526019543/d97758dex991.htm",
+    "domain": "sec.gov",
+    "title": "EX-99.1",
+    "quote": "today announced that it has entered into a definitive agreement to acquire Brex, in a combination of stock and cash transaction valued at $5.15 billion.",
+    "stance": "contradicts",
+    "entailment": 0.9,
+    "tier": 1,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "perplexity"
+    ],
+    "originId": "o-c5-1",
+    "isOrigin": false,
+    "selfInterest": false,
+    "publishedAt": "2026-01-22",
+    "fetchedVia": "tavily",
+    "weight": 0.103,
+    "factors": {
+     "tier": 1,
+     "independence": 0.15,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0.9
+    }
+   },
+   {
+    "id": "c5-e6",
+    "claimId": "c5",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/capital-one-completes-brex-buyout-152400899.html",
+    "domain": "finance.yahoo.com",
+    "title": "Capital One Completes Brex Buyout, Boosts Digital Payments Strategy",
+    "quote": "Capital One Completes Brex Buyout, Boosts Digital Payments Strategy",
+    "stance": "contradicts",
+    "entailment": 0.8,
+    "tier": 4,
+    "tierReason": "Yahoo Finance aggregator headline only",
+    "engines": [
+     "tavily"
+    ],
+    "originId": "o-c5-5",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.266,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.8
+    }
+   },
+   {
+    "id": "c5-e7",
+    "claimId": "c5",
+    "url": "https://www.sec.gov/Archives/edgar/data/927628/000092762826000152/cof-20260930.htm",
+    "domain": "sec.gov",
+    "title": "cof-20260930",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.05,
+    "tier": 1,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "parallel"
+    ],
+    "originId": "o-c5-6",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 1,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c4-e1",
+    "claimId": "c4",
+    "url": "https://finovate.com/ramp-valued-at-32-billion-after-300-million-financing-round/",
+    "domain": "finovate.com",
+    "title": "Ramp Valued at $32 Billion After $300 Million Financing Round  - Finovate",
+    "quote": "Ramp raised $300 million at a $32 billion valuation, bringing its total funding raised to $2.3 billion.",
+    "stance": "supports",
+    "entailment": 0.9,
+    "tier": 3,
+    "tierReason": "Niche fintech trade blog, reports company announcement",
+    "engines": [
+     "linkup",
+     "brave",
+     "tavily"
+    ],
+    "originId": "o-c4-1",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.731,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.25,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.9
+    }
+   },
+   {
+    "id": "c4-e2",
+    "claimId": "c4",
+    "url": "https://news.crunchbase.com/venture/fintech-unicorn-ramp-300m-raise-lightspeed/",
+    "domain": "news.crunchbase.com",
+    "title": "Fintech Ramp Now Valued At $32B After $300M Raise Led By Lightspeed",
+    "quote": "The expense management company has raised yet another round of capital — $300 million at a $32 billion valuation, the company announced on Monday.",
+    "stance": "supports",
+    "entailment": 0.85,
+    "tier": 3,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "exa",
+     "perplexity",
+     "tavily"
+    ],
+    "originId": "o-c4-2",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2025-11-17",
+    "fetchedVia": "tavily",
+    "weight": 0.553,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.25,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0.85
+    }
+   },
+   {
+    "id": "c4-e3",
+    "claimId": "c4",
+    "url": "https://tsginvest.com/ramp/",
+    "domain": "tsginvest.com",
+    "title": "Ramp Stock: $32B Valuation — Is It a Buy? | TSG Invest",
+    "quote": "With reported annualized revenue surpassing $1 billion, more than 50,000 customers including Shopify, CBRE, and Figma, and over $100 billion in annual purchase volume, Ramp reached a $32 billion valuation in November 2025",
+    "stance": "supports",
+    "entailment": 0.8,
+    "tier": 4,
+    "tierReason": "Investment firm promotional content, not primary source",
+    "engines": [
+     "linkup",
+     "brave"
+    ],
+    "originId": "o-c4-3",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.308,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.8
+    }
+   },
+   {
+    "id": "c4-e4",
+    "claimId": "c4",
+    "url": "https://www.startupriders.com/p/ramp-growth-playbook",
+    "domain": "startupriders.com",
+    "title": "Ramp's Growth Playbook: $0 to $1B+ Revenue in 6 Years",
+    "quote": "This week Ramp announced a $750M Series F at a $44 billion valuation",
+    "stance": "supports",
+    "entailment": 0.7,
+    "tier": 4,
+    "tierReason": "Paid personal Substack newsletter, secondary summary",
+    "engines": [
+     "brave",
+     "perplexity"
+    ],
+    "originId": "o-c4-4",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.269,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.7
+    }
+   },
+   {
+    "id": "c4-e5",
+    "claimId": "c4",
+    "url": "https://www.notboring.co/p/ramp-at-1-billion",
+    "domain": "notboring.co",
+    "title": "Ramp at $1 Billion - Not Boring by Packy McCormick",
+    "quote": "Today, Ramp is announcing that it's crossed $1 billion in annualized gross revenue while doubling year-over-year and generating positive cash flow.",
+    "stance": "supports",
+    "entailment": 0.6,
+    "tier": 4,
+    "tierReason": "Personal newsletter; revenue only, no valuation shown",
+    "engines": [
+     "linkup",
+     "brave"
+    ],
+    "originId": "o-c4-5",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2025-11-18",
+    "fetchedVia": "tavily",
+    "weight": 0.185,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0.6
+    }
+   },
+   {
+    "id": "c4-e6",
+    "claimId": "c4",
+    "url": "https://en.wikipedia.org/wiki/Ramp_(company)",
+    "domain": "en.wikipedia.org",
+    "title": "Ramp (company) - Wikipedia",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.1,
+    "tier": 3,
+    "tierReason": "Encyclopedia excerpt lacks valuation or revenue figures",
+    "engines": [
+     "linkup",
+     "brave"
+    ],
+    "originId": "o-c4-6",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c4-e7",
+    "claimId": "c4",
+    "url": "https://siliconangle.com/2025/11/17/financial-technology-startup-ramp-closes-300m-investment-32b-valuation/",
+    "domain": "siliconangle.com",
+    "title": "Financial technology startup Ramp closes $300M investment at $32B valuation - SiliconANGLE",
+    "quote": "Ramp Business Corp. today announced that it has closed a $300 million funding round at a $32 billion valuation, double what it was worth in June.",
+    "stance": "supports",
+    "entailment": 0.9,
+    "tier": 3,
+    "tierReason": "Niche tech press with company-sourced figures",
+    "engines": [
+     "linkup",
+     "tavily"
+    ],
+    "originId": "o-c4-7",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2025-11-17",
+    "fetchedVia": "tavily",
+    "weight": 0.515,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0.9
+    }
+   }
+  ],
+  "origins": [
+   {
+    "id": "o-c2-1",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e1",
+    "memberIds": [
+     "c2-e1",
+     "c2-e2"
+    ],
+    "similarity": 1
+   },
+   {
+    "id": "o-c2-2",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e3",
+    "memberIds": [
+     "c2-e3"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-3",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e4",
+    "memberIds": [
+     "c2-e4"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-4",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e5",
+    "memberIds": [
+     "c2-e5"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-5",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e6",
+    "memberIds": [
+     "c2-e6"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-6",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e7",
+    "memberIds": [
+     "c2-e7"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-1",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e1",
+    "memberIds": [
+     "c3-e1"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-2",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e2",
+    "memberIds": [
+     "c3-e2"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-3",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e3",
+    "memberIds": [
+     "c3-e3",
+     "c3-e5"
+    ],
+    "similarity": 0.98
+   },
+   {
+    "id": "o-c3-4",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e4",
+    "memberIds": [
+     "c3-e4",
+     "c3-e6"
+    ],
+    "similarity": 0.96
+   },
+   {
+    "id": "o-c3-5",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e7",
+    "memberIds": [
+     "c3-e7"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-1",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e1",
+    "memberIds": [
+     "c1-e1"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-2",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e2",
+    "memberIds": [
+     "c1-e2"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-3",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e3",
+    "memberIds": [
+     "c1-e3"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-4",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e4",
+    "memberIds": [
+     "c1-e4"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-5",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e5",
+    "memberIds": [
+     "c1-e5"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-6",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e6",
+    "memberIds": [
+     "c1-e6"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-7",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e7",
+    "memberIds": [
+     "c1-e7"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-1",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e1",
+    "memberIds": [
+     "c5-e1",
+     "c5-e5"
+    ],
+    "similarity": 1
+   },
+   {
+    "id": "o-c5-2",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e2",
+    "memberIds": [
+     "c5-e2"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-3",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e3",
+    "memberIds": [
+     "c5-e3"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-4",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e4",
+    "memberIds": [
+     "c5-e4"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-5",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e6",
+    "memberIds": [
+     "c5-e6"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-6",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e7",
+    "memberIds": [
+     "c5-e7"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-1",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e1",
+    "memberIds": [
+     "c4-e1"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-2",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e2",
+    "memberIds": [
+     "c4-e2"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-3",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e3",
+    "memberIds": [
+     "c4-e3"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-4",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e4",
+    "memberIds": [
+     "c4-e4"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-5",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e5",
+    "memberIds": [
+     "c4-e5"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-6",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e6",
+    "memberIds": [
+     "c4-e6"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-7",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e7",
+    "memberIds": [
+     "c4-e7"
+    ],
+    "similarity": 0
+   }
+  ],
+  "scores": {
+   "c1": {
+    "claimId": "c1",
+    "confidence": 65,
+    "label": "Contested",
+    "supportWeight": 0.73,
+    "contradictWeight": 0.37,
+    "articles": 2,
+    "independentOrigins": 2,
+    "engines": [
+     "perplexity",
+     "parallel",
+     "exa",
+     "tavily"
+    ]
+   },
+   "c2": {
+    "claimId": "c2",
+    "confidence": 83,
+    "label": "Contested",
+    "supportWeight": 1.24,
+    "contradictWeight": 0.42,
+    "articles": 5,
+    "independentOrigins": 4,
+    "engines": [
+     "linkup",
+     "brave",
+     "tavily",
+     "tavily-news",
+     "exa",
+     "perplexity"
+    ]
+   },
+   "c3": {
+    "claimId": "c3",
+    "confidence": 0,
+    "label": "Contested",
+    "supportWeight": 0.03,
+    "contradictWeight": 2.63,
+    "articles": 5,
+    "independentOrigins": 4,
+    "engines": [
+     "exa",
+     "tavily-news",
+     "tavily",
+     "parallel",
+     "brave"
+    ]
+   },
+   "c4": {
+    "claimId": "c4",
+    "confidence": 100,
+    "label": "Verified",
+    "supportWeight": 2.56,
+    "contradictWeight": 0,
+    "articles": 6,
+    "independentOrigins": 6,
+    "engines": [
+     "linkup",
+     "brave",
+     "tavily",
+     "exa",
+     "perplexity"
+    ]
+   },
+   "c5": {
+    "claimId": "c5",
+    "confidence": 0,
+    "label": "Contested",
+    "supportWeight": 0,
+    "contradictWeight": 2.08,
+    "articles": 5,
+    "independentOrigins": 4,
+    "engines": [
+     "parallel",
+     "exa",
+     "tavily",
+     "perplexity"
+    ]
+   }
+  },
+  "questions": [
+   "Which basis are you profitable on: GAAP net income, operating income, or free cash flow? How much comes from interest income on float, and what happens to margins if rates fall?",
+   "Brex appears to be getting absorbed by a larger card issuer. How does a bank-backed Brex change your win rates, interchange economics, and pricing power in startups and mid-market?",
+   "Amex has bought or built expense, bill pay, and card-control tools. How often do you meet them in deals, what's your head-to-head win rate, and where are they closing the gap?",
+   "You say you've passed Brex. On customer count, card volume, or revenue, by how much? What does the startup segment alone look like, and how do net revenue retention and churn compare?"
+  ],
+  "linkedin": null,
+  "routingBaseline": {
+   "claimId": "c1",
+   "engines": [
+    "exa",
+    "you",
+    "linkup"
+   ],
+   "note": "Telem auto-routing picked exa, you, linkup; Tripwire routed C1 (market) to perplexity, parallel, exa, tavily"
+  },
+  "log": [
+   {
+    "ts": 1794693161945,
+    "kind": "llm",
+    "text": "5 claims extracted for Ramp (corporate card / spend management) vs. Brex and American Express"
+   },
+   {
+    "ts": 1794693161947,
+    "kind": "search",
+    "text": "c1 [market] → perplexity, parallel, exa, tavily"
+   },
+   {
+    "ts": 1794693161950,
+    "kind": "search",
+    "text": "c2 [funding] → linkup, exa, brave, perplexity, tavily"
+   },
+   {
+    "ts": 1794693161953,
+    "kind": "search",
+    "text": "c3 [product] → exa, parallel, brave, tavily"
+   },
+   {
+    "ts": 1794693161956,
+    "kind": "search",
+    "text": "c4 [funding] → linkup, exa, brave, perplexity, tavily"
+   },
+   {
+    "ts": 1794693161960,
+    "kind": "search",
+    "text": "c5 [market] → perplexity, parallel, exa, tavily"
+   },
+   {
+    "ts": 1794693164481,
+    "kind": "search",
+    "text": "c3: 28 unique URLs from 4 engines → reading top 7"
+   },
+   {
+    "ts": 1794693166036,
+    "kind": "search",
+    "text": "c2: 35 unique URLs from 5 engines → reading top 7"
+   },
+   {
+    "ts": 1794693166547,
+    "kind": "search",
+    "text": "c1: 30 unique URLs from 4 engines → reading top 7"
+   },
+   {
+    "ts": 1794693167320,
+    "kind": "search",
+    "text": "c5: 27 unique URLs from 4 engines → reading top 7"
+   },
+   {
+    "ts": 1794693167433,
+    "kind": "search",
+    "text": "c4: 35 unique URLs from 5 engines → reading top 7"
+   },
+   {
+    "ts": 1794693173776,
+    "kind": "score",
+    "text": "c2 Contested 83/100 · 5 articles → 4 origins"
+   },
+   {
+    "ts": 1794693173829,
+    "kind": "score",
+    "text": "c3 Contested 0/100 · 5 articles → 4 origins"
+   },
+   {
+    "ts": 1794693175112,
+    "kind": "score",
+    "text": "c1 Contested 65/100 · 2 articles → 2 origins"
+   },
+   {
+    "ts": 1794693177203,
+    "kind": "score",
+    "text": "c5 Contested 0/100 · 5 articles → 4 origins"
+   },
+   {
+    "ts": 1794693178749,
+    "kind": "score",
+    "text": "c4 Verified 100/100 · 6 articles → 6 origins"
+   },
+   {
+    "ts": 1794693185090,
+    "kind": "info",
+    "text": "Case complete"
+   }
+  ],
+  "seeded": false,
+  "watch": [],
+  "alerts": [],
+  "history": {
+   "c1": [
+    {
+     "ts": 1794693185090,
+     "confidence": 65,
+     "label": "Contested",
+     "note": "initial check"
+    }
+   ],
+   "c2": [
+    {
+     "ts": 1794693185090,
+     "confidence": 83,
+     "label": "Contested",
+     "note": "initial check"
+    }
+   ],
+   "c3": [
+    {
+     "ts": 1794693185090,
+     "confidence": 0,
+     "label": "Contested",
+     "note": "initial check"
+    }
+   ],
+   "c4": [
+    {
+     "ts": 1794693185090,
+     "confidence": 100,
+     "label": "Verified",
+     "note": "initial check"
+    }
+   ],
+   "c5": [
+    {
+     "ts": 1794693185090,
+     "confidence": 0,
+     "label": "Contested",
+     "note": "initial check"
+    }
+   ]
+  }
+ },
+ {
+  "id": "case_gzv1w01",
+  "input": {
+   "kind": "thesis",
+   "value": "Abridge is the leading clinical AI documentation company.\nNo competitor has more health-system customers.\nMicrosoft Nuance DAX is losing share to Abridge."
+  },
+  "company": "Abridge",
+  "companyDomain": null,
+  "createdAt": 1794693251507,
+  "status": "done",
+  "stage": "Complete",
+  "claims": [
+   {
+    "id": "c1",
+    "text": "Abridge is the market-leading clinical AI documentation (ambient scribe) vendor, ahead of Microsoft Nuance DAX Copilot, Ambience, Suki, and others, as measured by market share or independent rankings such as KLAS.",
+    "type": "market",
+    "disproof": "Independent analyst data (KLAS, Peterson Health Technology Institute, Gartner, Menlo Ventures market reports) showing Microsoft/Nuance DAX Copilot or another vendor with a larger share of deployed clinicians, revenue, or health-system contracts, or Abridge not ranked first in KLAS ambient AI reports.",
+    "entities": [
+     "Abridge",
+     "Microsoft Nuance DAX Copilot",
+     "Ambience Healthcare",
+     "Suki",
+     "KLAS Research"
+    ],
+    "weight": 0.95,
+    "queries": {
+     "support": "Abridge KLAS ranking ambient AI market share 2026",
+     "attack": "Microsoft DAX Copilot market share vs Abridge 2026 ambient scribe leader Epic ambient AI"
+    },
+    "engines": [
+     "perplexity",
+     "parallel",
+     "exa",
+     "tavily"
+    ]
+   },
+   {
+    "id": "c2",
+    "text": "No competitor has more health-system customers than Abridge; Abridge claims 150+ health systems (or the most live enterprise deployments) in the ambient documentation category.",
+    "type": "customers",
+    "disproof": "Public customer counts or press releases showing Microsoft Nuance DAX Copilot (or Epic's native ambient tool, Ambience, Suki) with more health-system customers or more clinicians deployed than Abridge as of late 2026.",
+    "entities": [
+     "Abridge",
+     "Microsoft",
+     "Nuance",
+     "Epic Systems",
+     "Ambience Healthcare",
+     "Suki"
+    ],
+    "weight": 0.9,
+    "queries": {
+     "support": "Abridge number of health systems customers 2026 press release",
+     "attack": "Microsoft Dragon Copilot number of health systems customers 2026 more than Abridge"
+    },
+    "engines": [
+     "exa",
+     "brave",
+     "linkup",
+     "parallel",
+     "tavily"
+    ]
+   },
+   {
+    "id": "c3",
+    "text": "Microsoft Nuance DAX is losing share to Abridge, evidenced by health systems switching from DAX Copilot to Abridge or reporting declining DAX renewals.",
+    "type": "market",
+    "disproof": "Evidence that Microsoft's Dragon Copilot/DAX is gaining or holding share (e.g., Microsoft-reported growth in clinicians or customers, reports of health systems switching from Abridge to Microsoft), or analyst data showing flat or increasing DAX share through 2026.",
+    "entities": [
+     "Microsoft",
+     "Nuance DAX",
+     "Dragon Copilot",
+     "Abridge"
+    ],
+    "weight": 0.85,
+    "queries": {
+     "support": "health system switches from DAX Copilot to Abridge",
+     "attack": "Microsoft Dragon Copilot growth 2026 clinicians health systems switch from Abridge to Microsoft"
+    },
+    "engines": [
+     "perplexity",
+     "parallel",
+     "exa",
+     "tavily"
+    ]
+   },
+   {
+    "id": "c4",
+    "text": "Abridge's most recent funding round valued it at roughly $5B+ (Series E $300M in June 2025 at a ~$5.3B valuation, led by Andreessen Horowitz with Khosla Ventures), and any later round has been at a higher valuation.",
+    "type": "funding",
+    "disproof": "Press releases, SEC filings, or credible reporting (TechCrunch, Bloomberg, Fierce Healthcare) showing different round size, valuation, lead investors, or a down round or failed raise since June 2025.",
+    "entities": [
+     "Abridge",
+     "Andreessen Horowitz",
+     "Khosla Ventures"
+    ],
+    "weight": 0.8,
+    "queries": {
+     "support": "Abridge Series E $300 million $5.3 billion valuation Andreessen Horowitz",
+     "attack": "Abridge valuation 2026 new funding round down round layoffs"
+    },
+    "engines": [
+     "linkup",
+     "exa",
+     "brave",
+     "perplexity",
+     "tavily"
+    ]
+   },
+   {
+    "id": "c5",
+    "text": "Epic Systems' native ambient AI scribe (launched with Microsoft technology) and low-cost competitors threaten Abridge's pricing and distribution, and Abridge's revenue (reported ~$100M+ ARR) is not growing fast enough to justify its valuation.",
+    "type": "pricing",
+    "disproof": "Evidence that Abridge ARR exceeded the reported ~$100M and continues to grow strongly, retaining pricing per clinician with no significant Epic-driven churn, and Epic's native tool has not displaced Abridge deployments at Epic-based health systems.",
+    "entities": [
+     "Abridge",
+     "Epic Systems",
+     "Microsoft",
+     "Ambience Healthcare",
+     "OpenEvidence"
+    ],
+    "weight": 0.75,
+    "queries": {
+     "support": "Abridge annual recurring revenue 2026 growth",
+     "attack": "Epic native ambient AI scribe launch threat to Abridge pricing per clinician churn"
+    },
+    "engines": [
+     "parallel",
+     "exa",
+     "brave"
+    ]
+   }
+  ],
+  "evidence": [
+   {
+    "id": "c2-e1",
+    "claimId": "c2",
+    "url": "https://newmarketpitch.com/blogs/news/digital-health-abridge-vs-microsoft",
+    "domain": "newmarketpitch.com",
+    "title": "Is Abridge pulling ahead of Microsoft in AI scribes? – New Market Pitch",
+    "quote": "It reported more than 600 health systems adopting its ambient technology and over 100,000 Dragon Copilot clinicians, although its definitions and reporting periods differ from Abridge's disclosures.",
+    "stance": "contradicts",
+    "entailment": 0.8,
+    "tier": 4,
+    "tierReason": "commercial blog with vendor-comparison framing",
+    "engines": [
+     "exa",
+     "brave",
+     "parallel",
+     "tavily"
+    ],
+    "originId": "o-c2-1",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-21",
+    "fetchedVia": "tavily",
+    "weight": 0.392,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.4,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.8
+    }
+   },
+   {
+    "id": "c2-e2",
+    "claimId": "c2",
+    "url": "https://www.abridge.com/press-release/context-aware-clinical-intelligence-extended-to-all-partners",
+    "domain": "abridge.com",
+    "title": "Enterprise-ready clinical intelligence contextual to the patient in the room.",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.05,
+    "tier": 4,
+    "tierReason": "company's own marketing navigation page",
+    "engines": [
+     "exa",
+     "brave",
+     "linkup"
+    ],
+    "originId": "o-c2-2",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.25,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c2-e3",
+    "claimId": "c2",
+    "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/abridge-expands-ai-decision-support-more-clinicians-bid-become-healthcares",
+    "domain": "fiercehealthcare.com",
+    "title": "Abridge scales up AI decision support across 300 health systems",
+    "quote": "Abridge scales up AI decision support across 300 health systems",
+    "stance": "supports",
+    "entailment": 0.6,
+    "tier": 2,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "brave",
+     "parallel"
+    ],
+    "originId": "o-c2-3",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.561,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.6
+    }
+   },
+   {
+    "id": "c2-e4",
+    "claimId": "c2",
+    "url": "https://cleanclaimsai.com/vendors/dragon-copilot",
+    "domain": "cleanclaimsai.com",
+    "title": "Microsoft Dragon Copilot | Clean Claims",
+    "quote": "The deepest install base in ambient documentation, with more than 100,000 clinicians using it daily across 600+ organizations.",
+    "stance": "contradicts",
+    "entailment": 0.75,
+    "tier": 3,
+    "tierReason": "niche vendor-review site, credible analysis",
+    "engines": [
+     "brave",
+     "linkup"
+    ],
+    "originId": "o-c2-4",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.536,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.75
+    }
+   },
+   {
+    "id": "c2-e5",
+    "claimId": "c2",
+    "url": "https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote",
+    "domain": "abridge.com",
+    "title": "Abridge Unveils Unified Healthcare Intelligence Platform",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.05,
+    "tier": 4,
+    "tierReason": "company's own press release, no customer count",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c2-2",
+    "isOrigin": false,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 0.08,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c2-e6",
+    "claimId": "c2",
+    "url": "https://ustechautomations.com/resources/blog/abridge-explained-what-it-changes",
+    "domain": "ustechautomations.com",
+    "title": "Abridge Explained [What It Changes for Clinical AI]",
+    "quote": "runs across 300+ health systems serving 250+ million patients",
+    "stance": "supports",
+    "entailment": 0.55,
+    "tier": 4,
+    "tierReason": "explainer blog relaying Fortune figures",
+    "engines": [
+     "brave"
+    ],
+    "originId": "o-c2-5",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-06-14",
+    "fetchedVia": "tavily",
+    "weight": 0.183,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.55
+    }
+   },
+   {
+    "id": "c2-e7",
+    "claimId": "c2",
+    "url": "https://abridge.com/press-release/best-in-klas-2026-press",
+    "domain": "abridge.com",
+    "title": "Press: Abridge wins #1 Best in KLAS 2026 for Ambient AI.",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.05,
+    "tier": 4,
+    "tierReason": "company press release, truncated, no customer count",
+    "engines": [
+     "tavily"
+    ],
+    "originId": "o-c2-2",
+    "isOrigin": false,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 0.08,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c4-e1",
+    "claimId": "c4",
+    "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/ambient-ai-startup-abridge-scores-300m-series-e-backed-a16z-and-khosla",
+    "domain": "fiercehealthcare.com",
+    "title": "Abridge scores $300M series E, boosting valuation to $5.3B",
+    "quote": "Abridge scores $300M series E, boosting valuation to $5.3B",
+    "stance": "supports",
+    "entailment": 0.85,
+    "tier": 2,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "exa",
+     "brave",
+     "tavily"
+    ],
+    "originId": "o-c4-1",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.903,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 1.25,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.85
+    }
+   },
+   {
+    "id": "c4-e2",
+    "claimId": "c4",
+    "url": "https://www.revenuememo.com/p/abridge-funding",
+    "domain": "revenuememo.com",
+    "title": "Abridge funding: Every round, investor, and valuation (2026)",
+    "quote": "Its largest, a Series E led by Andreessen Horowitz in June 2025, valued the company at a reported $5.3 billion.",
+    "stance": "supports",
+    "entailment": 0.8,
+    "tier": 4,
+    "tierReason": "Aggregator-style funding roundup, not primary",
+    "engines": [
+     "linkup",
+     "tavily"
+    ],
+    "originId": "o-c4-2",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-04",
+    "fetchedVia": "tavily",
+    "weight": 0.308,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.8
+    }
+   },
+   {
+    "id": "c4-e3",
+    "claimId": "c4",
+    "url": "https://www.abridge.com/blog/series-e",
+    "domain": "abridge.com",
+    "title": "Abridge Series E Announcement and More",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.05,
+    "tier": 4,
+    "tierReason": "Company marketing page; no valuation content",
+    "engines": [
+     "exa",
+     "brave"
+    ],
+    "originId": "o-c4-3",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c4-e4",
+    "claimId": "c4",
+    "url": "https://valueaddvc.com/blog/abridge-valuation-2026-5-3b-100m-arr-and-how-the-ai-scribe-beat-nuance-and-ambience",
+    "domain": "valueaddvc.com",
+    "title": "Abridge Valuation 2026: $5.3B After $316M Extension",
+    "quote": "Abridge's April 2026 Series E extension confirmed a $5.3B valuation, up from $850M two years earlier.",
+    "stance": "contradicts",
+    "entailment": 0.6,
+    "tier": 4,
+    "tierReason": "Founder VC blog; later round at same price",
+    "engines": [
+     "brave",
+     "linkup"
+    ],
+    "originId": "o-c4-4",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-08-25",
+    "fetchedVia": "tavily",
+    "weight": 0.231,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.6
+    }
+   },
+   {
+    "id": "c4-e5",
+    "claimId": "c4",
+    "url": "https://sacra.com/c/abridge",
+    "domain": "sacra.com",
+    "title": "Abridge revenue, valuation & funding | Sacra",
+    "quote": "Abridge raised a $300M Series E led by Andreessen Horowitz in June 2025 at a $5.3B valuation, nearly double its February 2025 valuation of $2.75B set during its $250M Series D.",
+    "stance": "supports",
+    "entailment": 0.8,
+    "tier": 3,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "tavily",
+     "linkup"
+    ],
+    "originId": "o-c4-5",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.572,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.8
+    }
+   },
+   {
+    "id": "c4-e6",
+    "claimId": "c4",
+    "url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
+    "domain": "techcrunch.com",
+    "title": "Here are the 55 US AI startups that raised $100M or more in 2025",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.05,
+    "tier": 2,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "perplexity",
+     "tavily-news"
+    ],
+    "originId": "o-c4-6",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-01-19",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c4-e7",
+    "claimId": "c4",
+    "url": "https://www.mobihealthnews.com/news/abridge-secures-300m-boosts-valuation-53b",
+    "domain": "mobihealthnews.com",
+    "title": "Abridge secures $300M, boosts valuation to $5.3B",
+    "quote": "has raised $300 million in Series E funding, bringing its valuation to a reported $5.3 billion.",
+    "stance": "supports",
+    "entailment": 0.9,
+    "tier": 3,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "brave",
+     "tavily"
+    ],
+    "originId": "o-c4-7",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2025-06-25",
+    "fetchedVia": "tavily",
+    "weight": 0.515,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0.9
+    }
+   },
+   {
+    "id": "c5-e1",
+    "claimId": "c5",
+    "url": "https://valueaddvc.com/blog/abridge-valuation-2026-5-3b-100m-arr-and-how-the-ai-scribe-beat-nuance-and-ambience",
+    "domain": "valueaddvc.com",
+    "title": "Abridge Valuation 2026: $5.3B After $316M Extension",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.15,
+    "tier": 4,
+    "tierReason": "personal VC blog, no threat or growth-lag claim",
+    "engines": [
+     "parallel",
+     "exa",
+     "brave"
+    ],
+    "originId": "o-c5-1",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-08-25",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.25,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c5-e2",
+    "claimId": "c5",
+    "url": "https://aimagazine.com/news/abridge-nvidia-lilly-and-the-clinician-intelligence-push",
+    "domain": "aimagazine.com",
+    "title": "Abridge: NVIDIA, Lilly and the Clinician Intelligence Push | AI Magazine",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.15,
+    "tier": 3,
+    "tierReason": "trade magazine profile, no threat or growth-lag claim",
+    "engines": [
+     "parallel",
+     "exa"
+    ],
+    "originId": "o-c5-2",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-30",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c5-e3",
+    "claimId": "c5",
+    "url": "https://www.arr.club/abridge",
+    "domain": "arr.club",
+    "title": "Abridge ARR 2026: $117M Revenue, Growth & Milestones | ARR Club",
+    "quote": "Abridge Reaches $117M ARR",
+    "stance": "contradicts",
+    "entailment": 0.6,
+    "tier": 4,
+    "tierReason": "aggregator showing very rapid ARR growth",
+    "engines": [
+     "parallel",
+     "brave"
+    ],
+    "originId": "o-c5-3",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2025-03-14",
+    "fetchedVia": "tavily",
+    "weight": 0.139,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 0.6,
+     "entailment": 0.6
+    }
+   },
+   {
+    "id": "c5-e4",
+    "claimId": "c5",
+    "url": "https://www.forasoft.com/blog/article/ai-scribe-architecture-ambient-documentation-2026",
+    "domain": "forasoft.com",
+    "title": "Ambient AI Scribe: Build vs Buy, Architecture & Cost 2026",
+    "quote": "Since February 2026 Epic ships its own native AI Charting.",
+    "stance": "supports",
+    "entailment": 0.5,
+    "tier": 4,
+    "tierReason": "vendor marketing; notes Epic native and low-cost options",
+    "engines": [
+     "brave",
+     "tavily-news"
+    ],
+    "originId": "o-c5-4",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-16",
+    "fetchedVia": "tavily",
+    "weight": 0.193,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.5
+    }
+   },
+   {
+    "id": "c5-e5",
+    "claimId": "c5",
+    "url": "https://www.beckershospitalreview.com/healthcare-information-technology/innovation/the-health-tech-solutions-most-vulnerable-to-epic",
+    "domain": "beckershospitalreview.com",
+    "title": "The health tech solutions most vulnerable to Epic",
+    "quote": "And so everything that I buy now that's a point solution like that, I assume it's going to go away at some point",
+    "stance": "supports",
+    "entailment": 0.7,
+    "tier": 3,
+    "tierReason": "trade press quoting health system CIO on Epic threat",
+    "engines": [
+     "parallel"
+    ],
+    "originId": "o-c5-5",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "firecrawl",
+    "weight": 0.432,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.7
+    }
+   },
+   {
+    "id": "c5-e6",
+    "claimId": "c5",
+    "url": "https://medcitynews.com/2026/02/ambient-scribe-ai-startups-epic/",
+    "domain": "medcitynews.com",
+    "title": "Do Ambient Scribe Startups Have a Future Now That Epic Launched Its Own Tool? - MedCity News",
+    "quote": "This means that any time the company launches a tool of its own, the other vendors selling that technology suddenly have to justify their existence, as it's considerably more difficult to sell a solution to a customer when they already have an in-house option.",
+    "stance": "supports",
+    "entailment": 0.7,
+    "tier": 3,
+    "tierReason": "trade health-tech news on Epic competitive pressure",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c5-6",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-02-05",
+    "fetchedVia": "tavily",
+    "weight": 0.346,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0.7
+    }
+   },
+   {
+    "id": "c5-e7",
+    "claimId": "c5",
+    "url": "https://ailearningguides.com/abridge-ai-scribe-healthcare-2026-review/",
+    "domain": "ailearningguides.com",
+    "title": "Abridge AI Scribe 2026: Can It Beat Big Tech in Healthcare? - AI Learning Guides",
+    "quote": "That position is now under direct pressure.",
+    "stance": "supports",
+    "entailment": 0.55,
+    "tier": 5,
+    "tierReason": "content site; general claims, no primary sourcing",
+    "engines": [
+     "brave"
+    ],
+    "originId": "o-c5-7",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.063,
+    "factors": {
+     "tier": 0.12,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.55
+    }
+   },
+   {
+    "id": "c3-e1",
+    "claimId": "c3",
+    "url": "https://medcitynews.com/2026/02/mount-sinai-microsoft-clinical-documentation/",
+    "domain": "medcitynews.com",
+    "title": "Why Mount Sinai Chose Microsoft Over Abridge and Suki - MedCity News",
+    "quote": "Leaders at Mount Sinai Health System in New York think Microsoft is the winner of the ambient scribing world — for now.",
+    "stance": "contradicts",
+    "entailment": 0.1,
+    "tier": 3,
+    "tierReason": "niche health-tech trade news",
+    "engines": [
+     "perplexity",
+     "exa",
+     "tavily-news"
+    ],
+    "originId": "o-c3-1",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-02-11",
+    "fetchedVia": "tavily",
+    "weight": 0.065,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.25,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0.1
+    }
+   },
+   {
+    "id": "c3-e2",
+    "claimId": "c3",
+    "url": "https://newmarketpitch.com/blogs/news/digital-health-abridge-vs-microsoft",
+    "domain": "newmarketpitch.com",
+    "title": "Is Abridge pulling ahead of Microsoft in AI scribes? – New Market Pitch",
+    "quote": "Yes, Abridge is pulling ahead of Microsoft in AI medical scribes when it comes to customer satisfaction and winning new purchasing decisions.",
+    "stance": "supports",
+    "entailment": 0.45,
+    "tier": 4,
+    "tierReason": "vendor-shop blog, no switching data",
+    "engines": [
+     "perplexity",
+     "exa"
+    ],
+    "originId": "o-c3-2",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-21",
+    "fetchedVia": "tavily",
+    "weight": 0.173,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.45
+    }
+   },
+   {
+    "id": "c3-e3",
+    "claimId": "c3",
+    "url": "http://llmbook.icsgen-ai.org/part-14-applications-of-llms-across-industries/module-69-healthcare-llms/section-69.5.html",
+    "domain": "llmbook.icsgen-ai.org",
+    "title": "Section 69.5: Healthcare LLM Vendors and Further Reading",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.05,
+    "tier": 4,
+    "tierReason": "educational book, hypothetical case study",
+    "engines": [
+     "perplexity"
+    ],
+    "originId": "o-c3-3",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e4",
+    "claimId": "c3",
+    "url": "https://aihealthcarenewstoday.com/news/mass-general-brigham-ambient-ai-enterprise-wide",
+    "domain": "aihealthcarenewstoday.com",
+    "title": "Mass General Brigham extends ambient AI documentation to every ambulatory specialty enterprise-wide · AI in Healthcare",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.05,
+    "tier": 3,
+    "tierReason": "niche health AI news, no share data",
+    "engines": [
+     "parallel"
+    ],
+    "originId": "o-c3-4",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-09-17",
+    "fetchedVia": "parallel",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e5",
+    "claimId": "c3",
+    "url": "https://www.axios.com/pro/health-tech-deals/2025/02/03/health-systems-see-scribes-as-real-ai-revolution",
+    "domain": "axios.com",
+    "title": "Health systems embrace AI scribes as business booms",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.05,
+    "tier": 2,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c3-5",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2025-02-03",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.6,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e6",
+    "claimId": "c3",
+    "url": "https://artificial-intelligence-wiki.com/industry-ai/ai-in-healthcare-diagnostics/abridge-vs-dax-copilot",
+    "domain": "artificial-intelligence-wiki.com",
+    "title": "Abridge vs DAX Copilot 2025 | AI Medical Scribe Comparison",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.05,
+    "tier": 5,
+    "tierReason": "SEO comparison page, pricing only",
+    "engines": [
+     "tavily"
+    ],
+    "originId": "o-c3-6",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2025-10-29",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.12,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e7",
+    "claimId": "c3",
+    "url": "https://aihealthindex.io/compare/abridge-vs-microsoft-dragon-copilot",
+    "domain": "aihealthindex.io",
+    "title": "AI Health Index: Independent Reference for Healthcare AI Vendors",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.05,
+    "tier": 4,
+    "tierReason": "vendor reference site, no share data",
+    "engines": [
+     "perplexity"
+    ],
+    "originId": "o-c3-7",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c1-e1",
+    "claimId": "c1",
+    "url": "https://www.abridge.com/best-in-klas-2026",
+    "domain": "abridge.com",
+    "title": "News: Abridge wins #1 Best in KLAS 2026 for the Ambient AI.",
+    "quote": "Abridge wins #1 Best in KLAS 2026 for the Ambient AI.",
+    "stance": "supports",
+    "entailment": 0.85,
+    "tier": 4,
+    "tierReason": "company's own marketing news page",
+    "engines": [
+     "perplexity",
+     "parallel",
+     "tavily"
+    ],
+    "originId": "o-c1-1",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.372,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.25,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.85
+    }
+   },
+   {
+    "id": "c1-e2",
+    "claimId": "c1",
+    "url": "https://klasresearch.com/report/ambient-ai-2026-a-high-performing-market-shifts-as-ehr-native-tools-adjust-long-term-strategies/3982",
+    "domain": "klasresearch.com",
+    "title": "Ambient AI 2026 | KLAS Report",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.02,
+    "tier": 1,
+    "tierReason": "KLAS page; login and survey boilerplate only",
+    "engines": [
+     "perplexity",
+     "exa"
+    ],
+    "originId": "o-c1-2",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 1,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c1-e3",
+    "claimId": "c1",
+    "url": "https://newmarketpitch.com/blogs/news/digital-health-abridge-vs-microsoft",
+    "domain": "newmarketpitch.com",
+    "title": "Is Abridge pulling ahead of Microsoft in AI scribes? – New Market Pitch",
+    "quote": "Microsoft still has the larger publicly reported installed base, so Abridge has not yet established overall market leadership.",
+    "stance": "contradicts",
+    "entailment": 0.85,
+    "tier": 4,
+    "tierReason": "commercial blog promoting its own report",
+    "engines": [
+     "parallel",
+     "tavily"
+    ],
+    "originId": "o-c1-3",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-21",
+    "fetchedVia": "tavily",
+    "weight": 0.327,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.85
+    }
+   },
+   {
+    "id": "c1-e4",
+    "claimId": "c1",
+    "url": "https://www.fullduplex.ai/blog/v07-abridge",
+    "domain": "fullduplex.ai",
+    "title": "Abridge: an AI scribe built inside Epic, now competing with it — Fullduplex",
+    "quote": "Menlo puts Microsoft’s Nuance DAX Copilot first at 33%, then Abridge at 30%",
+    "stance": "contradicts",
+    "entailment": 0.9,
+    "tier": 4,
+    "tierReason": "independent-ish blog citing Menlo data",
+    "engines": [
+     "perplexity",
+     "parallel"
+    ],
+    "originId": "o-c1-4",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.347,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.9
+    }
+   },
+   {
+    "id": "c1-e5",
+    "claimId": "c1",
+    "url": "https://www.medigy.com/news/blogs/best-ambient-ai-medical-scribes-in-2026-ranked-for-specialty-practices",
+    "domain": "medigy.com",
+    "title": "Best Ambient AI Medical Scribes in 2026, Ranked for Specialty Practices | The Healthcare Guys",
+    "quote": "Abridge and Ambience Healthcare are the strongest options for large, Epic-anchored health systems, with Abridge earning back-to-back KLAS recognition in 2026.",
+    "stance": "supports",
+    "entailment": 0.35,
+    "tier": 3,
+    "tierReason": "niche healthcare trade roundup, ranks iScribe first",
+    "engines": [
+     "tavily",
+     "tavily-news"
+    ],
+    "originId": "o-c1-5",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-11-11",
+    "fetchedVia": "tavily",
+    "weight": 0.25,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.35
+    }
+   },
+   {
+    "id": "c1-e6",
+    "claimId": "c1",
+    "url": "https://klasresearch.com/best-in-klas-ranking/ambient-speech/2026/487",
+    "domain": "klasresearch.com",
+    "title": "2026 Best In KLAS Ambient Speech",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.03,
+    "tier": 1,
+    "tierReason": "KLAS page; account boilerplate, no ranking content",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c1-2",
+    "isOrigin": false,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 1,
+     "independence": 0.15,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c1-e7",
+    "claimId": "c1",
+    "url": "https://www.linkedin.com/posts/carlos-lozada_news-abridge-wins-1-best-in-klas-2026-for-activity-7424880740271607809-MTSF",
+    "domain": "linkedin.com",
+    "title": "News: Abridge wins #1 Best in KLAS 2026 for the Ambient AI. | Carlos Lozada",
+    "quote": "We are the ONLY ambient vendor to win Best in KLAS two years in a row.",
+    "stance": "supports",
+    "entailment": 0.7,
+    "tier": 3,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "tavily"
+    ],
+    "originId": "o-c1-6",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tinyfish",
+    "weight": 0.432,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.7
+    }
+   }
+  ],
+  "origins": [
+   {
+    "id": "o-c2-1",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e1",
+    "memberIds": [
+     "c2-e1"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-2",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e2",
+    "memberIds": [
+     "c2-e2",
+     "c2-e5",
+     "c2-e7"
+    ],
+    "similarity": 0.54
+   },
+   {
+    "id": "o-c2-3",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e3",
+    "memberIds": [
+     "c2-e3"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-4",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e4",
+    "memberIds": [
+     "c2-e4"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-5",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e6",
+    "memberIds": [
+     "c2-e6"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-1",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e1",
+    "memberIds": [
+     "c4-e1"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-2",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e2",
+    "memberIds": [
+     "c4-e2"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-3",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e3",
+    "memberIds": [
+     "c4-e3"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-4",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e4",
+    "memberIds": [
+     "c4-e4"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-5",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e5",
+    "memberIds": [
+     "c4-e5"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-6",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e6",
+    "memberIds": [
+     "c4-e6"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-7",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e7",
+    "memberIds": [
+     "c4-e7"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-1",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e1",
+    "memberIds": [
+     "c5-e1"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-2",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e2",
+    "memberIds": [
+     "c5-e2"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-3",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e3",
+    "memberIds": [
+     "c5-e3"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-4",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e4",
+    "memberIds": [
+     "c5-e4"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-5",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e5",
+    "memberIds": [
+     "c5-e5"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-6",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e6",
+    "memberIds": [
+     "c5-e6"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-7",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e7",
+    "memberIds": [
+     "c5-e7"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-1",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e1",
+    "memberIds": [
+     "c3-e1"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-2",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e2",
+    "memberIds": [
+     "c3-e2"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-3",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e3",
+    "memberIds": [
+     "c3-e3"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-4",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e4",
+    "memberIds": [
+     "c3-e4"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-5",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e5",
+    "memberIds": [
+     "c3-e5"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-6",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e6",
+    "memberIds": [
+     "c3-e6"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-7",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e7",
+    "memberIds": [
+     "c3-e7"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-1",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e1",
+    "memberIds": [
+     "c1-e1"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-2",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e2",
+    "memberIds": [
+     "c1-e2",
+     "c1-e6"
+    ],
+    "similarity": 0.94
+   },
+   {
+    "id": "o-c1-3",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e3",
+    "memberIds": [
+     "c1-e3"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-4",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e4",
+    "memberIds": [
+     "c1-e4"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-5",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e5",
+    "memberIds": [
+     "c1-e5"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-6",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e7",
+    "memberIds": [
+     "c1-e7"
+    ],
+    "similarity": 0
+   }
+  ],
+  "scores": {
+   "c1": {
+    "claimId": "c1",
+    "confidence": 63,
+    "label": "Contested",
+    "supportWeight": 1.05,
+    "contradictWeight": 0.67,
+    "articles": 5,
+    "independentOrigins": 5,
+    "engines": [
+     "perplexity",
+     "parallel",
+     "tavily",
+     "tavily-news"
+    ]
+   },
+   "c2": {
+    "claimId": "c2",
+    "confidence": 31,
+    "label": "Contested",
+    "supportWeight": 0.74,
+    "contradictWeight": 0.93,
+    "articles": 4,
+    "independentOrigins": 4,
+    "engines": [
+     "exa",
+     "brave",
+     "parallel",
+     "tavily",
+     "linkup"
+    ]
+   },
+   "c3": {
+    "claimId": "c3",
+    "confidence": 55,
+    "label": "Unverifiable",
+    "supportWeight": 0.17,
+    "contradictWeight": 0.07,
+    "articles": 2,
+    "independentOrigins": 2,
+    "engines": [
+     "perplexity",
+     "exa",
+     "tavily-news"
+    ]
+   },
+   "c4": {
+    "claimId": "c4",
+    "confidence": 99,
+    "label": "Verified",
+    "supportWeight": 2.3,
+    "contradictWeight": 0.23,
+    "articles": 5,
+    "independentOrigins": 5,
+    "engines": [
+     "exa",
+     "brave",
+     "tavily",
+     "linkup"
+    ]
+   },
+   "c5": {
+    "claimId": "c5",
+    "confidence": 87,
+    "label": "Verified",
+    "supportWeight": 1.03,
+    "contradictWeight": 0.14,
+    "articles": 5,
+    "independentOrigins": 5,
+    "engines": [
+     "parallel",
+     "brave",
+     "tavily-news",
+     "exa"
+    ]
+   }
+  },
+  "questions": [
+   "KLAS and market-share data are contested. On what metric, such as live deployments, clinicians active, or revenue, are you actually #1, and who verifies it independently?",
+   "You claim 150+ health systems. How many are enterprise-wide live deployments versus pilots or single-department rollouts, and how does that compare with DAX Copilot's count?",
+   "Name specific health systems that switched from DAX Copilot to Abridge in the last 12 months. What drove the decision, and have any churned back?",
+   "With Epic's native scribe launching and cheaper rivals emerging, what are your net revenue retention, price-per-clinician trends, and ARR growth, and how do they justify a $5B+ valuation?"
+  ],
+  "linkedin": null,
+  "routingBaseline": {
+   "claimId": "c1",
+   "engines": [
+    "exa",
+    "perplexity",
+    "tavily"
+   ],
+   "note": "Telem auto-routing picked exa, perplexity, tavily; Tripwire routed C1 (market) to perplexity, parallel, exa, tavily"
+  },
+  "log": [
+   {
+    "ts": 1794693262594,
+    "kind": "llm",
+    "text": "5 claims extracted for Abridge"
+   },
+   {
+    "ts": 1794693262600,
+    "kind": "search",
+    "text": "c1 [market] → perplexity, parallel, exa, tavily"
+   },
+   {
+    "ts": 1794693262602,
+    "kind": "search",
+    "text": "c2 [customers] → exa, brave, linkup, parallel, tavily"
+   },
+   {
+    "ts": 1794693262605,
+    "kind": "search",
+    "text": "c3 [market] → perplexity, parallel, exa, tavily"
+   },
+   {
+    "ts": 1794693262608,
+    "kind": "search",
+    "text": "c4 [funding] → linkup, exa, brave, perplexity, tavily"
+   },
+   {
+    "ts": 1794693262609,
+    "kind": "search",
+    "text": "c5 [pricing] → parallel, exa, brave"
+   },
+   {
+    "ts": 1794693265431,
+    "kind": "search",
+    "text": "c2: 36 unique URLs from 5 engines → reading top 7"
+   },
+   {
+    "ts": 1794693265982,
+    "kind": "search",
+    "text": "c1: 30 unique URLs from 4 engines → reading top 7"
+   },
+   {
+    "ts": 1794693266553,
+    "kind": "search",
+    "text": "c5: 24 unique URLs from 3 engines → reading top 7"
+   },
+   {
+    "ts": 1794693266801,
+    "kind": "search",
+    "text": "c3: 34 unique URLs from 4 engines → reading top 7"
+   },
+   {
+    "ts": 1794693267022,
+    "kind": "search",
+    "text": "c4: 35 unique URLs from 5 engines → reading top 7"
+   },
+   {
+    "ts": 1794693274245,
+    "kind": "score",
+    "text": "c2 Contested 31/100 · 4 articles → 4 origins"
+   },
+   {
+    "ts": 1794693277529,
+    "kind": "score",
+    "text": "c4 Verified 99/100 · 5 articles → 5 origins"
+   },
+   {
+    "ts": 1794693279751,
+    "kind": "score",
+    "text": "c5 Verified 87/100 · 5 articles → 5 origins"
+   },
+   {
+    "ts": 1794693280281,
+    "kind": "score",
+    "text": "c3 Unverifiable 55/100 · 2 articles → 2 origins"
+   },
+   {
+    "ts": 1794693283049,
+    "kind": "score",
+    "text": "c1 Contested 63/100 · 5 articles → 5 origins"
+   },
+   {
+    "ts": 1794693285812,
+    "kind": "info",
+    "text": "Case complete"
+   },
+   {
+    "ts": 1794693305467,
+    "kind": "info",
+    "text": "c1: tripwire armed (monitor 8daace78)"
+   },
+   {
+    "ts": 1794693305695,
+    "kind": "info",
+    "text": "c5: tripwire armed (monitor c80d033e)"
+   },
+   {
+    "ts": 1794693305706,
+    "kind": "info",
+    "text": "c2: tripwire armed (monitor 2664e8bb)"
+   },
+   {
+    "ts": 1794693305708,
+    "kind": "info",
+    "text": "c4: tripwire armed (monitor 74f176ba)"
+   },
+   {
+    "ts": 1794693305918,
+    "kind": "info",
+    "text": "c3: tripwire armed (monitor 3a9e506b)"
+   }
+  ],
+  "seeded": false,
+  "watch": [
+   {
+    "claimId": "c1",
+    "monitorId": "8daace78-7abe-4052-a58e-bd7bbf798921",
+    "query": "Abridge: Independent analyst data (KLAS, Peterson Health Technology Institute, Gartner, Menlo Ventures market reports) showing Microsoft/Nuance DAX Copilot or another vendor with a larger share of deployed clinicians, revenue, or health-system contracts, or Abridge not ranked first in KLAS ambient A",
+    "cursor": 0,
+    "createdAt": 1794693305467,
+    "agentStatus": "compiling",
+    "lastCheckedAt": null,
+    "seen": 0
+   },
+   {
+    "claimId": "c2",
+    "monitorId": "2664e8bb-de56-4aec-b8f2-e97038c16713",
+    "query": "Abridge: Public customer counts or press releases showing Microsoft Nuance DAX Copilot (or Epic's native ambient tool, Ambience, Suki) with more health-system customers or more clinicians deployed than Abridge as of late 2026.",
+    "cursor": 0,
+    "createdAt": 1794693305706,
+    "agentStatus": "compiling",
+    "lastCheckedAt": null,
+    "seen": 0
+   },
+   {
+    "claimId": "c3",
+    "monitorId": "3a9e506b-2bbb-4476-aee7-b1d1e87862e3",
+    "query": "Abridge: Evidence that Microsoft's Dragon Copilot/DAX is gaining or holding share (e.g., Microsoft-reported growth in clinicians or customers, reports of health systems switching from Abridge to Microsoft), or analyst data showing flat or increasing DAX share through 2026.",
+    "cursor": 0,
+    "createdAt": 1794693305918,
+    "agentStatus": null,
+    "lastCheckedAt": null,
+    "seen": 0
+   },
+   {
+    "claimId": "c4",
+    "monitorId": "74f176ba-25dc-46c9-a48c-aa106f948f86",
+    "query": "Abridge: Press releases, SEC filings, or credible reporting (TechCrunch, Bloomberg, Fierce Healthcare) showing different round size, valuation, lead investors, or a down round or failed raise since June 2025.",
+    "cursor": 0,
+    "createdAt": 1794693305708,
+    "agentStatus": "compiling",
+    "lastCheckedAt": null,
+    "seen": 0
+   },
+   {
+    "claimId": "c5",
+    "monitorId": "c80d033e-274e-4fbe-98a2-4aa55bc3dafe",
+    "query": "Abridge: Evidence that Abridge ARR exceeded the reported ~$100M and continues to grow strongly, retaining pricing per clinician with no significant Epic-driven churn, and Epic's native tool has not displaced Abridge deployments at Epic-based health systems.",
+    "cursor": 0,
+    "createdAt": 1794693305695,
+    "agentStatus": "compiling",
+    "lastCheckedAt": null,
+    "seen": 0
+   }
+  ],
+  "alerts": [],
+  "history": {
+   "c1": [
+    {
+     "ts": 1794693285812,
+     "confidence": 63,
+     "label": "Contested",
+     "note": "initial check"
+    }
+   ],
+   "c2": [
+    {
+     "ts": 1794693285812,
+     "confidence": 31,
+     "label": "Contested",
+     "note": "initial check"
+    }
+   ],
+   "c3": [
+    {
+     "ts": 1794693285812,
+     "confidence": 55,
+     "label": "Unverifiable",
+     "note": "initial check"
+    }
+   ],
+   "c4": [
+    {
+     "ts": 1794693285812,
+     "confidence": 99,
+     "label": "Verified",
+     "note": "initial check"
+    }
+   ],
+   "c5": [
+    {
+     "ts": 1794693285812,
+     "confidence": 87,
+     "label": "Verified",
+     "note": "initial check"
+    }
+   ]
+  }
  }
 ]
