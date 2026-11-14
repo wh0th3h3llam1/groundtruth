@@ -121,7 +121,11 @@ export interface CaseFile {
   alerts?: AlertItem[];
   history?: Record<string, HistoryPoint[]>;
   routingCompare?: RoutingCompare[];
+  auto?: AutoWatch;
 }
+
+/** The watch loop re-checks on its own while someone has the case open; it pauses when nobody is looking. */
+export interface AutoWatch { everyMs: number; nextCheckAt: number | null; lastViewedAt: number; checks: number }
 
 /** Same queries, two routes: Telem auto-routing vs Groundtruth's per-claim-type engine routing. */
 export interface RouteStats { engines: string[]; urls: number; domains: number; credible: number; selfReported: number }

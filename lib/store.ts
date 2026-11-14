@@ -40,6 +40,7 @@ export function persist() {
 
 export function getCase(id: string) { load(); return store.cases.get(id); }
 export function putCase(c: CaseFile) { load(); store.cases.set(c.id, c); }
+export function allCases() { load(); return [...store.cases.values()]; }
 export function listCases() {
   load();
   return [...store.cases.values()]

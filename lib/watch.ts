@@ -1,10 +1,48 @@
 import type { AlertItem, CaseFile, Claim, ClaimScore, Evidence } from "./types";
-import { log, persist, uid } from "./store";
+import { allCases, log, persist, uid } from "./store";
 import { monitorChanges, monitorCreate, monitorGet, monitorPoll, telemSearch } from "./telem";
 import { buildEvidence, recollapse, type Candidate } from "./pipeline";
 import { normUrl } from "./credibility";
 
 const MAX_NEW_PER_CLAIM = 5;
+export const AUTO_EVERY_MS = 3 * 60_000;   // auto re-check cadence once tripwires are armed
+const IDLE_PAUSE_MS = 20 * 60_000;         // pause when nobody has looked at the case for this long (saves API credits)
+const RESUME_DELAY_MS = 20_000;            // first check soon after someone comes back
+const TICK_MS = 10_000;
+
+/** One in-process ticker per server: runs due auto-checks for armed cases. */
+export function ensureScheduler() {
+  const g = globalThis as unknown as { __gtTicker?: ReturnType<typeof setInterval> };
+  if (g.__gtTicker) return;
+  g.__gtTicker = setInterval(tick, TICK_MS);
+}
+
+function tick() {
+  const now = Date.now();
+  for (const c of allCases()) {
+    const a = c.auto;
+    if (!a || !c.watch?.length || c.status !== "done") continue;
+    if (now - a.lastViewedAt > IDLE_PAUSE_MS) {
+      if (a.nextCheckAt !== null) { a.nextCheckAt = null; log(c, "info", "Auto-check paused: nobody watching this case"); }
+      continue;
+    }
+    if (c.checking || a.nextCheckAt === null || a.nextCheckAt > now) continue;
+    a.nextCheckAt = now + a.everyMs;
+    a.checks++;
+    log(c, "info", `Auto-check #${a.checks} (every ${Math.round(a.everyMs / 60_000)} min)`);
+    checkWatch(c).catch((e) => log(c, "error", "auto-check failed: " + String(e)));
+  }
+}
+
+/** Called whenever the case is read: keeps the loop alive while someone is looking, resumes it after a pause. */
+export function touchWatch(c: CaseFile) {
+  if (!c.watch?.length) return;
+  const now = Date.now();
+  c.auto ??= { everyMs: AUTO_EVERY_MS, nextCheckAt: now + RESUME_DELAY_MS, lastViewedAt: now, checks: 0 };
+  c.auto.lastViewedAt = now;
+  if (c.auto.nextCheckAt === null) { c.auto.nextCheckAt = now + RESUME_DELAY_MS; log(c, "info", "Auto-check resumed"); }
+  ensureScheduler();
+}
 
 /** Arm the tripwire: one Telem Monitor per claim, built from the claim's disproof condition. */
 export async function armWatch(c: CaseFile) {
@@ -24,6 +62,8 @@ export async function armWatch(c: CaseFile) {
     log(c, "info", `${cl.id}: tripwire armed (monitor ${m.id.slice(0, 8)})`);
   }));
   c.watch.sort((a, b) => a.claimId.localeCompare(b.claimId));
+  c.auto = { everyMs: AUTO_EVERY_MS, nextCheckAt: Date.now() + AUTO_EVERY_MS, lastViewedAt: Date.now(), checks: 0 };
+  ensureScheduler();
   persist();
   return c;
 }
@@ -37,6 +77,7 @@ export async function checkWatch(c: CaseFile) {
     await Promise.all(c.claims.map((cl) => checkClaim(c, cl)));
   } finally {
     c.checking = false;
+    if (c.auto?.nextCheckAt) c.auto.nextCheckAt = Math.max(c.auto.nextCheckAt, Date.now() + c.auto.everyMs / 2);
     c.stage = "Complete";
     persist();
   }

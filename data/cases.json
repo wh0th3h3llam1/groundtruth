@@ -14378,15 +14378,15 @@
     "engines": [
      "exa"
     ],
-    "originId": "o-c2-2",
-    "isOrigin": false,
+    "originId": "o-c2-5",
+    "isOrigin": true,
     "selfInterest": false,
     "publishedAt": null,
     "fetchedVia": "tavily",
     "weight": 0,
     "factors": {
      "tier": 0.35,
-     "independence": 0.08,
+     "independence": 1,
      "crossEngine": 0.95,
      "selfInterest": 1,
      "recency": 1,
@@ -14407,7 +14407,7 @@
     "engines": [
      "brave"
     ],
-    "originId": "o-c2-5",
+    "originId": "o-c2-6",
     "isOrigin": true,
     "selfInterest": false,
     "publishedAt": "2026-06-14",
@@ -14436,15 +14436,15 @@
     "engines": [
      "tavily"
     ],
-    "originId": "o-c2-2",
-    "isOrigin": false,
+    "originId": "o-c2-7",
+    "isOrigin": true,
     "selfInterest": false,
     "publishedAt": null,
     "fetchedVia": "tavily",
     "weight": 0,
     "factors": {
      "tier": 0.35,
-     "independence": 0.08,
+     "independence": 1,
      "crossEngine": 0.95,
      "selfInterest": 1,
      "recency": 1,
@@ -15241,15 +15241,15 @@
     "engines": [
      "exa"
     ],
-    "originId": "o-c1-2",
-    "isOrigin": false,
+    "originId": "o-c1-6",
+    "isOrigin": true,
     "selfInterest": false,
     "publishedAt": null,
     "fetchedVia": "tavily",
     "weight": 0,
     "factors": {
      "tier": 1,
-     "independence": 0.15,
+     "independence": 1,
      "crossEngine": 0.95,
      "selfInterest": 1,
      "recency": 1,
@@ -15270,7 +15270,7 @@
     "engines": [
      "tavily"
     ],
-    "originId": "o-c1-6",
+    "originId": "o-c1-7",
     "isOrigin": true,
     "selfInterest": false,
     "publishedAt": null,
@@ -15284,53 +15284,840 @@
      "recency": 1,
      "entailment": 0.7
     }
+   },
+   {
+    "id": "c1-e8",
+    "claimId": "c1",
+    "url": "https://menlovc.com/wp-content/uploads/2025/12/menlo_ventures_enterprise_ai_report-2025-123125.pdf",
+    "domain": "menlovc.com",
+    "title": "2025: The State of Generative AI in the Enterprise",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 1,
+    "tierReason": "Menlo Ventures investor report, general GenAI spend",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c1-8",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2025-12-09",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 1,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c1-e9",
+    "claimId": "c1",
+    "url": "https://menlovc.com/perspective/2025-the-state-of-ai-in-healthcare/",
+    "domain": "menlovc.com",
+    "title": "2025: The State of AI in Healthcare | Menlo Ventures",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 1,
+    "tierReason": "Menlo Ventures investor report, healthcare AI overall",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c1-9",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2025-10-21",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 1,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c1-e10",
+    "claimId": "c1",
+    "url": "https://klasresearch.com/archcollaborative/report/ambient-speech-outcomes-2025/652",
+    "domain": "klasresearch.com",
+    "title": "Ambient Speech Outcomes 2025 - Arch Report",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 3,
+    "tierReason": "KLAS analyst report page, no vendor rankings shown",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c1-10",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c1-e11",
+    "claimId": "c1",
+    "url": "https://www.phti.org/wp-content/uploads/2025/03/PHTI-Adoption-of-AI-in-Healthcare-Delivery-Systems-Early-Applications-Impacts.pdf",
+    "domain": "phti.org",
+    "title": "Adoption of Artificial Intelligence in Healthcare Delivery Systems: Early Applications and Impacts",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 1,
+    "tierReason": "Peterson Health Technology Institute report, no vendor share",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c1-11",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2025-03-01",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 1,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.6,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c1-e12",
+    "claimId": "c1",
+    "url": "https://www.gartner.com/reviews/market/ambient-digital-scribes",
+    "domain": "gartner.com",
+    "title": "Ambient Digital Scribes Reviews and Ratings",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 3,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c1-12",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-04-01",
+    "fetchedVia": "exa",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c4-e8",
+    "claimId": "c4",
+    "url": "https://techcrunch.com/2025/06/24/in-just-4-months-ai-medical-scribe-abridge-doubles-valuation-to-5-3b/",
+    "domain": "techcrunch.com",
+    "title": "In just 4 months, AI medical scribe Abridge doubles valuation to $5.3B | TechCrunch",
+    "quote": "Abridge, an AI startup automating medical notes, has secured a $300 million Series E at a $5.3 billion valuation, according to the Wall Street Journal.",
+    "stance": "supports",
+    "entailment": 0.95,
+    "tier": 2,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c4-8",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2025-06-24",
+    "fetchedVia": "tavily",
+    "weight": 0.614,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0.95
+    }
+   },
+   {
+    "id": "c4-e9",
+    "claimId": "c4",
+    "url": "https://www.wsj.com/articles/abridge-whose-ai-app-takes-notes-for-doctors-valued-at-5-3-billion-at-funding-801825f3",
+    "domain": "wsj.com",
+    "title": "Exclusive | Abridge, Whose AI App Takes Notes for Doctors, Valued at $5.3 Billion at Funding - WSJ",
+    "quote": "The round, led by venture-capital firm Andreessen Horowitz with participation from Khosla Ventures, values the startup at $5.3 billion.",
+    "stance": "supports",
+    "entailment": 0.95,
+    "tier": 2,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c4-9",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2025-06-24",
+    "fetchedVia": "tavily",
+    "weight": 0.614,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0.95
+    }
+   },
+   {
+    "id": "c4-e10",
+    "claimId": "c4",
+    "url": "https://fortune.com/2026/06/11/abridge-operating-system-medicine-nvidia-eli-lilly-artsight",
+    "domain": "fortune.com",
+    "title": "Abridge wants to be the operating system for medicine—and NVIDIA and Eli Lilly are helping build it | Fortune",
+    "quote": "Abridge has raised approximately $830 million to date, and has a $5.3 billion valuation.",
+    "stance": "supports",
+    "entailment": 0.75,
+    "tier": 2,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c4-10",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-06-11",
+    "fetchedVia": "tavily",
+    "weight": 0.606,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.75
+    }
+   },
+   {
+    "id": "c4-e11",
+    "claimId": "c4",
+    "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/healthcare-startup-abridge-raises-300-million-led-by-vc-firm-andreessen-horowitz-2025-06-24/",
+    "domain": "reuters.com",
+    "title": "Healthcare startup Abridge tops $5 billion valuation in A16z-led financing round | Reuters",
+    "quote": "Healthcare firm Abridge, which uses artificial intelligence to build medical documents, has raised $300 million at a $5.3 billion valuation, it said on Tuesday.",
+    "stance": "supports",
+    "entailment": 0.95,
+    "tier": 2,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c4-11",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2025-06-24",
+    "fetchedVia": "exa",
+    "weight": 0.614,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0.95
+    }
+   },
+   {
+    "id": "c4-e12",
+    "claimId": "c4",
+    "url": "https://technical.ly/entrepreneurship/abridge-300m-healthtech-ai-funding",
+    "domain": "technical.ly",
+    "title": "Abridge lands $300M funding round led by Andreessen Horowitz",
+    "quote": "bringing Abridge's valuation to roughly $5.3 billion.",
+    "stance": "supports",
+    "entailment": 0.9,
+    "tier": 3,
+    "tierReason": "Regional trade press, Technical.ly",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c4-12",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.556,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.9
+    }
+   },
+   {
+    "id": "c3-e8",
+    "claimId": "c3",
+    "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/healthcare/2026/03/05/unify-simplify-scale-microsoft-dragon-copilot-meets-the-moment-at-himss-2026/",
+    "domain": "microsoft.com",
+    "title": "Unify. Simplify. Scale: Microsoft Dragon Copilot meets the moment at HIMSS 2026 | The Microsoft Cloud Blog",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.02,
+    "tier": 4,
+    "tierReason": "Company marketing blog about its own product",
+    "engines": [
+     "exa",
+     "tavily"
+    ],
+    "originId": "o-c3-8",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-03-05",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e9",
+    "claimId": "c3",
+    "url": "https://agentmarketcap.ai/blog/2026/04/06/healthcare-ai-agent-funding-surge-corti-abridge-nabla-nuance",
+    "domain": "agentmarketcap.ai",
+    "title": "Healthcare AI's First Killer App: The $600M Race to End Physician Burnout | AgentMarketCap",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.05,
+    "tier": 4,
+    "tierReason": "Aggregator blog post on market funding",
+    "engines": [
+     "perplexity"
+    ],
+    "originId": "o-c3-9",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-04-06",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e10",
+    "claimId": "c3",
+    "url": "https://www.technobezz.com/news/microsoft-expands-dragon-copilot-into-a-clinical-ai-platform-at-himss-2026",
+    "domain": "technobezz.com",
+    "title": "Microsoft Expands Dragon Copilot into a Clinical AI Platform at HIMSS 2026 | Technobezz",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.03,
+    "tier": 3,
+    "tierReason": "Niche tech press on product launch",
+    "engines": [
+     "perplexity"
+    ],
+    "originId": "o-c3-10",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e11",
+    "claimId": "c3",
+    "url": "https://www.microsoft.com/en/customers/story/26765-brown-university-health-microsoft-365-copilot",
+    "domain": "microsoft.com",
+    "title": "Brown Health scales Microsoft Dragon Copilot and AI agents to ease care delivery | Microsoft Customer Stories",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.02,
+    "tier": 4,
+    "tierReason": "Microsoft customer story, company marketing",
+    "engines": [
+     "parallel"
+    ],
+    "originId": "o-c3-11",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e12",
+    "claimId": "c3",
+    "url": "https://www.technologyrecord.com/article/brown-university-health-rolls-out-dragon-copilot-to-over-400-clinicians-and-builds-24-ai-agents-with-copilot-studio",
+    "domain": "technologyrecord.com",
+    "title": "Brown University Health rolls out Dragon Copilot to over...",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.04,
+    "tier": 3,
+    "tierReason": "Trade press reporting customer adoption growth",
+    "engines": [
+     "parallel"
+    ],
+    "originId": "o-c3-12",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-07-27",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c2-e8",
+    "claimId": "c2",
+    "url": "https://www.marvix.ai/blog/dax-copilot-pricing-review",
+    "domain": "marvix.ai",
+    "title": "DAX Copilot Pricing & Review 2026: Costs, Features, Alternatives",
+    "quote": "Microsoft and Lime Health Source report that Dragon Copilot is used by more than 600 healthcare organizations and 100,000 clinicians daily.",
+    "stance": "contradicts",
+    "entailment": 0.1,
+    "tier": 4,
+    "tierReason": "Competitor-affiliated blog citing vendor-reported figures",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c2-8",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-06-19",
+    "fetchedVia": "tavily",
+    "weight": 0.033,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.1
+    }
+   },
+   {
+    "id": "c2-e9",
+    "claimId": "c2",
+    "url": "https://medicalresearch.com/best-ai-scribe-software-solutions-6-picks-made-for-clinicians",
+    "domain": "medicalresearch.com",
+    "title": "MedicalResearch.com | Best AI Scribe Software Solutions: 6 Picks Made for Clinicians",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 4,
+    "tierReason": "Contributor article on aggregator site",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c2-9",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-20",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c2-e10",
+    "claimId": "c2",
+    "url": "https://www.healthcare-brew.com/stories/2026/02/18/microsoft-health-vps-ai-development-research",
+    "domain": "healthcare-brew.com",
+    "title": "Microsoft Health VPs talk AI development, research at NYC briefing",
+    "quote": "more than 600 health systems adopting its ambient tech, DAX Copilot, over the past 18 months.",
+    "stance": "contradicts",
+    "entailment": 0.1,
+    "tier": 3,
+    "tierReason": "Trade newsletter reporting Microsoft executive briefing",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c2-10",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-02-18",
+    "fetchedVia": "tavily",
+    "weight": 0.049,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0.1
+    }
+   },
+   {
+    "id": "c2-e11",
+    "claimId": "c2",
+    "url": "https://metavert.io/compare/abridge-vs-microsoft",
+    "domain": "metavert.io",
+    "title": "Abridge vs Microsoft",
+    "quote": "| Health System Deployments | 250+ health system partners; 150+ active deployments | 600+ health systems adopted DAX Copilot in 18 months |",
+    "stance": "contradicts",
+    "entailment": 0.15,
+    "tier": 4,
+    "tierReason": "Vendor comparison site, unverified figures",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c2-7",
+    "isOrigin": false,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.007,
+    "factors": {
+     "tier": 0.35,
+     "independence": 0.15,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.15
+    }
+   },
+   {
+    "id": "c2-e12",
+    "claimId": "c2",
+    "url": "https://aihealthindex.io/compare/abridge-vs-microsoft-dragon-copilot",
+    "domain": "aihealthindex.io",
+    "title": "AI Health Index: Independent Reference for Healthcare AI Vendors",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 3,
+    "tierReason": "Independent index page with no relevant data",
+    "engines": [
+     "brave"
+    ],
+    "originId": "o-c2-11",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c5-e8",
+    "claimId": "c5",
+    "url": "https://ai.deliverhealth.com/blog/heidi-ai-vs-abridge",
+    "domain": "ai.deliverhealth.com",
+    "title": "Heidi AI vs. Abridge - Find the Smarter AI Scribe",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.05,
+    "tier": 4,
+    "tierReason": "competitor marketing blog, not on claim",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c5-8",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c5-e9",
+    "claimId": "c5",
+    "url": "https://www.linkedin.com/posts/amychkovsky_abridge-is-reportedly-doing-117m-in-contracted-activity-7335289105062260737-hEIg",
+    "domain": "linkedin.com",
+    "title": "Abridge is reportedly doing $117M in \"contracted annual recurring revenue\" as of March 2025. | Andy Mychkovsky",
+    "quote": "So Abridge getting to $2-2.7B in software revenue is going to be hard.",
+    "stance": "supports",
+    "entailment": 0.45,
+    "tier": 3,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c5-9",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2025-03-31",
+    "fetchedVia": "tinyfish",
+    "weight": 0.167,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 0.6,
+     "entailment": 0.45
+    }
+   },
+   {
+    "id": "c5-e10",
+    "claimId": "c5",
+    "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/10-ai-vendors-gaining-traction-with-health-systems/",
+    "domain": "beckershospitalreview.com",
+    "title": "10 AI vendors gaining traction with health systems",
+    "quote": "Abridge now works with 250-plus health systems — a 50% jump from its series D announcement just months earlier.",
+    "stance": "contradicts",
+    "entailment": 0.2,
+    "tier": 3,
+    "tierReason": "trade press, shows rapid customer growth",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c5-10",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-06-08",
+    "fetchedVia": "exa",
+    "weight": 0.124,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.2
+    }
+   },
+   {
+    "id": "c5-e11",
+    "claimId": "c5",
+    "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/sutter-health-reports-5-million-ai-generated-clinical-notes/",
+    "domain": "beckershospitalreview.com",
+    "title": "Sutter Health reports 5 million AI-generated clinical notes",
+    "quote": "As of June, more than 6,000 clinicians had used Abridge to draft over 5 million clinical notes, reducing documentation time by as much as 30%.",
+    "stance": "contradicts",
+    "entailment": 0.25,
+    "tier": 3,
+    "tierReason": "trade press reporting health system adoption",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c5-11",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "exa",
+    "weight": 0.154,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.25
+    }
+   },
+   {
+    "id": "c5-e12",
+    "claimId": "c5",
+    "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/abridge-university-texas-system-enter-enterprise-wide-agreement-expanded-ai",
+    "domain": "fiercehealthcare.com",
+    "title": "University of Texas System expands Abridge enterprise-wide",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.05,
+    "tier": 2,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "telem-monitor"
+    ],
+    "originId": "o-c5-12",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
    }
   ],
   "origins": [
    {
-    "id": "o-c2-1",
-    "claimId": "c2",
-    "originEvidenceId": "c2-e1",
+    "id": "o-c1-1",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e1",
     "memberIds": [
-     "c2-e1"
+     "c1-e1"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c2-2",
-    "claimId": "c2",
-    "originEvidenceId": "c2-e2",
+    "id": "o-c1-2",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e2",
     "memberIds": [
-     "c2-e2",
-     "c2-e5",
-     "c2-e7"
-    ],
-    "similarity": 0.54
-   },
-   {
-    "id": "o-c2-3",
-    "claimId": "c2",
-    "originEvidenceId": "c2-e3",
-    "memberIds": [
-     "c2-e3"
+     "c1-e2"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c2-4",
-    "claimId": "c2",
-    "originEvidenceId": "c2-e4",
+    "id": "o-c1-3",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e3",
     "memberIds": [
-     "c2-e4"
+     "c1-e3"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c2-5",
-    "claimId": "c2",
-    "originEvidenceId": "c2-e6",
+    "id": "o-c1-4",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e4",
     "memberIds": [
-     "c2-e6"
+     "c1-e4"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-5",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e5",
+    "memberIds": [
+     "c1-e5"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-6",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e6",
+    "memberIds": [
+     "c1-e6"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-7",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e7",
+    "memberIds": [
+     "c1-e7"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-8",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e8",
+    "memberIds": [
+     "c1-e8"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-9",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e9",
+    "memberIds": [
+     "c1-e9"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-10",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e10",
+    "memberIds": [
+     "c1-e10"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-11",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e11",
+    "memberIds": [
+     "c1-e11"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-12",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e12",
+    "memberIds": [
+     "c1-e12"
     ],
     "similarity": 0
    },
@@ -15398,65 +16185,47 @@
     "similarity": 0
    },
    {
-    "id": "o-c5-1",
-    "claimId": "c5",
-    "originEvidenceId": "c5-e1",
+    "id": "o-c4-8",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e8",
     "memberIds": [
-     "c5-e1"
+     "c4-e8"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c5-2",
-    "claimId": "c5",
-    "originEvidenceId": "c5-e2",
+    "id": "o-c4-9",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e9",
     "memberIds": [
-     "c5-e2"
+     "c4-e9"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c5-3",
-    "claimId": "c5",
-    "originEvidenceId": "c5-e3",
+    "id": "o-c4-10",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e10",
     "memberIds": [
-     "c5-e3"
+     "c4-e10"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c5-4",
-    "claimId": "c5",
-    "originEvidenceId": "c5-e4",
+    "id": "o-c4-11",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e11",
     "memberIds": [
-     "c5-e4"
+     "c4-e11"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c5-5",
-    "claimId": "c5",
-    "originEvidenceId": "c5-e5",
+    "id": "o-c4-12",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e12",
     "memberIds": [
-     "c5-e5"
-    ],
-    "similarity": 0
-   },
-   {
-    "id": "o-c5-6",
-    "claimId": "c5",
-    "originEvidenceId": "c5-e6",
-    "memberIds": [
-     "c5-e6"
-    ],
-    "similarity": 0
-   },
-   {
-    "id": "o-c5-7",
-    "claimId": "c5",
-    "originEvidenceId": "c5-e7",
-    "memberIds": [
-     "c5-e7"
+     "c4-e12"
     ],
     "similarity": 0
    },
@@ -15524,57 +16293,255 @@
     "similarity": 0
    },
    {
-    "id": "o-c1-1",
-    "claimId": "c1",
-    "originEvidenceId": "c1-e1",
+    "id": "o-c3-8",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e8",
     "memberIds": [
-     "c1-e1"
+     "c3-e8"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c1-2",
-    "claimId": "c1",
-    "originEvidenceId": "c1-e2",
+    "id": "o-c3-9",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e9",
     "memberIds": [
-     "c1-e2",
-     "c1-e6"
-    ],
-    "similarity": 0.94
-   },
-   {
-    "id": "o-c1-3",
-    "claimId": "c1",
-    "originEvidenceId": "c1-e3",
-    "memberIds": [
-     "c1-e3"
+     "c3-e9"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c1-4",
-    "claimId": "c1",
-    "originEvidenceId": "c1-e4",
+    "id": "o-c3-10",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e10",
     "memberIds": [
-     "c1-e4"
+     "c3-e10"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c1-5",
-    "claimId": "c1",
-    "originEvidenceId": "c1-e5",
+    "id": "o-c3-11",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e11",
     "memberIds": [
-     "c1-e5"
+     "c3-e11"
     ],
     "similarity": 0
    },
    {
-    "id": "o-c1-6",
-    "claimId": "c1",
-    "originEvidenceId": "c1-e7",
+    "id": "o-c3-12",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e12",
     "memberIds": [
-     "c1-e7"
+     "c3-e12"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-1",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e1",
+    "memberIds": [
+     "c2-e1"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-2",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e2",
+    "memberIds": [
+     "c2-e2"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-3",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e3",
+    "memberIds": [
+     "c2-e3"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-4",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e4",
+    "memberIds": [
+     "c2-e4"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-5",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e5",
+    "memberIds": [
+     "c2-e5"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-6",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e6",
+    "memberIds": [
+     "c2-e6"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-7",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e7",
+    "memberIds": [
+     "c2-e7",
+     "c2-e11"
+    ],
+    "similarity": 0.57
+   },
+   {
+    "id": "o-c2-8",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e8",
+    "memberIds": [
+     "c2-e8"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-9",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e9",
+    "memberIds": [
+     "c2-e9"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-10",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e10",
+    "memberIds": [
+     "c2-e10"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-11",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e12",
+    "memberIds": [
+     "c2-e12"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-1",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e1",
+    "memberIds": [
+     "c5-e1"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-2",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e2",
+    "memberIds": [
+     "c5-e2"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-3",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e3",
+    "memberIds": [
+     "c5-e3"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-4",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e4",
+    "memberIds": [
+     "c5-e4"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-5",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e5",
+    "memberIds": [
+     "c5-e5"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-6",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e6",
+    "memberIds": [
+     "c5-e6"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-7",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e7",
+    "memberIds": [
+     "c5-e7"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-8",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e8",
+    "memberIds": [
+     "c5-e8"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-9",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e9",
+    "memberIds": [
+     "c5-e9"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-10",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e10",
+    "memberIds": [
+     "c5-e10"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-11",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e11",
+    "memberIds": [
+     "c5-e11"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-12",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e12",
+    "memberIds": [
+     "c5-e12"
     ],
     "similarity": 0
    }
@@ -15597,18 +16564,19 @@
    },
    "c2": {
     "claimId": "c2",
-    "confidence": 31,
+    "confidence": 26,
     "label": "Contested",
     "supportWeight": 0.74,
-    "contradictWeight": 0.93,
-    "articles": 4,
-    "independentOrigins": 4,
+    "contradictWeight": 1.02,
+    "articles": 7,
+    "independentOrigins": 7,
     "engines": [
      "exa",
      "brave",
      "parallel",
      "tavily",
-     "linkup"
+     "linkup",
+     "telem-monitor"
     ]
    },
    "c3": {
@@ -15627,32 +16595,34 @@
    },
    "c4": {
     "claimId": "c4",
-    "confidence": 99,
+    "confidence": 100,
     "label": "Verified",
-    "supportWeight": 2.3,
+    "supportWeight": 5.3,
     "contradictWeight": 0.23,
-    "articles": 5,
-    "independentOrigins": 5,
+    "articles": 10,
+    "independentOrigins": 10,
     "engines": [
      "exa",
      "brave",
      "tavily",
-     "linkup"
+     "linkup",
+     "telem-monitor"
     ]
    },
    "c5": {
     "claimId": "c5",
-    "confidence": 87,
-    "label": "Verified",
-    "supportWeight": 1.03,
-    "contradictWeight": 0.14,
-    "articles": 5,
-    "independentOrigins": 5,
+    "confidence": 82,
+    "label": "Contested",
+    "supportWeight": 1.2,
+    "contradictWeight": 0.42,
+    "articles": 8,
+    "independentOrigins": 8,
     "engines": [
      "parallel",
      "brave",
      "tavily-news",
-     "exa"
+     "exa",
+     "telem-monitor"
     ]
    }
   },
@@ -15787,6 +16757,66 @@
     "ts": 1794694931518,
     "kind": "search",
     "text": "Routing measured on 5 claims: auto vs routed"
+   },
+   {
+    "ts": 1794695280047,
+    "kind": "info",
+    "text": "Auto-check #1 (every 3 min)"
+   },
+   {
+    "ts": 1794695280957,
+    "kind": "search",
+    "text": "c1: monitor 8daace78 (ready) → 6 findings"
+   },
+   {
+    "ts": 1794695280973,
+    "kind": "search",
+    "text": "c5: monitor c80d033e (ready) → 19 findings"
+   },
+   {
+    "ts": 1794695281207,
+    "kind": "search",
+    "text": "c4: monitor 74f176ba (ready) → 14 findings"
+   },
+   {
+    "ts": 1794695281439,
+    "kind": "search",
+    "text": "c3: monitor 3a9e506b (?) → 0 findings"
+   },
+   {
+    "ts": 1794695281440,
+    "kind": "search",
+    "text": "c2: monitor 2664e8bb (ready) → 2 findings"
+   },
+   {
+    "ts": 1794695286378,
+    "kind": "score",
+    "text": "c1: 63 → 63 (Contested) · 5 new sources"
+   },
+   {
+    "ts": 1794695289893,
+    "kind": "score",
+    "text": "c4: 99 → 100 (Verified) · 5 new sources"
+   },
+   {
+    "ts": 1794695290451,
+    "kind": "score",
+    "text": "c3: 55 → 55 (Unverifiable) · 5 new sources"
+   },
+   {
+    "ts": 1794695292199,
+    "kind": "score",
+    "text": "c2: 31 → 26 (Contested) · 5 new sources"
+   },
+   {
+    "ts": 1794695298066,
+    "kind": "score",
+    "text": "c5: 87 → 82 (Contested) · 5 new sources"
+   },
+   {
+    "ts": 1794695298066,
+    "kind": "error",
+    "text": "TRIPWIRE c5: 87 → 82 · beckershospitalreview.com (T3)"
    }
   ],
   "seeded": false,
@@ -15795,21 +16825,21 @@
     "claimId": "c1",
     "monitorId": "8daace78-7abe-4052-a58e-bd7bbf798921",
     "query": "Abridge: Independent analyst data (KLAS, Peterson Health Technology Institute, Gartner, Menlo Ventures market reports) showing Microsoft/Nuance DAX Copilot or another vendor with a larger share of deployed clinicians, revenue, or health-system contracts, or Abridge not ranked first in KLAS ambient A",
-    "cursor": 0,
+    "cursor": 3058,
     "createdAt": 1794693305467,
-    "agentStatus": "compiling",
-    "lastCheckedAt": null,
-    "seen": 0
+    "agentStatus": "ready",
+    "lastCheckedAt": 1794695280957,
+    "seen": 6
    },
    {
     "claimId": "c2",
     "monitorId": "2664e8bb-de56-4aec-b8f2-e97038c16713",
     "query": "Abridge: Public customer counts or press releases showing Microsoft Nuance DAX Copilot (or Epic's native ambient tool, Ambience, Suki) with more health-system customers or more clinicians deployed than Abridge as of late 2026.",
-    "cursor": 0,
+    "cursor": 3064,
     "createdAt": 1794693305706,
-    "agentStatus": "compiling",
-    "lastCheckedAt": null,
-    "seen": 0
+    "agentStatus": "ready",
+    "lastCheckedAt": 1794695281440,
+    "seen": 2
    },
    {
     "claimId": "c3",
@@ -15818,31 +16848,47 @@
     "cursor": 0,
     "createdAt": 1794693305918,
     "agentStatus": null,
-    "lastCheckedAt": null,
+    "lastCheckedAt": 1794695281439,
     "seen": 0
    },
    {
     "claimId": "c4",
     "monitorId": "74f176ba-25dc-46c9-a48c-aa106f948f86",
     "query": "Abridge: Press releases, SEC filings, or credible reporting (TechCrunch, Bloomberg, Fierce Healthcare) showing different round size, valuation, lead investors, or a down round or failed raise since June 2025.",
-    "cursor": 0,
+    "cursor": 3092,
     "createdAt": 1794693305708,
-    "agentStatus": "compiling",
-    "lastCheckedAt": null,
-    "seen": 0
+    "agentStatus": "ready",
+    "lastCheckedAt": 1794695281207,
+    "seen": 14
    },
    {
     "claimId": "c5",
     "monitorId": "c80d033e-274e-4fbe-98a2-4aa55bc3dafe",
     "query": "Abridge: Evidence that Abridge ARR exceeded the reported ~$100M and continues to grow strongly, retaining pricing per clinician with no significant Epic-driven churn, and Epic's native tool has not displaced Abridge deployments at Epic-based health systems.",
-    "cursor": 0,
+    "cursor": 3132,
     "createdAt": 1794693305695,
-    "agentStatus": "compiling",
-    "lastCheckedAt": null,
-    "seen": 0
+    "agentStatus": "ready",
+    "lastCheckedAt": 1794695280973,
+    "seen": 19
    }
   ],
-  "alerts": [],
+  "alerts": [
+   {
+    "id": "al_s7n44jb",
+    "ts": 1794695298066,
+    "claimId": "c5",
+    "kind": "contested",
+    "from": 87,
+    "to": 82,
+    "fromLabel": "Verified",
+    "toLabel": "Contested",
+    "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/sutter-health-reports-5-million-ai-generated-clinical-notes/",
+    "domain": "beckershospitalreview.com",
+    "tier": 3,
+    "quote": "As of June, more than 6,000 clinicians had used Abridge to draft over 5 million clinical notes, reducing documentation time by as much as 30%.",
+    "source": "monitor"
+   }
+  ],
   "history": {
    "c1": [
     {
@@ -15850,6 +16896,12 @@
      "confidence": 63,
      "label": "Contested",
      "note": "initial check"
+    },
+    {
+     "ts": 1794695286378,
+     "confidence": 63,
+     "label": "Contested",
+     "note": "check: 5 new, 0 relevant"
     }
    ],
    "c2": [
@@ -15858,6 +16910,12 @@
      "confidence": 31,
      "label": "Contested",
      "note": "initial check"
+    },
+    {
+     "ts": 1794695292199,
+     "confidence": 26,
+     "label": "Contested",
+     "note": "check: 5 new, 3 relevant"
     }
    ],
    "c3": [
@@ -15866,6 +16924,12 @@
      "confidence": 55,
      "label": "Unverifiable",
      "note": "initial check"
+    },
+    {
+     "ts": 1794695290451,
+     "confidence": 55,
+     "label": "Unverifiable",
+     "note": "check: 5 new, 0 relevant"
     }
    ],
    "c4": [
@@ -15874,6 +16938,12 @@
      "confidence": 99,
      "label": "Verified",
      "note": "initial check"
+    },
+    {
+     "ts": 1794695289893,
+     "confidence": 100,
+     "label": "Verified",
+     "note": "check: 5 new, 5 relevant"
     }
    ],
    "c5": [
@@ -15882,6 +16952,12 @@
      "confidence": 87,
      "label": "Verified",
      "note": "initial check"
+    },
+    {
+     "ts": 1794695298066,
+     "confidence": 82,
+     "label": "Contested",
+     "note": "check: 5 new, 3 relevant"
     }
    ]
   },
@@ -16027,7 +17103,14 @@
     },
     "at": 1794694931518
    }
-  ]
+  ],
+  "auto": {
+   "everyMs": 180000,
+   "nextCheckAt": 1794695460047,
+   "lastViewedAt": 1794695297768,
+   "checks": 1
+  },
+  "checking": false
  },
  {
   "id": "case_4cbo56k",

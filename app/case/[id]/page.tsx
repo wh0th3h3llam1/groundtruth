@@ -43,7 +43,8 @@ export default function CasePage() {
         const d: CaseFile = await r.json();
         if (stop) return;
         setC(d); setErr(null);
-        if (d.status !== "running" && !d.checking) return;
+        // fast poll while work is running; slow poll while tripwires auto-check on their own
+        if (d.status !== "running" && !d.checking) { if (!stop && d.watch?.length) t = setTimeout(tick, 5000); return; }
       } catch (e) { if (!stop) setErr((e as Error).message); }
       if (!stop) t = setTimeout(tick, 900);
     };
@@ -111,13 +112,16 @@ export default function CasePage() {
           </span>
           <span className="mono text-[11px] text-muted">{c.stage}</span>
         </div>
-        <div className="ml-auto flex gap-1" aria-label="Search engines">
+        <div className="ml-auto flex flex-col items-end gap-1">
+        <div className="flex gap-1" aria-label="Search engines">
           {ENGINES.map((e) => {
             const on = litEngines.has(e);
             return <span key={e} className="mono text-[10px] uppercase tracking-wider px-1.5 py-0.5 border transition-colors"
               style={{ borderColor: ENGINE_COLOR[e], color: on ? "#0E0E0C" : ENGINE_COLOR[e], background: on ? ENGINE_COLOR[e] : "transparent", opacity: on ? 1 : 0.55 }}
               title={on ? `${e}: returned results` : `${e}: no successful results yet`}>{e}</span>;
           })}
+        </div>
+        <div className="mono text-[10px] text-muted text-right">one Telem API · cross-engine agreement is a credibility signal · Telem Monitors keep watching</div>
         </div>
       </header>
 

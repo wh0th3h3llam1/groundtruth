@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { CaseFile, HistoryPoint } from "@/lib/types";
 import { TierBadge, timeAgo } from "./ui";
 
@@ -28,10 +28,21 @@ export function TripwireBar({ c, onChanged }: { c: CaseFile; onChanged: (d: Case
     } catch (e) { setErr((e as Error).message); } finally { setBusy(false); }
   }
 
+  const [now, setNow] = useState(() => Date.now());
+  useEffect(() => { if (!armed) return; const t = setInterval(() => setNow(Date.now()), 1000); return () => clearInterval(t); }, [armed]);
+  const next = c.auto?.nextCheckAt ?? null;
+  const left = next ? Math.max(0, Math.round((next - now) / 1000)) : null;
   const statuses = [...new Set((c.watch ?? []).map((w) => w.agentStatus ?? "unknown"))].join(", ");
   const last = Math.max(0, ...(c.watch ?? []).map((w) => w.lastCheckedAt ?? 0));
   return (
     <div className="flex items-center gap-2 flex-wrap justify-end">
+      {armed && c.auto && (
+        <span className="mono text-[11px] px-2 py-0.5 border" style={{ borderColor: "#5B9DFF", color: "#5B9DFF" }}
+          title={`Re-checks every ${Math.round(c.auto.everyMs / 60000)} min on its own while this case is open; pauses after 20 min with no viewer`}>
+          {c.checking ? "● checking now" : left === null ? "auto-check paused" : `● auto-check every ${Math.round(c.auto.everyMs / 60000)} min · next in ${Math.floor(left / 60)}:${String(left % 60).padStart(2, "0")}`}
+          {c.auto.checks > 0 && <span className="text-muted"> · {c.auto.checks} run</span>}
+        </span>
+      )}
       {armed && (
         <span className="survey-label">
           {c.watch!.length} tripwires · monitors {statuses} · {last ? `checked ${timeAgo(last)}` : "not checked yet"}

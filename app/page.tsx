@@ -67,6 +67,9 @@ export default function Home() {
         <p className="mt-5 text-lg text-muted max-w-2xl leading-snug">
           Paste a company or write your investment assumptions. Groundtruth checks each claim across 6 search engines, scores how credible the sources are, and keeps watching for changes.
         </p>
+        <p className="mt-3 mono text-[12px] max-w-2xl leading-snug" style={{ color: "#5B9DFF" }}>
+          Why Telem: one API reaches 6 search engines at once, so agreement across independent engines becomes a credibility signal — and Telem Monitors keep watching every claim after the check ends.
+        </p>
 
         <div className="mt-8 max-w-3xl">
           <div role="tablist" className="flex border-b border-line">
