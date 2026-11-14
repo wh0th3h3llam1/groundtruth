@@ -7,6 +7,7 @@ import type { ApiCall, CaseFile } from "@/lib/types";
 import { mockCase } from "@/components/mockCase";
 import { ClaimList, Cores2D, EvidenceDrawer, ProofPanel } from "@/components/panels";
 import { AlertFeed, TripwireBar } from "@/components/tripwire";
+import RoutingPanel from "@/components/RoutingPanel";
 import { ENGINES, ENGINE_COLOR, useReducedMotion } from "@/components/ui";
 
 const EvidenceTerrain = dynamic(() => import("@/components/EvidenceTerrain"), { ssr: false, loading: () => <div className="survey-label p-6">raising terrain…</div> });
@@ -173,6 +174,7 @@ export default function CasePage() {
 
         <section className="space-y-5 min-w-0">
           {selEvidence && <EvidenceDrawer e={selEvidence} c={c} onClose={() => setSelEv(null)} />}
+          {!isMock && <RoutingPanel c={c} onChanged={() => setPollKey((k) => k + 1)} />}
           <AlertFeed c={c} onSelect={(cid) => setSelClaim(cid)} />
           {c.questions.length > 0 && (
             <div>

@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { ApiCall, CaseFile, LogLine } from "./types";
+import { scoreClaim } from "./credibility";
 
 type Store = { cases: Map<string, CaseFile>; calls: ApiCall[]; loaded: boolean };
 const g = globalThis as unknown as { __tripwire?: Store };
@@ -14,8 +15,19 @@ function load() {
   store.loaded = true;
   try {
     const arr = JSON.parse(fs.readFileSync(CASES_FILE, "utf8")) as CaseFile[];
-    for (const c of arr) store.cases.set(c.id, { ...c, seeded: true });
+    for (const c of arr) { rescore(c); store.cases.set(c.id, { ...c, seeded: true }); }
   } catch { /* no cache yet */ }
+}
+
+/** Re-apply the current label rules to cached evidence so replays never show a stale label. */
+function rescore(c: CaseFile) {
+  for (const cl of c.claims) {
+    const prev = c.scores[cl.id];
+    if (!prev || prev.label === "Pending") continue;
+    const next = scoreClaim(cl.id, c.evidence.filter((e) => e.claimId === cl.id), c.origins.filter((o) => o.claimId === cl.id));
+    c.scores[cl.id] = next;
+    for (const h of c.history?.[cl.id] ?? []) if (h.label === prev.label && h.confidence === prev.confidence) h.label = next.label;
+  }
 }
 
 export function persist() {

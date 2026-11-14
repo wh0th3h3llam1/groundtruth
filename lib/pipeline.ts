@@ -3,6 +3,7 @@ import { getCase, log, persist, putCase, uid } from "./store";
 import { telemFetchPages, telemSearch, type FetchedPage } from "./telem";
 import { tavilyMap, tavilyNews } from "./tavily";
 import { extractClaims, judgeEvidence, openQuestions } from "./llm";
+import { compareRouting, putCompare } from "./routing";
 import { PRESS_WIRES, ROUTES, domainOf, echoCollapse, normUrl, scoreClaim, seededTier, weighEvidence } from "./credibility";
 
 const PER_CLAIM_DOCS = 7;
@@ -60,12 +61,6 @@ async function run(id: string) {
   for (const cl of c.claims) c.scores[cl.id] = { claimId: cl.id, confidence: 0, label: "Pending", supportWeight: 0, contradictWeight: 0, articles: 0, independentOrigins: 0, engines: [] };
   log(c, "llm", `${c.claims.length} claims extracted for ${c.company}`);
 
-  if (c.claims[0]) {
-    telemSearch(c.claims[0].queries.support, { autoRouting: true, numResults: 3, caseId: c.id, label: "baseline C1" }).then((r) => {
-      const engines = r.engines.map((e) => e.name);
-      c.routingBaseline = { claimId: "c1", engines, note: `Telem auto-routing picked ${engines.join(", ") || "n/a"}; Groundtruth routed C1 (${c.claims[0].type}) to ${c.claims[0].engines.join(", ")}` };
-    });
-  }
 
   c.stage = "Drilling: two-sided search across engines, fetching full pages, judging";
   await Promise.all(c.claims.map((cl) => drill(c, cl)));
@@ -165,6 +160,9 @@ async function drill(c: CaseFile, cl: Claim) {
     tavilyNews(cl.queries.attack, c.id),
   ]);
 
+  // Measure: same two queries through Telem auto-routing (runs alongside evidence building).
+  const compared = compareRouting(c, cl, [sup, att]).then((r) => putCompare(c, r)).catch((e) => log(c, "error", `${cl.id} routing compare failed: ${String(e)}`));
+
   const agg = new Map<string, Candidate>();
   const add = (url: string, title: string, summary: string, engine: string, rank: number, published: string | null = null) => {
     if (!url) return;
@@ -180,7 +178,7 @@ async function drill(c: CaseFile, cl: Claim) {
 
   const top = [...agg.values()].sort((a, b) => b.engines.size - a.engines.size || a.rank - b.rank).slice(0, PER_CLAIM_DOCS);
   log(c, "search", `${cl.id}: ${agg.size} unique URLs from ${new Set([...sup.engines, ...att.engines].map((e) => e.name)).size} engines → reading top ${top.length}`);
-  if (!top.length) { c.scores[cl.id] = scoreClaim(cl.id, [], []); return; }
+  if (!top.length) { c.scores[cl.id] = scoreClaim(cl.id, [], []); await compared; return; }
 
   const evs = await buildEvidence(c, cl, top, `${cl.id} evidence`);
   // Stream pre-collapse evidence so the UI shows it arriving, then collapse.
@@ -188,5 +186,6 @@ async function drill(c: CaseFile, cl: Claim) {
   c.scores[cl.id] = scoreClaim(cl.id, evs, []);
   await new Promise((r) => setTimeout(r, 700));
   const s = recollapse(c, cl);
+  await compared;
   log(c, "score", `${cl.id} ${s.label} ${s.confidence}/100 · ${s.articles} articles → ${s.independentOrigins} origins`);
 }

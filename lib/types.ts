@@ -120,7 +120,12 @@ export interface CaseFile {
   watch?: WatchEntry[];
   alerts?: AlertItem[];
   history?: Record<string, HistoryPoint[]>;
+  routingCompare?: RoutingCompare[];
 }
+
+/** Same queries, two routes: Telem auto-routing vs Groundtruth's per-claim-type engine routing. */
+export interface RouteStats { engines: string[]; urls: number; domains: number; credible: number; selfReported: number }
+export interface RoutingCompare { claimId: string; auto: RouteStats; routed: RouteStats; at: number }
 
 export type Service =
   | "telem.search" | "telem.fetch" | "telem.monitors" | "tavily.search" | "tavily.map" | "anthropic";

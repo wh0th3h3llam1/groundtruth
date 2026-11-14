@@ -3367,7 +3367,7 @@
    "c1": {
     "claimId": "c1",
     "confidence": 99,
-    "label": "Contested",
+    "label": "Verified",
     "supportWeight": 2.77,
     "contradictWeight": 0.37,
     "articles": 14,
@@ -3804,7 +3804,7 @@
     {
      "ts": 1794693106896,
      "confidence": 99,
-     "label": "Contested",
+     "label": "Verified",
      "note": "check: 5 new, 4 relevant"
     }
    ],
@@ -7055,7 +7055,7 @@
    "c2": {
     "claimId": "c2",
     "confidence": 24,
-    "label": "Contested",
+    "label": "Contradicted",
     "supportWeight": 0,
     "contradictWeight": 0.44,
     "articles": 1,
@@ -7070,7 +7070,7 @@
    "c3": {
     "claimId": "c3",
     "confidence": 26,
-    "label": "Contested",
+    "label": "Contradicted",
     "supportWeight": 0.2,
     "contradictWeight": 0.56,
     "articles": 3,
@@ -10426,7 +10426,7 @@
    "c2": {
     "claimId": "c2",
     "confidence": 45,
-    "label": "Contested",
+    "label": "Contradicted",
     "supportWeight": 0,
     "contradictWeight": 0.08,
     "articles": 1,
@@ -12256,9 +12256,160 @@
     "ts": 1794687616829,
     "kind": "info",
     "text": "Case complete"
+   },
+   {
+    "ts": 1794694937716,
+    "kind": "search",
+    "text": "Routing measured on 5 claims: auto vs routed"
    }
   ],
-  "seeded": false
+  "seeded": false,
+  "routingCompare": [
+   {
+    "claimId": "c1",
+    "auto": {
+     "engines": [
+      "exa",
+      "tavily",
+      "brave",
+      "parallel",
+      "ceramic",
+      "seltz",
+      "you"
+     ],
+     "urls": 40,
+     "domains": 33,
+     "credible": 1,
+     "selfReported": 3
+    },
+    "routed": {
+     "engines": [
+      "parallel",
+      "exa",
+      "brave"
+     ],
+     "urls": 21,
+     "domains": 15,
+     "credible": 1,
+     "selfReported": 2
+    },
+    "at": 1794694935683
+   },
+   {
+    "claimId": "c2",
+    "auto": {
+     "engines": [
+      "exa",
+      "perplexity",
+      "tavily"
+     ],
+     "urls": 24,
+     "domains": 24,
+     "credible": 4,
+     "selfReported": 2
+    },
+    "routed": {
+     "engines": [
+      "exa",
+      "brave",
+      "linkup",
+      "perplexity",
+      "tavily",
+      "parallel"
+     ],
+     "urls": 40,
+     "domains": 38,
+     "credible": 5,
+     "selfReported": 1
+    },
+    "at": 1794694937716
+   },
+   {
+    "claimId": "c3",
+    "auto": {
+     "engines": [
+      "seltz",
+      "exa",
+      "perplexity",
+      "brave"
+     ],
+     "urls": 21,
+     "domains": 12,
+     "credible": 2,
+     "selfReported": 1
+    },
+    "routed": {
+     "engines": [
+      "exa",
+      "parallel",
+      "brave",
+      "tavily"
+     ],
+     "urls": 29,
+     "domains": 19,
+     "credible": 0,
+     "selfReported": 1
+    },
+    "at": 1794694935930
+   },
+   {
+    "claimId": "c4",
+    "auto": {
+     "engines": [
+      "exa",
+      "you",
+      "linkup",
+      "perplexity",
+      "brave"
+     ],
+     "urls": 22,
+     "domains": 21,
+     "credible": 2,
+     "selfReported": 2
+    },
+    "routed": {
+     "engines": [
+      "exa",
+      "parallel",
+      "brave",
+      "tavily"
+     ],
+     "urls": 25,
+     "domains": 20,
+     "credible": 3,
+     "selfReported": 2
+    },
+    "at": 1794694935599
+   },
+   {
+    "claimId": "c5",
+    "auto": {
+     "engines": [
+      "exa",
+      "perplexity",
+      "tavily",
+      "brave"
+     ],
+     "urls": 20,
+     "domains": 16,
+     "credible": 2,
+     "selfReported": 1
+    },
+    "routed": {
+     "engines": [
+      "brave",
+      "linkup",
+      "perplexity",
+      "tavily"
+     ],
+     "urls": 23,
+     "domains": 20,
+     "credible": 1,
+     "selfReported": 1
+    },
+    "at": 1794694934252
+   }
+  ]
  },
  {
   "id": "case_to446vd",
@@ -13763,7 +13914,7 @@
    "c3": {
     "claimId": "c3",
     "confidence": 0,
-    "label": "Contested",
+    "label": "Contradicted",
     "supportWeight": 0.03,
     "contradictWeight": 2.63,
     "articles": 5,
@@ -13795,7 +13946,7 @@
    "c5": {
     "claimId": "c5",
     "confidence": 0,
-    "label": "Contested",
+    "label": "Contradicted",
     "supportWeight": 0,
     "contradictWeight": 2.08,
     "articles": 5,
@@ -13935,7 +14086,7 @@
     {
      "ts": 1794693185090,
      "confidence": 0,
-     "label": "Contested",
+     "label": "Contradicted",
      "note": "initial check"
     }
    ],
@@ -13951,7 +14102,7 @@
     {
      "ts": 1794693185090,
      "confidence": 0,
-     "label": "Contested",
+     "label": "Contradicted",
      "note": "initial check"
     }
    ]
@@ -15631,6 +15782,11 @@
     "ts": 1794693305918,
     "kind": "info",
     "text": "c3: tripwire armed (monitor 3a9e506b)"
+   },
+   {
+    "ts": 1794694931518,
+    "kind": "search",
+    "text": "Routing measured on 5 claims: auto vs routed"
    }
   ],
   "seeded": false,
@@ -15728,7 +15884,150 @@
      "note": "initial check"
     }
    ]
-  }
+  },
+  "routingCompare": [
+   {
+    "claimId": "c1",
+    "auto": {
+     "engines": [
+      "exa",
+      "perplexity",
+      "tavily"
+     ],
+     "urls": 20,
+     "domains": 17,
+     "credible": 1,
+     "selfReported": 1
+    },
+    "routed": {
+     "engines": [
+      "perplexity",
+      "parallel",
+      "exa",
+      "tavily"
+     ],
+     "urls": 25,
+     "domains": 20,
+     "credible": 1,
+     "selfReported": 1
+    },
+    "at": 1794694930822
+   },
+   {
+    "claimId": "c2",
+    "auto": {
+     "engines": [
+      "tavily",
+      "exa",
+      "seltz",
+      "perplexity"
+     ],
+     "urls": 21,
+     "domains": 15,
+     "credible": 3,
+     "selfReported": 0
+    },
+    "routed": {
+     "engines": [
+      "exa",
+      "brave",
+      "linkup",
+      "parallel",
+      "tavily"
+     ],
+     "urls": 30,
+     "domains": 21,
+     "credible": 2,
+     "selfReported": 0
+    },
+    "at": 1794694930728
+   },
+   {
+    "claimId": "c3",
+    "auto": {
+     "engines": [
+      "exa",
+      "you",
+      "linkup",
+      "perplexity",
+      "tavily"
+     ],
+     "urls": 22,
+     "domains": 18,
+     "credible": 1,
+     "selfReported": 0
+    },
+    "routed": {
+     "engines": [
+      "perplexity",
+      "parallel",
+      "exa",
+      "tavily"
+     ],
+     "urls": 29,
+     "domains": 24,
+     "credible": 2,
+     "selfReported": 0
+    },
+    "at": 1794694929832
+   },
+   {
+    "claimId": "c4",
+    "auto": {
+     "engines": [
+      "exa",
+      "perplexity",
+      "tavily"
+     ],
+     "urls": 23,
+     "domains": 23,
+     "credible": 7,
+     "selfReported": 0
+    },
+    "routed": {
+     "engines": [
+      "linkup",
+      "exa",
+      "brave",
+      "perplexity",
+      "tavily"
+     ],
+     "urls": 31,
+     "domains": 29,
+     "credible": 7,
+     "selfReported": 0
+    },
+    "at": 1794694930840
+   },
+   {
+    "claimId": "c5",
+    "auto": {
+     "engines": [
+      "exa",
+      "perplexity",
+      "tavily",
+      "you",
+      "linkup"
+     ],
+     "urls": 22,
+     "domains": 20,
+     "credible": 2,
+     "selfReported": 0
+    },
+    "routed": {
+     "engines": [
+      "parallel",
+      "exa",
+      "brave"
+     ],
+     "urls": 19,
+     "domains": 17,
+     "credible": 3,
+     "selfReported": 0
+    },
+    "at": 1794694931518
+   }
+  ]
  },
  {
   "id": "case_4cbo56k",
@@ -17240,7 +17539,7 @@
    "c3": {
     "claimId": "c3",
     "confidence": 0,
-    "label": "Contested",
+    "label": "Contradicted",
     "supportWeight": 0.19,
     "contradictWeight": 2.29,
     "articles": 5,
@@ -17272,7 +17571,7 @@
    "c5": {
     "claimId": "c5",
     "confidence": 0,
-    "label": "Contested",
+    "label": "Contradicted",
     "supportWeight": 0,
     "contradictWeight": 3.5,
     "articles": 7,
@@ -17389,6 +17688,11 @@
     "ts": 1794693774883,
     "kind": "info",
     "text": "Case complete"
+   },
+   {
+    "ts": 1794694927168,
+    "kind": "search",
+    "text": "Routing measured on 5 claims: auto vs routed"
    }
   ],
   "seeded": false,
@@ -17415,7 +17719,7 @@
     {
      "ts": 1794693774883,
      "confidence": 0,
-     "label": "Contested",
+     "label": "Contradicted",
      "note": "initial check"
     }
    ],
@@ -17431,10 +17735,151 @@
     {
      "ts": 1794693774883,
      "confidence": 0,
-     "label": "Contested",
+     "label": "Contradicted",
      "note": "initial check"
     }
    ]
-  }
+  },
+  "routingCompare": [
+   {
+    "claimId": "c1",
+    "auto": {
+     "engines": [
+      "exa",
+      "perplexity",
+      "tavily"
+     ],
+     "urls": 17,
+     "domains": 16,
+     "credible": 1,
+     "selfReported": 0
+    },
+    "routed": {
+     "engines": [
+      "perplexity",
+      "parallel",
+      "exa",
+      "tavily"
+     ],
+     "urls": 22,
+     "domains": 20,
+     "credible": 2,
+     "selfReported": 0
+    },
+    "at": 1794694924456
+   },
+   {
+    "claimId": "c2",
+    "auto": {
+     "engines": [
+      "exa",
+      "perplexity",
+      "tavily"
+     ],
+     "urls": 16,
+     "domains": 15,
+     "credible": 3,
+     "selfReported": 1
+    },
+    "routed": {
+     "engines": [
+      "linkup",
+      "exa",
+      "brave",
+      "perplexity",
+      "tavily"
+     ],
+     "urls": 29,
+     "domains": 27,
+     "credible": 5,
+     "selfReported": 1
+    },
+    "at": 1794694927168
+   },
+   {
+    "claimId": "c3",
+    "auto": {
+     "engines": [
+      "exa",
+      "you",
+      "linkup"
+     ],
+     "urls": 21,
+     "domains": 16,
+     "credible": 1,
+     "selfReported": 0
+    },
+    "routed": {
+     "engines": [
+      "exa",
+      "parallel",
+      "brave",
+      "tavily"
+     ],
+     "urls": 21,
+     "domains": 11,
+     "credible": 1,
+     "selfReported": 0
+    },
+    "at": 1794694923954
+   },
+   {
+    "claimId": "c4",
+    "auto": {
+     "engines": [
+      "exa",
+      "perplexity",
+      "tavily"
+     ],
+     "urls": 19,
+     "domains": 19,
+     "credible": 3,
+     "selfReported": 1
+    },
+    "routed": {
+     "engines": [
+      "linkup",
+      "exa",
+      "brave",
+      "perplexity",
+      "tavily"
+     ],
+     "urls": 28,
+     "domains": 28,
+     "credible": 3,
+     "selfReported": 1
+    },
+    "at": 1794694924212
+   },
+   {
+    "claimId": "c5",
+    "auto": {
+     "engines": [
+      "exa",
+      "perplexity",
+      "tavily"
+     ],
+     "urls": 17,
+     "domains": 15,
+     "credible": 3,
+     "selfReported": 0
+    },
+    "routed": {
+     "engines": [
+      "exa",
+      "brave",
+      "linkup",
+      "perplexity",
+      "tavily",
+      "parallel"
+     ],
+     "urls": 32,
+     "domains": 26,
+     "credible": 3,
+     "selfReported": 0
+    },
+    "at": 1794694924289
+   }
+  ]
  }
 ]
