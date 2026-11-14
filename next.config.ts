@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Production builds go to their own folder so `next dev` and `next start` can run side by side.
+  distDir: process.env.NEXT_DIST_DIR || ".next",
 };
 
 export default nextConfig;

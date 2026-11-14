@@ -1,5 +1,6 @@
 "use client";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import { useParams } from "next/navigation";
 import { Component, useEffect, useMemo, useState, type ReactNode } from "react";
 import type { ApiCall, CaseFile } from "@/lib/types";
@@ -83,7 +84,7 @@ export default function CasePage() {
           <div className="survey-label mb-2">CASE {id}</div>
           <div className="text-3xl font-semibold">{err ? "Waiting for the survey…" : "Surveying the ground…"}</div>
           {err && <p className="mono text-[11px] text-muted mt-2">{err} — retrying every 0.9s</p>}
-          <a href="/" className="survey-label hover:text-survey mt-6 inline-block">← back</a>
+          <Link href="/" className="survey-label hover:text-survey mt-6 inline-block">← back</Link>
         </div>
       </main>
     );
@@ -96,7 +97,7 @@ export default function CasePage() {
   return (
     <main className="min-h-screen px-4 md:px-6 py-4 max-w-[1500px] mx-auto">
       <header className="border-b border-line pb-3 flex flex-wrap items-end gap-x-6 gap-y-2">
-        <a href="/" className="text-lg font-bold tracking-tight hover:text-survey">GROUNDTRUTH</a>
+        <Link href="/" className="text-lg font-bold tracking-tight hover:text-survey">GROUNDTRUTH</Link>
         <div className="min-w-0">
           <div className="survey-label truncate max-w-[60ch]">{c.input.kind === "url" ? "SITE" : "ASSUMPTIONS"} · {c.input.value.slice(0, 90)}</div>
           <h1 className="text-4xl font-bold tracking-tight leading-none">{c.company || "Untitled company"}</h1>
