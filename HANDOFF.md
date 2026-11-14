@@ -1,4 +1,6 @@
-# HANDOFF — Tripwire (SearchHack, 2026-11-14)
+# HANDOFF — Groundtruth (SearchHack, 2026-11-14)
+
+> Product renamed from **Tripwire** to **Groundtruth** (Tripwire is an existing security company). "Tripwires" remains the name of the per-claim watch feature (Arm tripwires / Tripwire alerts). Code identifiers like `TripwireBar` and `components/tripwire.tsx` were left as-is.
 
 Read this first. It is the full context of the build session so another agent can continue without the chat.
 
@@ -21,14 +23,14 @@ Read this first. It is the full context of the build session so another agent ca
 - **Tavily is not in the rubric.** Telem routes to Tavily as one of its engines; Tavily is also used directly for `/map` and news search.
 - **Sponsor feedback (from talking to them):** credibility is the big risk in AI search — focus on how reliable sources and news are. This became the core of the product.
 
-## 2. The product: Tripwire
+## 2. The product: Groundtruth
 
-**Pitch:** "Paste any company, or write your investment assumptions. Tripwire checks every claim across 6 search engines, scores how credible the sources really are, and keeps watching for changes."
-**Hook line:** "AI search counts 30 rewrites of one press release as 30 sources. Tripwire counts one."
+**Pitch:** "Paste any company, or write your investment assumptions. Groundtruth checks every claim across 6 search engines, scores how credible the sources really are, and keeps watching for changes."
+**Hook line:** "AI search counts 30 rewrites of one press release as 30 sources. Groundtruth counts one."
 
 It merges two ideas from brainstorming:
 - **Idea 2 — Diligence Room (BUILT):** company URL → site mapped and read → LinkedIn record → 5 falsifiable claims → evidence for and against each → credibility scoring → founder questions.
-- **Idea 1 — Tripwire (BUILT):** user types investment assumptions → "Arm tripwires" creates one Telem Monitor per claim → "Check now" judges new findings, rescores, and raises alerts (see section 7).
+- **Idea 1 — Tripwires (BUILT):** user types investment assumptions → "Arm tripwires" creates one Telem Monitor per claim → "Check now" judges new findings, rescores, and raises alerts (see section 7).
 
 "Belief" was dropped as a word; use **claim** or **assumption**. The product is **not** limited to one industry (dental was only an example early on).
 

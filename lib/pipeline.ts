@@ -63,7 +63,7 @@ async function run(id: string) {
   if (c.claims[0]) {
     telemSearch(c.claims[0].queries.support, { autoRouting: true, numResults: 3, caseId: c.id, label: "baseline C1" }).then((r) => {
       const engines = r.engines.map((e) => e.name);
-      c.routingBaseline = { claimId: "c1", engines, note: `Telem auto-routing picked ${engines.join(", ") || "n/a"}; Tripwire routed C1 (${c.claims[0].type}) to ${c.claims[0].engines.join(", ")}` };
+      c.routingBaseline = { claimId: "c1", engines, note: `Telem auto-routing picked ${engines.join(", ") || "n/a"}; Groundtruth routed C1 (${c.claims[0].type}) to ${c.claims[0].engines.join(", ")}` };
     });
   }
 

@@ -1,7 +1,7 @@
 # PROGRESS — 2026-11-14
 
 ## RESUME HERE
-Evidence Terrain 3D and the Tripwire watch-and-alert loop are built and verified in the browser. Next: rehearse DEMO.md, record a backup video, submit on Devpost before 4:15.
+Evidence Terrain 3D and the tripwire watch-and-alert loop are built and verified in the browser. Next: rehearse DEMO.md, record a backup video, submit on Devpost before 4:15.
 
 | Area | State | Evidence |
 |---|---|---|

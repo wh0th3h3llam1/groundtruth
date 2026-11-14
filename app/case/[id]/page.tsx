@@ -96,7 +96,7 @@ export default function CasePage() {
   return (
     <main className="min-h-screen px-4 md:px-6 py-4 max-w-[1500px] mx-auto">
       <header className="border-b border-line pb-3 flex flex-wrap items-end gap-x-6 gap-y-2">
-        <a href="/" className="text-lg font-bold tracking-tight hover:text-survey">TRIPWIRE</a>
+        <a href="/" className="text-lg font-bold tracking-tight hover:text-survey">GROUNDTRUTH</a>
         <div className="min-w-0">
           <div className="survey-label truncate max-w-[60ch]">{c.input.kind === "url" ? "SITE" : "ASSUMPTIONS"} · {c.input.value.slice(0, 90)}</div>
           <h1 className="text-4xl font-bold tracking-tight leading-none">{c.company || "Untitled company"}</h1>

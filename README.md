@@ -1,6 +1,6 @@
-# Tripwire — every claim, core-sampled
+# Groundtruth — what's solid under every claim
 
-Paste any company URL (or type investment assumptions). Tripwire extracts the checkable claims, searches
+Paste any company URL (or type investment assumptions). Groundtruth extracts the checkable claims, searches
 for evidence **for and against** each one across 6 engines through Telem, reads the full pages, scores how
 credible each source is, and keeps watching with Telem Monitors.
 

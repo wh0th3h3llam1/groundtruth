@@ -2,7 +2,7 @@
 
 **Prep (before judging):** open a case and click **Arm tripwires** at least 10 minutes before you present, so the Telem Monitors are `ready` and have findings. Keep a second, already-checked case open in another tab as a backup.
 
-**Hook (0:00, 15s):** "AI search counts 30 rewrites of one press release as 30 sources. Tripwire counts one, and it tells you when a claim breaks."
+**Hook (0:00, 15s):** "AI search counts 30 rewrites of one press release as 30 sources. Groundtruth counts one, and it tells you when a claim breaks."
 
 1. (0:15) Home → Investment assumptions → click a sample card (or type a judge's thesis) → **Check**. Engine pills light up: 6 engines through Telem.
 2. (0:35) The **evidence terrain** rises: green peaks = supported claims, red pits = contradicted, amber = only the company says so. Flags are the strongest sources; bigger flag = more credible tier.

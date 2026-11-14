@@ -15729,5 +15729,1712 @@
     }
    ]
   }
+ },
+ {
+  "id": "case_4cbo56k",
+  "input": {
+   "kind": "thesis",
+   "value": "Ramp has overtaken Brex as the leading US corporate card for startups.\nRamp is profitable.\nAmex has not launched a competing spend-management product."
+  },
+  "company": "Ramp (vs. Brex and American Express) – US corporate card / spend management",
+  "companyDomain": null,
+  "createdAt": 1794693739240,
+  "status": "done",
+  "stage": "Complete",
+  "claims": [
+   {
+    "id": "c1",
+    "text": "Ramp has overtaken Brex as the leading US corporate card for startups, measured by number of startup customers and/or card spend volume.",
+    "type": "market",
+    "disproof": "Third-party market share data, company disclosures, or credible reporting showing Brex has more US startup customers or higher startup card volume than Ramp as of late 2026. Also invalid if the leader depends on the metric used (customers, TPV, revenue) and Ramp trails on the one that matters for startups.",
+    "entities": [
+     "Ramp",
+     "Brex",
+     "US startups"
+    ],
+    "weight": 0.9,
+    "queries": {
+     "support": "Ramp vs Brex market share startups corporate card 2026 customers total payment volume",
+     "attack": "Brex still leading startup corporate card market share 2026 Brex customers vs Ramp"
+    },
+    "engines": [
+     "perplexity",
+     "parallel",
+     "exa",
+     "tavily"
+    ]
+   },
+   {
+    "id": "c2",
+    "text": "Ramp is profitable (on a GAAP, operating, or EBITDA basis, as stated by the company or credible reporting).",
+    "type": "funding",
+    "disproof": "Ramp executives, investor letters, or reporting (The Information, Bloomberg, Forbes) showing net or operating losses, or that 'profitable' only refers to an adjusted or unit-economics measure rather than company-wide profit.",
+    "entities": [
+     "Ramp",
+     "Eric Glyman",
+     "Karim Atiyeh"
+    ],
+    "weight": 0.85,
+    "queries": {
+     "support": "Ramp fintech profitable EBITDA positive Eric Glyman 2026",
+     "attack": "Ramp net loss unprofitable burn rate 2026 Ramp financials losses"
+    },
+    "engines": [
+     "linkup",
+     "exa",
+     "brave",
+     "perplexity",
+     "tavily"
+    ]
+   },
+   {
+    "id": "c3",
+    "text": "American Express has not launched a competing spend-management product (expense management, virtual cards, and bill pay for businesses).",
+    "type": "product",
+    "disproof": "Amex product pages or press releases for a business spend-management offering. Examples to check: Amex Business expense management tools, Center/Nipendo-derived products, Amex integrations with Expensify or Emburse, and any newer launch aimed at SMBs or startups.",
+    "entities": [
+     "American Express",
+     "Amex Business",
+     "Ramp",
+     "Brex"
+    ],
+    "weight": 0.85,
+    "queries": {
+     "support": "American Express launches business spend management expense management platform",
+     "attack": "American Express spend management product competes with Ramp Brex Amex launch virtual cards expense software"
+    },
+    "engines": [
+     "exa",
+     "parallel",
+     "brave",
+     "tavily"
+    ]
+   },
+   {
+    "id": "c4",
+    "text": "Ramp's annualized revenue has reached or exceeded roughly $1B and is larger than Brex's, supporting the claim that it has overtaken Brex.",
+    "type": "funding",
+    "disproof": "Company statements or reputable press reports putting Ramp's annualized revenue well below $1B or below Brex's. Also disproved if the figures are TPV or gross-revenue claims that don't hold up on a net basis.",
+    "entities": [
+     "Ramp",
+     "Brex"
+    ],
+    "weight": 0.7,
+    "queries": {
+     "support": "Ramp annualized revenue $1 billion valuation 2026 funding round",
+     "attack": "Brex annual revenue 2026 vs Ramp revenue discrepancy reported figures"
+    },
+    "engines": [
+     "linkup",
+     "exa",
+     "brave",
+     "perplexity",
+     "tavily"
+    ]
+   },
+   {
+    "id": "c5",
+    "text": "Brex remains an independent company actively competing with Ramp as of November 2026, rather than having been acquired and absorbed by a larger bank.",
+    "type": "other",
+    "disproof": "An announced or closed acquisition of Brex (e.g., by Capital One) would change the competitive framing, since the rival would be a bank-backed entity rather than a standalone startup. Check deal status, closing date, and any integration plans.",
+    "entities": [
+     "Brex",
+     "Capital One",
+     "Ramp"
+    ],
+    "weight": 0.75,
+    "queries": {
+     "support": "Brex acquisition Capital One status closed 2026",
+     "attack": "Brex acquired Capital One deal Brex independent standalone Henrique Dubugras 2026"
+    },
+    "engines": [
+     "exa",
+     "brave",
+     "linkup",
+     "perplexity",
+     "tavily",
+     "parallel"
+    ]
+   }
+  ],
+  "evidence": [
+   {
+    "id": "c2-e1",
+    "claimId": "c2",
+    "url": "https://sacra.com/c/ramp/",
+    "domain": "sacra.com",
+    "title": "Ramp revenue, valuation & funding | Sacra",
+    "quote": "Underlying profitability grew 153% YoY in the twelve months through November 2025, and the company was generating free cash flow as of November 1, 2025.",
+    "stance": "supports",
+    "entailment": 0.5,
+    "tier": 3,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "exa",
+     "perplexity",
+     "tavily"
+    ],
+    "originId": "o-c2-1",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.406,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.25,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.5
+    }
+   },
+   {
+    "id": "c2-e2",
+    "claimId": "c2",
+    "url": "https://quantlogix.ai/briefing/quantlogix-ipo-brief-ramp-2026-07-06",
+    "domain": "quantlogix.ai",
+    "title": "Ramp IPO 2026 — $44B Series F, Revenue Doubling to $1B, the AI-Agent Finance Stack | QuantLogix",
+    "quote": "Profitability | Free-cash-flow positive since Nov 2025 · underlying profitability +153% YoY",
+    "stance": "supports",
+    "entailment": 0.45,
+    "tier": 4,
+    "tierReason": "Research briefing site, unverified sourcing",
+    "engines": [
+     "linkup",
+     "brave"
+    ],
+    "originId": "o-c2-2",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-07-06",
+    "fetchedVia": "tavily",
+    "weight": 0.173,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.45
+    }
+   },
+   {
+    "id": "c2-e3",
+    "claimId": "c2",
+    "url": "https://ramp.com/blog/ramp-at-60-billion",
+    "domain": "ramp.com",
+    "title": "Ramp at $60B: The End of the Beginning",
+    "quote": "Over the summer, we passed $2 billion in annualized revenue, with positive cash flow.",
+    "stance": "irrelevant",
+    "entailment": 0.3,
+    "tier": 4,
+    "tierReason": "Company's own blog, marketing self-description",
+    "engines": [
+     "exa",
+     "perplexity"
+    ],
+    "originId": "o-c2-3",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c2-e4",
+    "claimId": "c2",
+    "url": "https://www.startupriders.com/p/ramp-growth-playbook",
+    "domain": "startupriders.com",
+    "title": "Ramp's Growth Playbook: $0 to $1B+ Revenue in 6 Years",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 4,
+    "tierReason": "Paid substack newsletter, no profitability claim",
+    "engines": [
+     "brave",
+     "tavily"
+    ],
+    "originId": "o-c2-4",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c2-e5",
+    "claimId": "c2",
+    "url": "https://www.sec.gov/Archives/edgar/data/733269/000073326926000025/ramp-20260331.htm",
+    "domain": "sec.gov",
+    "title": "ramp-20260331",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 1,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "exa",
+     "perplexity"
+    ],
+    "originId": "o-c2-5",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 1,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c2-e6",
+    "claimId": "c2",
+    "url": "https://www.gurufocus.com/news/8876504/ramp-swot-analysis-strong-financial-recovery-and-growth-potential-revealed-in-10k-filing",
+    "domain": "gurufocus.com",
+    "title": "RAMP SWOT Analysis: Strong Financial Recovery and Growth Potential Revealed in 10-K Filing",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 4,
+    "tierReason": "Aggregator article about LiveRamp, different company",
+    "engines": [
+     "linkup",
+     "brave"
+    ],
+    "originId": "o-c2-6",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-05-21",
+    "fetchedVia": "exa",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c2-e7",
+    "claimId": "c2",
+    "url": "https://en.wikipedia.org/wiki/Ramp_(company)",
+    "domain": "en.wikipedia.org",
+    "title": "Ramp (company) - Wikipedia",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 3,
+    "tierReason": "Wikipedia excerpt, no profitability content",
+    "engines": [
+     "brave",
+     "tavily"
+    ],
+    "originId": "o-c2-7",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e1",
+    "claimId": "c3",
+    "url": "https://www.americanexpress.com/en-us/newsroom/amex-for-business/american-express-delivers-the-next-generation-of-amex-corporate/",
+    "domain": "americanexpress.com",
+    "title": "American Express Delivers the Next Generation of Amex Corporate™",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.1,
+    "tier": 1,
+    "tierReason": "Official Amex newsroom; body truncated",
+    "engines": [
+     "exa",
+     "parallel",
+     "tavily"
+    ],
+    "originId": "o-c3-1",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 1,
+     "independence": 1,
+     "crossEngine": 1.25,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e2",
+    "claimId": "c3",
+    "url": "https://www.wsj.com/tech/amex-adds-ai-expense-tracking-to-corporate-card-to-counter-fintech-rivals-1cf54487",
+    "domain": "wsj.com",
+    "title": "American Express Rolls Out AI Expense Management to Counter Fintech Rivals - WSJ",
+    "quote": "American Express is rolling out an expense-management platform with AI features alongside its new corporate card",
+    "stance": "contradicts",
+    "entailment": 0.95,
+    "tier": 2,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "exa",
+     "tavily"
+    ],
+    "originId": "o-c3-2",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.888,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.95
+    }
+   },
+   {
+    "id": "c3-e3",
+    "claimId": "c3",
+    "url": "https://www.americanexpress.com/en-us/newsroom/articles/amex-for-business/american-express-delivers-the-next-generation-of-amex-corporate-.html",
+    "domain": "americanexpress.com",
+    "title": "American Express Delivers the Next Generation of Amex Corporate™",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.1,
+    "tier": 1,
+    "tierReason": "Official Amex newsroom; body truncated",
+    "engines": [
+     "parallel",
+     "brave"
+    ],
+    "originId": "o-c3-1",
+    "isOrigin": false,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 1,
+     "independence": 0.08,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c3-e4",
+    "claimId": "c3",
+    "url": "https://ramp.com/blog/brex-vs-amex-vs-ramp",
+    "domain": "ramp.com",
+    "title": "Brex vs. American Express vs. Ramp: Choosing the best corporate card",
+    "quote": "Cards integrate with third-party expense tools",
+    "stance": "supports",
+    "entailment": 0.5,
+    "tier": 4,
+    "tierReason": "Competitor (Ramp) marketing blog comparison",
+    "engines": [
+     "parallel",
+     "brave"
+    ],
+    "originId": "o-c3-3",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.193,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.5
+    }
+   },
+   {
+    "id": "c3-e5",
+    "claimId": "c3",
+    "url": "https://www.businesstravelnews.com/Payment-Expense/Amex-Debuts-Expense-Mgmt-Capabilities-with-New-Card-Offering",
+    "domain": "businesstravelnews.com",
+    "title": "Amex Debuts Expense Mgmt Capabilities with New Card Offering",
+    "quote": "Amex Debuts Expense Mgmt Capabilities with New Card Offering",
+    "stance": "contradicts",
+    "entailment": 0.9,
+    "tier": 3,
+    "tierReason": "Trade press, Business Travel News",
+    "engines": [
+     "exa",
+     "tavily"
+    ],
+    "originId": "o-c3-4",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.644,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.9
+    }
+   },
+   {
+    "id": "c3-e6",
+    "claimId": "c3",
+    "url": "https://www.americanexpress.com/en-us/newsroom/articles/amex-for-business/american-express-now-offers-virtual-cards-in-concur-expense-to-s.html",
+    "domain": "americanexpress.com",
+    "title": "American Express Now Offers Virtual Cards in Concur Expense to Simplify Expense Management",
+    "quote": "American Express Now Offers Virtual Cards in Concur Expense to Simplify Expense Management",
+    "stance": "contradicts",
+    "entailment": 0.9,
+    "tier": 1,
+    "tierReason": "Amex's own official newsroom announcement",
+    "engines": [
+     "exa",
+     "parallel"
+    ],
+    "originId": "o-c3-1",
+    "isOrigin": false,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.074,
+    "factors": {
+     "tier": 1,
+     "independence": 0.08,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.9
+    }
+   },
+   {
+    "id": "c3-e7",
+    "claimId": "c3",
+    "url": "https://thepaypers.com/payments/news/american-express-launches-corporate-cashback-card-with-expense-tools",
+    "domain": "thepaypers.com",
+    "title": "Amex launches corporate cashback card with AI | The Paypers",
+    "quote": "American Express has launched a corporate cashback card integrated with an AI-enabled expense management platform for middle-market firms.",
+    "stance": "contradicts",
+    "entailment": 0.95,
+    "tier": 3,
+    "tierReason": "Trade payments news outlet, dated report",
+    "engines": [
+     "brave",
+     "tavily-news"
+    ],
+    "originId": "o-c3-5",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-01",
+    "fetchedVia": "tavily",
+    "weight": 0.679,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.95
+    }
+   },
+   {
+    "id": "c5-e1",
+    "claimId": "c5",
+    "url": "https://www.paymentsdive.com/news/capital-one-acquire-brex-5-billion-fintech/810319/",
+    "domain": "paymentsdive.com",
+    "title": "Capital One nabs Brex for $5.15B | Payments Dive",
+    "quote": "Capital One Financial said Thursday it will buy the tech startup Brex for $5.15 billion in cash and stock",
+    "stance": "contradicts",
+    "entailment": 0.9,
+    "tier": 2,
+    "tierReason": "national business trade press reporting",
+    "engines": [
+     "brave",
+     "perplexity",
+     "tavily"
+    ],
+    "originId": "o-c5-1",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-01-23",
+    "fetchedVia": "tavily",
+    "weight": 0.765,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 1.25,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0.9
+    }
+   },
+   {
+    "id": "c5-e2",
+    "claimId": "c5",
+    "url": "https://www.capitalone.com/about/newsroom/capital-one-completes-acquisition-of-brex/",
+    "domain": "capitalone.com",
+    "title": "Capital One completes acquisition of Brex",
+    "quote": "Capital One completes acquisition of Brex",
+    "stance": "contradicts",
+    "entailment": 0.95,
+    "tier": 1,
+    "tierReason": "acquirer's official newsroom announcement",
+    "engines": [
+     "exa",
+     "brave"
+    ],
+    "originId": "o-c5-2",
+    "isOrigin": false,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.157,
+    "factors": {
+     "tier": 1,
+     "independence": 0.15,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.95
+    }
+   },
+   {
+    "id": "c5-e3",
+    "claimId": "c5",
+    "url": "https://www.sec.gov/Archives/edgar/data/927628/000119312526145764/d85207d8k.htm",
+    "domain": "sec.gov",
+    "title": "8-K",
+    "quote": "On April 7, 2026, Capital One Financial Corporation (the “Company”), completed its previously announced acquisition of Brex Inc.",
+    "stance": "contradicts",
+    "entailment": 0.98,
+    "tier": 1,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "exa",
+     "tavily"
+    ],
+    "originId": "o-c5-3",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-04-07",
+    "fetchedVia": "tavily",
+    "weight": 0.862,
+    "factors": {
+     "tier": 1,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0.98
+    }
+   },
+   {
+    "id": "c5-e4",
+    "claimId": "c5",
+    "url": "https://www.investor.capitalone.com/news-releases/news-release-details/capital-one-acquire-brex",
+    "domain": "investor.capitalone.com",
+    "title": "Capital One to Acquire Brex | Capital One Financial Corp.",
+    "quote": "Capital One to Acquire Brex",
+    "stance": "contradicts",
+    "entailment": 0.85,
+    "tier": 1,
+    "tierReason": "acquirer's official investor relations release",
+    "engines": [
+     "brave",
+     "parallel"
+    ],
+    "originId": "o-c5-2",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-01-22",
+    "fetchedVia": "tavily",
+    "weight": 0.748,
+    "factors": {
+     "tier": 1,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0.85
+    }
+   },
+   {
+    "id": "c5-e5",
+    "claimId": "c5",
+    "url": "https://paymentsandpartnerships.com/wp-content/uploads/2026/02/Deep-Dive-Capital-One-Acquisition-of-Brexi.pdf",
+    "domain": "paymentsandpartnerships.com",
+    "title": "Deep-Dive-Capital-One-Acquisition-of-Brexi.pdf",
+    "quote": "Brex will operate as an independent subsidiary, with Pedro Franceschi continuing as CEO.",
+    "stance": "contradicts",
+    "entailment": 0.8,
+    "tier": 3,
+    "tierReason": "credible analyst deal deep-dive document",
+    "engines": [
+     "tavily",
+     "brave"
+    ],
+    "originId": "o-c5-4",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-02-01",
+    "fetchedVia": "tavily",
+    "weight": 0.458,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0.8
+    }
+   },
+   {
+    "id": "c5-e6",
+    "claimId": "c5",
+    "url": "https://www.merlin.computer/dossier/brex",
+    "domain": "merlin.computer",
+    "title": "Brex: Founders, CEO, Capital One Deal and News (2026) · Merlin",
+    "quote": "Capital One bought Brex in a deal that closed on April 7, 2026, and Franceschi still runs it as CEO.",
+    "stance": "contradicts",
+    "entailment": 0.85,
+    "tier": 4,
+    "tierReason": "aggregator dossier summarizing acquisition facts",
+    "engines": [
+     "linkup",
+     "parallel"
+    ],
+    "originId": "o-c5-5",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.327,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.85
+    }
+   },
+   {
+    "id": "c5-e7",
+    "claimId": "c5",
+    "url": "https://www.airwallex.com/en-us/blog/capital-one-acquired-brex",
+    "domain": "airwallex.com",
+    "title": "Capital One Acquired Brex: Strategic Analysis of the $5.15B Deal — Airwallex US",
+    "quote": "Earlier this year, the financial industry was surprised to learn of Capital One’s planned acquisition of Brex for $5.15 billion.",
+    "stance": "contradicts",
+    "entailment": 0.6,
+    "tier": 4,
+    "tierReason": "competitor company marketing blog post",
+    "engines": [
+     "brave",
+     "tavily-news"
+    ],
+    "originId": "o-c5-6",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-03-11",
+    "fetchedVia": "tavily",
+    "weight": 0.185,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 0.8,
+     "entailment": 0.6
+    }
+   },
+   {
+    "id": "c4-e1",
+    "claimId": "c4",
+    "url": "https://okara.ai/blog/brex-revenue-growth",
+    "domain": "okara.ai",
+    "title": "Brex Valuation and Revenue: From $12.3B to a $5.15B Sale",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 4,
+    "tierReason": "Brex valuation blog; no Ramp revenue",
+    "engines": [
+     "exa",
+     "brave",
+     "perplexity",
+     "tavily"
+    ],
+    "originId": "o-c4-1",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.4,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c4-e2",
+    "claimId": "c4",
+    "url": "https://www.cnbc.com/2026/06/04/ramp-valuation-funding-ai-spend.html",
+    "domain": "cnbc.com",
+    "title": "Ramp hits $44 billion valuation as companies look to rein in AI spend",
+    "quote": "The New York-based company crossed $1 billion in annualized revenue, with positive free cash flow, according to CEO Eric Glyman.",
+    "stance": "supports",
+    "entailment": 0.5,
+    "tier": 2,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "exa",
+     "brave",
+     "perplexity"
+    ],
+    "originId": "o-c4-2",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-06-04",
+    "fetchedVia": "tavily",
+    "weight": 0.531,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 1.25,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.5
+    }
+   },
+   {
+    "id": "c4-e3",
+    "claimId": "c4",
+    "url": "https://techcrunch.com/2026/06/04/ramp-raises-750m-at-44b-valuation-as-investors-hunger-for-fintechs-with-an-ai-story/",
+    "domain": "techcrunch.com",
+    "title": "Ramp raises $750M at $44B valuation as investors hunger for fintechs with an AI story | TechCrunch",
+    "quote": "Ramp said its annualized revenue is currently more than $1 billion, though it said it had crossed that milestone last September",
+    "stance": "supports",
+    "entailment": 0.5,
+    "tier": 2,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "exa",
+     "brave",
+     "perplexity"
+    ],
+    "originId": "o-c4-3",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-06-04",
+    "fetchedVia": "tavily",
+    "weight": 0.531,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 1.25,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.5
+    }
+   },
+   {
+    "id": "c4-e4",
+    "claimId": "c4",
+    "url": "https://zandigital.in/ramp-valuation-brex-exit-multiple",
+    "domain": "zandigital.in",
+    "title": "Ramp Valuation: $60B at 30x Run Rate vs Brex at 7x",
+    "quote": "said annualised revenue had passed $2 billion",
+    "stance": "supports",
+    "entailment": 0.8,
+    "tier": 4,
+    "tierReason": "Personal blog analysis; implies Ramp far above Brex",
+    "engines": [
+     "exa",
+     "perplexity"
+    ],
+    "originId": "o-c4-4",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-11-13",
+    "fetchedVia": "tavily",
+    "weight": 0.308,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.8
+    }
+   },
+   {
+    "id": "c4-e5",
+    "claimId": "c4",
+    "url": "https://resources.rework.com/tools/spend-expense/ramp-vs-brex",
+    "domain": "resources.rework.com",
+    "title": "Ramp vs Brex in 2026: Can You Even Qualify for Both?",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 4,
+    "tierReason": "Feature and qualification comparison; no revenue figures",
+    "engines": [
+     "brave",
+     "tavily"
+    ],
+    "originId": "o-c4-5",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c4-e6",
+    "claimId": "c4",
+    "url": "https://getlatka.com/companies/ramp",
+    "domain": "getlatka.com",
+    "title": "Ramp Revenue 2026: $1.4B, $44B Valuation",
+    "quote": "Ramp's annual revenue was $1.4B in June 2026 (Business Insider).",
+    "stance": "supports",
+    "entailment": 0.5,
+    "tier": 4,
+    "tierReason": "Aggregator citing Business Insider; no Brex figure",
+    "engines": [
+     "tavily",
+     "linkup"
+    ],
+    "originId": "o-c4-6",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-10-30",
+    "fetchedVia": "tavily",
+    "weight": 0.193,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.5
+    }
+   },
+   {
+    "id": "c4-e7",
+    "claimId": "c4",
+    "url": "https://www.indinero.com/blog/ramp-vs-brex-vs-bill-comparison/",
+    "domain": "indinero.com",
+    "title": "Ramp vs Brex vs Bill: 2026 SaaS Comparison | Indinero",
+    "quote": "more than $1 billion in annualized revenue with positive free cash flow",
+    "stance": "supports",
+    "entailment": 0.5,
+    "tier": 4,
+    "tierReason": "Company blog; $1B only, no Brex revenue",
+    "engines": [
+     "brave",
+     "tavily"
+    ],
+    "originId": "o-c4-7",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-08-20",
+    "fetchedVia": "tavily",
+    "weight": 0.193,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.5
+    }
+   },
+   {
+    "id": "c1-e1",
+    "claimId": "c1",
+    "url": "https://valueaddvc.com/blog/ramp-vs-brex-in-2026-which-corporate-card-wins-for-your-startup",
+    "domain": "valueaddvc.com",
+    "title": "Ramp vs Brex in 2026: Which Corporate Card Wins for Your Startup",
+    "quote": "Ramp wins for most startups on cost and accessibility — flat 1.5% cashback, no minimum funding requirement, and free expense management at any headcount.",
+    "stance": "supports",
+    "entailment": 0.5,
+    "tier": 4,
+    "tierReason": "editorial affiliate blog, not primary data",
+    "engines": [
+     "perplexity",
+     "parallel",
+     "exa"
+    ],
+    "originId": "o-c1-1",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-08-24",
+    "fetchedVia": "tavily",
+    "weight": 0.219,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.25,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.5
+    }
+   },
+   {
+    "id": "c1-e2",
+    "claimId": "c1",
+    "url": "https://www.corpay.com/resources/blog/ramp-vs-brex-vs-corpay",
+    "domain": "corpay.com",
+    "title": "Ramp vs. Brex vs. Corpay: Which Corporate Card Is Right for Your Business? (2026) | Corpay",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0,
+    "tier": 4,
+    "tierReason": "vendor marketing blog comparing products",
+    "engines": [
+     "parallel",
+     "tavily"
+    ],
+    "originId": "o-c1-2",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-09-02",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c1-e3",
+    "claimId": "c1",
+    "url": "https://www.startupcfo.ai/insights/best-corporate-cards-for-startups-2026",
+    "domain": "startupcfo.ai",
+    "title": "Best Corporate Cards for Startups 2026: Brex, Ramp, Mercury",
+    "quote": "",
+    "stance": "irrelevant",
+    "entailment": 0.1,
+    "tier": 3,
+    "tierReason": "niche fintech analyst guide, no market share",
+    "engines": [
+     "tavily",
+     "perplexity"
+    ],
+    "originId": "o-c1-3",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 1.1,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c1-e4",
+    "claimId": "c1",
+    "url": "https://www.cnbc.com/2026/05/19/ramp-cnbc-disruptor-50-ranking.html",
+    "domain": "cnbc.com",
+    "title": "5. Ramp",
+    "quote": "The company now serves more than 50,000 companies and surpassed $1 billion in annualized recurring revenue in September.",
+    "stance": "irrelevant",
+    "entailment": 0.1,
+    "tier": 2,
+    "tierReason": "seeded domain list",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c1-4",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-05-19",
+    "fetchedVia": "tavily",
+    "weight": 0,
+    "factors": {
+     "tier": 0.85,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0
+    }
+   },
+   {
+    "id": "c1-e5",
+    "claimId": "c1",
+    "url": "https://www.bankingnewsai.com/fintech/brex/competitors.md",
+    "domain": "bankingnewsai.com",
+    "title": "Brex: Competitors and alternatives",
+    "quote": "Brex had about 35,000 clients when the Capital One deal closed",
+    "stance": "supports",
+    "entailment": 0.75,
+    "tier": 4,
+    "tierReason": "AI-generated aggregator summarizing sources",
+    "engines": [
+     "perplexity"
+    ],
+    "originId": "o-c1-5",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-11-08",
+    "fetchedVia": "tavily",
+    "weight": 0.249,
+    "factors": {
+     "tier": 0.35,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.75
+    }
+   },
+   {
+    "id": "c1-e6",
+    "claimId": "c1",
+    "url": "https://www.buckinghamcapitalconsulting.com/compare/brex-vs-ramp",
+    "domain": "buckinghamcapitalconsulting.com",
+    "title": "Brex vs Ramp: spend management compared 2026",
+    "quote": "Brex scores higher for startups and small firms; Ramp scores higher for mid-market and multi-country groups and regulated financial firms.",
+    "stance": "contradicts",
+    "entailment": 0.7,
+    "tier": 3,
+    "tierReason": "analyst index, startup-segment scoring favoring Brex",
+    "engines": [
+     "parallel"
+    ],
+    "originId": "o-c1-6",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": "2026-11-02",
+    "fetchedVia": "tavily",
+    "weight": 0.432,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.7
+    }
+   },
+   {
+    "id": "c1-e7",
+    "claimId": "c1",
+    "url": "https://pilot.com/insights/what-1700-businesses-reveal-about-the-best-cards-for-2025",
+    "domain": "pilot.com",
+    "title": "The tech startup credit card shakeup: What 1,700+ businesses reveal about the best cards for 2025",
+    "quote": "Brex: 54.5% market share (757 companies)",
+    "stance": "contradicts",
+    "entailment": 0.7,
+    "tier": 3,
+    "tierReason": "vendor-run 2025 tech card market data study",
+    "engines": [
+     "exa"
+    ],
+    "originId": "o-c1-7",
+    "isOrigin": true,
+    "selfInterest": false,
+    "publishedAt": null,
+    "fetchedVia": "tavily",
+    "weight": 0.432,
+    "factors": {
+     "tier": 0.65,
+     "independence": 1,
+     "crossEngine": 0.95,
+     "selfInterest": 1,
+     "recency": 1,
+     "entailment": 0.7
+    }
+   }
+  ],
+  "origins": [
+   {
+    "id": "o-c2-1",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e1",
+    "memberIds": [
+     "c2-e1"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-2",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e2",
+    "memberIds": [
+     "c2-e2"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-3",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e3",
+    "memberIds": [
+     "c2-e3"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-4",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e4",
+    "memberIds": [
+     "c2-e4"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-5",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e5",
+    "memberIds": [
+     "c2-e5"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-6",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e6",
+    "memberIds": [
+     "c2-e6"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c2-7",
+    "claimId": "c2",
+    "originEvidenceId": "c2-e7",
+    "memberIds": [
+     "c2-e7"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-1",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e1",
+    "memberIds": [
+     "c3-e1",
+     "c3-e3",
+     "c3-e6"
+    ],
+    "similarity": 0.98
+   },
+   {
+    "id": "o-c3-2",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e2",
+    "memberIds": [
+     "c3-e2"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-3",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e4",
+    "memberIds": [
+     "c3-e4"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-4",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e5",
+    "memberIds": [
+     "c3-e5"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c3-5",
+    "claimId": "c3",
+    "originEvidenceId": "c3-e7",
+    "memberIds": [
+     "c3-e7"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-1",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e1",
+    "memberIds": [
+     "c5-e1"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-2",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e4",
+    "memberIds": [
+     "c5-e4",
+     "c5-e2"
+    ],
+    "similarity": 0.91
+   },
+   {
+    "id": "o-c5-3",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e3",
+    "memberIds": [
+     "c5-e3"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-4",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e5",
+    "memberIds": [
+     "c5-e5"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-5",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e6",
+    "memberIds": [
+     "c5-e6"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c5-6",
+    "claimId": "c5",
+    "originEvidenceId": "c5-e7",
+    "memberIds": [
+     "c5-e7"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-1",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e1",
+    "memberIds": [
+     "c4-e1"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-2",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e2",
+    "memberIds": [
+     "c4-e2"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-3",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e3",
+    "memberIds": [
+     "c4-e3"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-4",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e4",
+    "memberIds": [
+     "c4-e4"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-5",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e5",
+    "memberIds": [
+     "c4-e5"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-6",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e6",
+    "memberIds": [
+     "c4-e6"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c4-7",
+    "claimId": "c4",
+    "originEvidenceId": "c4-e7",
+    "memberIds": [
+     "c4-e7"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-1",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e1",
+    "memberIds": [
+     "c1-e1"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-2",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e2",
+    "memberIds": [
+     "c1-e2"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-3",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e3",
+    "memberIds": [
+     "c1-e3"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-4",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e4",
+    "memberIds": [
+     "c1-e4"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-5",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e5",
+    "memberIds": [
+     "c1-e5"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-6",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e6",
+    "memberIds": [
+     "c1-e6"
+    ],
+    "similarity": 0
+   },
+   {
+    "id": "o-c1-7",
+    "claimId": "c1",
+    "originEvidenceId": "c1-e7",
+    "memberIds": [
+     "c1-e7"
+    ],
+    "similarity": 0
+   }
+  ],
+  "scores": {
+   "c1": {
+    "claimId": "c1",
+    "confidence": 22,
+    "label": "Contested",
+    "supportWeight": 0.47,
+    "contradictWeight": 0.86,
+    "articles": 4,
+    "independentOrigins": 4,
+    "engines": [
+     "perplexity",
+     "parallel",
+     "exa"
+    ]
+   },
+   "c2": {
+    "claimId": "c2",
+    "confidence": 78,
+    "label": "Verified",
+    "supportWeight": 0.58,
+    "contradictWeight": 0,
+    "articles": 2,
+    "independentOrigins": 2,
+    "engines": [
+     "exa",
+     "perplexity",
+     "tavily",
+     "linkup",
+     "brave"
+    ]
+   },
+   "c3": {
+    "claimId": "c3",
+    "confidence": 0,
+    "label": "Contested",
+    "supportWeight": 0.19,
+    "contradictWeight": 2.29,
+    "articles": 5,
+    "independentOrigins": 5,
+    "engines": [
+     "exa",
+     "tavily",
+     "parallel",
+     "brave",
+     "tavily-news"
+    ]
+   },
+   "c4": {
+    "claimId": "c4",
+    "confidence": 98,
+    "label": "Verified",
+    "supportWeight": 1.76,
+    "contradictWeight": 0,
+    "articles": 5,
+    "independentOrigins": 5,
+    "engines": [
+     "exa",
+     "brave",
+     "perplexity",
+     "tavily",
+     "linkup"
+    ]
+   },
+   "c5": {
+    "claimId": "c5",
+    "confidence": 0,
+    "label": "Contested",
+    "supportWeight": 0,
+    "contradictWeight": 3.5,
+    "articles": 7,
+    "independentOrigins": 6,
+    "engines": [
+     "brave",
+     "perplexity",
+     "tavily",
+     "exa",
+     "parallel",
+     "linkup",
+     "tavily-news"
+    ]
+   }
+  },
+  "questions": [
+   "Third-party reporting disputes whether you've passed Brex with startups. On a clearly defined startup cohort, what are your customer counts and card spend versus Brex's, and how do you source the Brex numbers?",
+   "You're reported as profitable. Is that GAAP, operating, or adjusted EBITDA, does it exclude stock comp, and how much comes from interchange versus software? What happens to margin if rates or interchange fall?",
+   "American Express now sells expense management, virtual cards, and bill pay to businesses. In which deals do you lose to Amex, and why? How does its bundled rewards and credit offer change your win rate?",
+   "Brex appears to be moving under a larger bank's ownership rather than staying independent. How does that change pricing, underwriting, and poaching of your customers, and what are you seeing in competitive deals?"
+  ],
+  "linkedin": null,
+  "routingBaseline": {
+   "claimId": "c1",
+   "engines": [
+    "exa",
+    "perplexity",
+    "tavily"
+   ],
+   "note": "Telem auto-routing picked exa, perplexity, tavily; Tripwire routed C1 (market) to perplexity, parallel, exa, tavily"
+  },
+  "log": [
+   {
+    "ts": 1794693754286,
+    "kind": "llm",
+    "text": "5 claims extracted for Ramp (vs. Brex and American Express) – US corporate card / spend management"
+   },
+   {
+    "ts": 1794693754290,
+    "kind": "search",
+    "text": "c1 [market] → perplexity, parallel, exa, tavily"
+   },
+   {
+    "ts": 1794693754295,
+    "kind": "search",
+    "text": "c2 [funding] → linkup, exa, brave, perplexity, tavily"
+   },
+   {
+    "ts": 1794693754299,
+    "kind": "search",
+    "text": "c3 [product] → exa, parallel, brave, tavily"
+   },
+   {
+    "ts": 1794693754301,
+    "kind": "search",
+    "text": "c4 [funding] → linkup, exa, brave, perplexity, tavily"
+   },
+   {
+    "ts": 1794693754304,
+    "kind": "search",
+    "text": "c5 [other] → exa, brave, linkup, perplexity, tavily, parallel"
+   },
+   {
+    "ts": 1794693756858,
+    "kind": "search",
+    "text": "c2: 34 unique URLs from 5 engines → reading top 7"
+   },
+   {
+    "ts": 1794693757890,
+    "kind": "search",
+    "text": "c5: 37 unique URLs from 6 engines → reading top 7"
+   },
+   {
+    "ts": 1794693758779,
+    "kind": "search",
+    "text": "c1: 26 unique URLs from 4 engines → reading top 7"
+   },
+   {
+    "ts": 1794693758799,
+    "kind": "search",
+    "text": "c3: 24 unique URLs from 4 engines → reading top 7"
+   },
+   {
+    "ts": 1794693758899,
+    "kind": "search",
+    "text": "c4: 34 unique URLs from 5 engines → reading top 7"
+   },
+   {
+    "ts": 1794693765447,
+    "kind": "score",
+    "text": "c2 Verified 78/100 · 2 articles → 2 origins"
+   },
+   {
+    "ts": 1794693766469,
+    "kind": "score",
+    "text": "c3 Contested 0/100 · 5 articles → 5 origins"
+   },
+   {
+    "ts": 1794693767257,
+    "kind": "score",
+    "text": "c5 Contested 0/100 · 7 articles → 6 origins"
+   },
+   {
+    "ts": 1794693767334,
+    "kind": "score",
+    "text": "c4 Verified 98/100 · 5 articles → 5 origins"
+   },
+   {
+    "ts": 1794693768009,
+    "kind": "score",
+    "text": "c1 Contested 22/100 · 4 articles → 4 origins"
+   },
+   {
+    "ts": 1794693774883,
+    "kind": "info",
+    "text": "Case complete"
+   }
+  ],
+  "seeded": false,
+  "watch": [],
+  "alerts": [],
+  "history": {
+   "c1": [
+    {
+     "ts": 1794693774883,
+     "confidence": 22,
+     "label": "Contested",
+     "note": "initial check"
+    }
+   ],
+   "c2": [
+    {
+     "ts": 1794693774883,
+     "confidence": 78,
+     "label": "Verified",
+     "note": "initial check"
+    }
+   ],
+   "c3": [
+    {
+     "ts": 1794693774883,
+     "confidence": 0,
+     "label": "Contested",
+     "note": "initial check"
+    }
+   ],
+   "c4": [
+    {
+     "ts": 1794693774883,
+     "confidence": 98,
+     "label": "Verified",
+     "note": "initial check"
+    }
+   ],
+   "c5": [
+    {
+     "ts": 1794693774883,
+     "confidence": 0,
+     "label": "Contested",
+     "note": "initial check"
+    }
+   ]
+  }
  }
 ]

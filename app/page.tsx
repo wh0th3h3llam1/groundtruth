@@ -52,7 +52,7 @@ export default function Home() {
   return (
     <main className="min-h-screen px-5 md:px-10 py-6 max-w-[1100px] mx-auto">
       <header className="flex items-center justify-between border-b border-line pb-3">
-        <div className="text-2xl font-bold tracking-tight">TRIPWIRE</div>
+        <div className="text-2xl font-bold tracking-tight">GROUNDTRUTH</div>
         <div className="flex gap-1" aria-label="Search engines routed through Telem">
           {ENGINES.map((e) => (
             <span key={e} className="mono text-[10px] uppercase tracking-wider px-1.5 py-0.5 border" style={{ color: ENGINE_COLOR[e], borderColor: ENGINE_COLOR[e] }}>{e}</span>
@@ -65,7 +65,7 @@ export default function Home() {
           Every claim,<br /><span style={{ color: "#3FB68B" }}>checked</span> <span className="text-muted">and</span> <span style={{ color: "#5B9DFF" }}>watched.</span>
         </h1>
         <p className="mt-5 text-lg text-muted max-w-2xl leading-snug">
-          Paste a company or write your investment assumptions. Tripwire checks each claim across 6 search engines, scores how credible the sources are, and keeps watching for changes.
+          Paste a company or write your investment assumptions. Groundtruth checks each claim across 6 search engines, scores how credible the sources are, and keeps watching for changes.
         </p>
 
         <div className="mt-8 max-w-3xl">

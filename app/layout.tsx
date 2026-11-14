@@ -6,7 +6,7 @@ const head = Archivo_Narrow({ variable: "--font-head", subsets: ["latin"], weigh
 const mono = JetBrains_Mono({ variable: "--font-mono-jb", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tripwire — every claim, core-sampled",
+  title: "Groundtruth — what's solid under every claim",
   description: "Claim-level credibility across six search engines.",
 };
 
